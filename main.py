@@ -1,65 +1,54 @@
+from datasets import Dataset
+
+from factory import get_tokenizer, get_ne_classifier
 from ne_classifier import BertForNERC
 from scripts.anntools import Collection, Sentence
 from pathlib import Path
 import numpy as np
 import json
-
+from transformers import Trainer, TrainingArguments
+import random
 import torch
 from transformers import BertTokenizerFast, BertForTokenClassification, BertConfig, BertModel
+from datasets import load_metric
 
-
-def get_tokenizer():
-    return BertTokenizerFast.from_pretrained('dccuchile/bert-base-spanish-wwm-cased')
-
-
-def get_ne_classifier():
-    bert_model = BertModel.from_pretrained('dccuchile/bert-base-spanish-wwm-cased'
-                                           # , config=BertConfig(num_labels=5)
-                                           )
-    ne_classifier = BertForNERC(bert_model, num_labels=5)
-    return ne_classifier
-
-
-def ne_label_token_sentence(sentence_tokens: list, sentence: Sentence, tokenizer: BertTokenizerFast) -> np.ndarray:
-    ne_to_label_mapping = {
-        'Action': 1,
-        'Concept': 2,
-        'Predicate': 3,
-        'Reference': 4
-    }
-    keyphrase_tokens = tokenizer([k.text for k in sentence.keyphrases])['input_ids']
-    labels = np.zeros(len(sentence_tokens))
-    for keyphrase, tokens in zip(sentence.keyphrases, keyphrase_tokens):
-        s_pointer = 0
-        actual_tokens = tokens[1:-1]
-        while s_pointer < len(sentence_tokens):
-            if sentence_tokens[s_pointer:s_pointer+len(actual_tokens)] == actual_tokens:
-                label_to_assign = ne_to_label_mapping[keyphrase.label]
-                for i in range(s_pointer, s_pointer+len(actual_tokens)):
-                    labels[i] = label_to_assign
-                break
-            s_pointer += 1
-
-    return labels
+# class TokenDataset(Dataset):
+#     def __init__(self, tokens, labels):
+#         assert(len(tokens) == len(labels))
+#         self.tokens = tokens
+#         self.labels = labels
+#
+#     def __len__(self):
+#         return len(self.tokens)
+#
+#     def __getitem__(self, item):
+#         return self.tokens[item], self.labels[item]
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    c: Collection = Collection().load(Path("2021/ref/training/medline.1200.es.txt"))
-
-    tokens = []
-    labels = []
     tokenizer = get_tokenizer()
-    batch_size = 64
-    c_pointer = 0
-    while c_pointer < len(c):
-        sentence_tokens = tokenizer([s.text for s in c.sentences[c_pointer:c_pointer+batch_size]])['input_ids']
-        for i in range(len(sentence_tokens)):
-            tokens.append(sentence_tokens[i])
-            labels.append(ne_label_token_sentence(sentence_tokens[i], c.sentences[c_pointer+i], tokenizer)
-                          .astype(int)
-                          .tolist())
-        c_pointer += batch_size
+    classifier = get_ne_classifier()
 
-    with open('medline_train.json', 'x') as f:
-        json.dump({'tokens': tokens, 'labels': labels}, f, indent=4)
+    with open('medline_train.json', 'r') as f:
+        train_dataset = json.load(f)
+    train_dataset = list(zip(train_dataset['tokens'], train_dataset['labels']))
+    random.shuffle(train_dataset)
+    val_dataset = train_dataset[int(0.9*len(train_dataset)):]
+    train_dataset = train_dataset[:int(0.9*len(train_dataset))]
+
+    train_tokens, train_labels = zip(*train_dataset)
+    print(classifier(torch.Tensor([train_tokens[0]])))
+
+    # print('Starting training')
+    # metric = load_metric("accuracy")
+    # trainer = Trainer(
+    #     model=classifier,
+    #     args=TrainingArguments('test_trainer'),
+    #     train_dataset=TokenDataset(*zip(*train_dataset)),
+    #     eval_dataset=TokenDataset(*zip(*val_dataset)),
+    #     compute_metrics=lambda eval_prediction: metric.compute(predictions=np.argmax(eval_prediction[0], axis=-1),
+    #                                                            references=eval_prediction[1])
+    # )
+    # print('Evaluating')
+    # trainer.evaluate()
