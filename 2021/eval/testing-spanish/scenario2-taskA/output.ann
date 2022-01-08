@@ -1,0 +1,465 @@
+T1	Concept 4 12	fractura
+T2	Action 20 27	ruptura
+T3	Concept 34 39	hueso
+T4	Concept 56 68	enfermedades
+T5	Concept 69 81	transmitidas
+T6	Concept 86 95	picaduras
+T7	Concept 99 108	garrapata
+T8	Concept 116 126;127 129;130 134	enfermedad de Lyme
+T9	Concept 136 148	ehrlichiosis
+T10	Concept 150 156;157 159;160 163;164 172;173 183	fiebre de las montañas rocallosas
+T11	Concept 186 195	tularemia
+T12	Action 202 214	diagnosticar
+T13	Concept 215 218	NF1
+T14	Concept 221 224	NF2
+T15	Concept 241 248	pruebas
+T16	Concept 249 258	genéticas
+T17	Concept 263 270;271 278	paladar hendido
+T18	Concept 284 289;290 298	labio leporino
+T19	Concept 303 311;312 322	defectos congénitos
+T20	Concept 327 331	asma
+T21	Action 335 340	trata
+T22	Concept 345 348	dos
+T23	Predicate 349 354	tipos
+T24	Concept 358 370	medicamentos
+T25	Concept 372 381	medicinas
+T26	Action 390 396	alivio
+T27	Concept 397 403	rápido
+T28	Action 409 416	detener
+T29	Concept 421 429	síntomas
+T30	Concept 432 441	medicinas
+T31	Action 450 457	control
+T32	Concept 460 465	largo
+T33	Concept 466 471	plazo
+T34	Action 480 490	prevención
+T35	Concept 494 502	síntomas
+T36	Concept 508 516;517 522	glóbulos rojos
+T37	Action 523 534	suministran
+T38	Concept 535 542	oxígeno
+T39	Predicate 543 548	desde
+T40	Concept 553 561	pulmones
+T41	Predicate 562 563	a
+T42	Concept 568 575	tejidos
+T43	Concept 578 585	órganos
+T44	Reference 587 592	Estos
+T45	Concept 602 611	ungüentos
+T46	Action 616 625	adormecen
+T47	Concept 630 636	llagas
+T48	Action 638 646	ablandan
+T49	Concept 651 658	costras
+T50	Reference 665 668	las
+T51	Action 669 674	secan
+T52	Concept 680 690	trastornos
+T53	Concept 695 701	cóccix
+T54	Concept 711 723	traumatismos
+T55	Concept 725 730	dolor
+T56	Concept 732 743	infecciones
+T57	Concept 745 752	quistes
+T58	Concept 755 762	tumores
+T59	Concept 768 775	adultos
+T60	Concept 780 787	diarrea
+T61	Action 794 799	beber
+A0	Uncertain T61
+T62	Concept 800 804	agua
+T63	Concept 806 811;812 814;815 821	jugos de frutas
+T64	Concept 823 830;831 841	bebidas deportivas
+T65	Concept 843 850	bebidas
+T66	Concept 851 859	gaseosas
+T67	Concept 864 871	cafeína
+A1	Negated T67
+T68	Concept 874 880	caldos
+T69	Concept 881 888	salados
+T70	Concept 893 898	usted
+T71	Action 899 904	tiene
+T72	Concept 905 913	síntomas
+T73	Concept 921 927;928 935	úlcera péptica
+T74	Concept 940 946	médico
+T75	Action 950 954	hará
+T76	Concept 955 962	pruebas
+T77	Concept 966 972	sangre
+T78	Concept 974 981	aliento
+T79	Concept 984 989	heces
+T80	Action 995 998	ver
+T81	Action 1002 1010	contiene
+T82	Concept 1011 1013;1014 1020	H. pylori
+T83	Concept 1025 1034;1035 1038;1039 1048	neuralgia del trigémino
+T84	Action 1062 1068	afecta
+T85	Concept 1071 1079	personas
+T86	Predicate 1080 1087	mayores
+T87	Concept 1091 1093;1094 1098	50 años
+T88	Concept 1116 1123	mujeres
+T89	Concept 1128 1134;1135 1137;1138 1140;1141 1149	cáncer de la vesícula
+T90	Concept 1160 1167	difícil
+A2	Uncertain T90
+T91	Action 1171 1177	tratar
+T92	Action 1200 1207	detecta
+A3	Negated T92
+T93	Predicate 1208 1213	hasta
+T94	Action 1227 1239	desarrollado
+T95	Concept 1244 1254	agorafobia
+T96	Action 1261 1266	temor
+T97	Concept 1273 1280	lugares
+T98	Concept 1281 1289	públicos
+T99	Concept 1295 1308	claustrofobia
+T100	Action 1315 1320	temor
+T101	Concept 1327 1335	espacios
+T102	Concept 1336 1344	cerrados
+T103	Concept 1350 1359	problemas
+T104	Predicate 1360 1363	más
+T105	Concept 1364 1370	serios
+T106	Concept 1386 1396	meningitis
+T107	Concept 1398 1406;1407 1417	coágulos sanguíneos
+T108	Action 1419 1430	inflamación
+T109	Concept 1435 1442;1443 1452	sistema digestivo
+T110	Concept 1455 1462	ceguera
+T111	Predicate 1468 1476	primeros
+T112	Concept 1477 1485	síntomas
+T113	Concept 1492 1501;1502 1504;1505 1512;1513 1521	arteritis de células gigantes
+T114	Action 1525 1532	parecen
+T115	Reference 1535 1538	los
+T116	Concept 1545 1550	gripe
+T117	Concept 1552 1558	fatiga
+T118	Action 1560 1567	pérdida
+T119	Concept 1571 1578	apetito
+T120	Concept 1581 1587	fiebre
+T121	Concept 1589 1596	Pruebas
+T122	Concept 1600 1609	detección
+T123	Predicate 1610 1617	durante
+T124	Concept 1621 1629	embarazo
+T125	Action 1637 1649	diagnosticar
+T126	Concept 1650 1656;1657 1663	espina bífida
+T127	Concept 1685 1690	común
+A4	Emphasized T127
+T128	Predicate 1695 1702	mayoría
+T129	Concept 1710 1718	personas
+T130	Action 1722 1731	contagian
+T131	Concept 1736 1739	VPH
+T132	Predicate 1745 1752	después
+A5	Diminished T132
+T133	Concept 1760 1771	sexualmente
+T134	Concept 1772 1779	activos
+T135	Predicate 1784 1791	primera
+T136	Concept 1792 1795	vez
+T137	Predicate 1800 1805	todas
+A6	Negated T137
+T138	Concept 1810 1818	personas
+T139	Concept 1823 1827	baja
+T140	Concept 1828 1832;1833 1837	masa ósea
+T141	Action 1838 1844	tienen
+T142	Concept 1845 1857	osteoporosis
+T143	Action 1864 1869	están
+T144	Concept 1873 1877	alto
+T145	Predicate 1878 1884	riesgo
+T146	Action 1888 1895	tenerla
+T147	Concept 1901 1915	articulaciones
+T148	Concept 1924 1931	lugares
+T149	Action 1941 1945	unen
+T150	Predicate 1946 1949	dos
+T151	Concept 1950 1956	huesos
+T152	Concept 1966 1970	codo
+T153	Concept 1976 1983	rodilla
+T154	Concept 1991 2005	complicaciones
+T155	Concept 2008 2013	largo
+T156	Concept 2014 2019	plazo
+T157	Concept 2026 2034	diabetes
+T158	Concept 2044 2053	problemas
+T159	Concept 2061 2065	piel
+T160	Concept 2067 2076	problemas
+T161	Concept 2083 2090;2091 2100	aparato digestivo
+T162	Concept 2102 2112;2113 2119	disfunción sexual
+T163	Concept 2122 2131	problemas
+T164	Concept 2139 2146	dientes
+T165	Concept 2153 2159	encías
+T166	Concept 2164 2176	polimiositis
+T167	Action 2183 2192	debilidad
+T168	Concept 2200 2208	músculos
+T169	Action 2222 2228	afecta
+T170	Concept 2235 2243	músculos
+T171	Predicate 2244 2252	cercanos
+T172	Concept 2256 2262;2263 2266;2267 2273	tronco del cuerpo
+T173	Concept 2278 2283	usted
+T174	Action 2284 2289	tiene
+T175	Concept 2290 2301	resistencia
+T176	Concept 2307 2315	insulina
+T177	Action 2320 2327	acumula
+T178	Predicate 2331 2337	exceso
+T179	Concept 2341 2347	azúcar
+T180	Concept 2354 2360	sangre
+T181	Action 2394 2403	aparición
+T182	Reference 2410 2420	enfermedad
+T183	Concept 2425 2431;2432 2447	ataque cerebrovascular
+T184	Concept 2461 2465;2466 2474	daño cerebral
+T185	Concept 2475 2485	permanente
+T186	Action 2490 2496	siente
+T187	Concept 2497 2502	dolor
+T188	Concept 2505 2512	rigidez
+T189	Concept 2519 2525	cuerpo
+T190	Action 2528 2533	tiene
+T191	Concept 2534 2543	problemas
+T192	Action 2549 2556	moverse
+T193	Action 2572 2579	padezca
+A7	Uncertain T193
+T194	Concept 2583 2591	artritis
+T195	Concept 2596 2605;2606 2612;2613 2621	trombosis venosa profunda
+T196	Concept 2624 2627	TVP
+T197	Concept 2635 2642;2643 2652	coágulo sanguíneo
+T198	Action 2660 2665	forma
+T199	Concept 2673 2677	vena
+T200	Concept 2678 2686	profunda
+T201	Concept 2693 2699	cuerpo
+T202	Concept 2708 2715	eventos
+T203	Concept 2716 2723	locales
+T204	Concept 2725 2735	nacionales
+T205	Concept 2738 2747	mundiales
+T206	Predicate 2751 2755	todo
+T207	Predicate 2756 2760	tipo
+T208	Concept 2762 2772	conciertos
+T209	Concept 2774 2781	eventos
+T210	Concept 2782 2790	sociales
+T211	Concept 2792 2802	deportivos
+T212	Concept 2804 2814	religiosos
+T213	Action 2838 2849	suspendidos
+T214	Action 2852 2861	aplazados
+T215	Concept 2878 2886	pandemia
+T216	Concept 2888 2897;2898 2907	Christian Lindmeier
+T217	Concept 2909 2917	portavoz
+T218	Concept 2924 2936;2937 2944;2945 2947;2948 2950;2951 2956	Organización Mundial de la Salud
+T219	Concept 2958 2961	OMS
+T220	Action 2963 2969	indicó
+T221	Concept 2977 2987	preferible
+T222	Action 2988 2992	usar
+T223	Concept 2993 3004	paracetamol
+T224	Predicate 3005 3007;3008 3013	en lugar
+T225	Concept 3017 3027	ibuprofeno
+T226	Action 3033 3039	paliar
+T227	Concept 3044 3051	efectos
+T228	Concept 3056 3064	COVID-19
+T229	Concept 3066 3069;3070 3077;3078 3082	Ali Mohamed Zaki
+T230	Action 3083 3088	aisló
+T231	Action 3091 3101	identificó
+T232	Concept 3105 3110	virus
+T233	Concept 3117 3125	paciente
+T234	Concept 3126 3131	saudí
+T235	Concept 3135 3137;3138 3142	60 años
+T236	Concept 3148 3155	pruebas
+T237	Concept 3156 3166	originales
+T238	Action 3167 3180	desarrolladas
+T239	Concept 3189 3192	CDC
+T240	Action 3196 3204	enviaron
+T241	Concept 3208 3209;3210 3212;3213 3220	5 de febrero
+T242	Concept 3230 3232;3233 3235;3236 3243;3244 3246;3247 3251	28 de febrero de 2020
+T243	Concept 3257 3265	mercados
+T244	Concept 3266 3276	bursátiles
+T245	Concept 3288 3293	mundo
+T246	Action 3294 3304	acumulaban
+T247	Predicate 3309 3316	mayores
+T248	Concept 3317 3326	descensos
+T249	Concept 3334 3340	semana
+T250	Predicate 3341 3346	desde
+T251	Concept 3350 3356;3357 3367	crisis financiera
+T252	Concept 3371 3375	2008
+T253	Concept 3381 3387	semana
+T254	Predicate 3388 3395	después
+T255	Concept 3400 3406	hombre
+T256	Concept 3407 3415	italiano
+T257	Concept 3416 3426	repatriado
+T258	Action 3430 3437	regreso
+T259	Concept 3440 3446	Italia
+T260	Concept 3456 3462	ciudad
+T261	Concept 3466 3471	Wuhan
+T262	Concept 3473 3478	China
+T263	Action 3484 3497	hospitalizado
+T264	Predicate 3523 3529	tercer
+T265	Concept 3530 3534	caso
+T266	Concept 3538 3543;3544 3546	COVID 19
+T267	Concept 3550 3556	Italia
+T268	Predicate 3558 3563	Hasta
+T269	Concept 3567 3569;3570 3572;3573 3578	19 de marzo
+T270	Action 3591 3599	realizar
+T271	Concept 3600 3602;3603 3606;3607 3614	56 221 pruebas
+T272	Concept 3626 3627;3628 3631;3632 3637	3 269 casos
+T273	Action 3638 3649	confirmados
+T274	Concept 3653 3661	COVID-19
+T275	Concept 3668 3673;3674 3679	Reino Unido
+T276	Concept 3684 3686;3687 3689;3690 3694;3695 3697;3698 3702	29 de mayo de 2013
+T277	Concept 3707 3719;3720 3727;3728 3730;3731 3733;3734 3739	Organización Mundial de la Salud
+T278	Action 3740 3748	advertía
+T279	Concept 3756 3761	virus
+T280	Concept 3762 3766;3767 3770	MERS CoV
+T281	Concept 3778 3785	amenaza
+T282	Predicate 3788 3793	nivel
+T283	Concept 3794 3801	mundial
+T284	Concept 3806 3807;3808 3810;3811 3816	7 de marzo
+T285	Concept 3822 3834	funcionarios
+T286	Concept 3842 3845	CDC
+T287	Action 3846 3857	confirmaron
+T288	Concept 3865 3870	virus
+T289	Action 3881 3891	propagando
+T290	Concept 3898 3907	comunidad
+T291	Action 3926 3936	transmitía
+T292	Concept 3940 3947	persona
+T293	Concept 3950 3957	persona
+T294	Concept 3966 3972	fuente
+T295	Concept 3973 3984	desconocida
+T296	Reference 3992 3996	esto
+T297	Action 4011 4022	continuaría
+A8	Uncertain T297
+T298	Predicate 4030 4038	próximos
+T299	Concept 4039 4043	días
+T300	Concept 4048 4058	ministerio
+T301	Action 4059 4066	ofreció
+T302	Concept 4073 4083	hospitales
+T303	Concept 4084 4089	rusos
+T304	Concept 4090 4103	descripciones
+T305	Concept 4106 4111	guías
+T306	Concept 4121 4130	mecanismo
+T307	Concept 4134 4140	acción
+T308	Concept 4145 4156	tratamiento
+T309	Concept 4163 4168	dosis
+T310	Concept 4169 4181	recomendadas
+T311	Concept 4186 4192;4193 4195;4196 4200	agosto de 2013
+T312	Predicate 4211 4216	total
+T313	Concept 4220 4229	pacientes
+T314	Action 4230 4244	diagnosticados
+T315	Concept 4251 4255	país
+T316	Concept 4263 4265	76
+T317	Action 4267 4275	llegando
+T318	Concept 4278 4281	127
+T319	Concept 4285 4294;4295 4297;4298 4302	noviembre de 2013
+T320	Concept 4307 4309;4310 4312;4313 4318	13 de enero
+T321	Action 4322 4329	detectó
+T322	Concept 4333 4337	caso
+T323	Concept 4341 4350	Tailandia
+T324	Action 4351 4361	confirmado
+T325	Concept 4366 4373	pruebas
+T326	Concept 4377 4388	laboratorio
+T327	Concept 4395 4398;4399 4404	125 niños
+T328	Predicate 4406 4410	casi
+T329	Concept 4414 4415;4416 4419;4420 4426	6 por ciento
+T330	Action 4428 4441	desarrollaron
+T331	Concept 4446 4456	enfermedad
+T332	Concept 4461 4466	grave
+A9	Emphasized T332
+T333	Concept 4472 4476	niño
+T334	Concept 4480 4482;4483 4487	14 años
+T335	Concept 4492 4501	infección
+T336	Concept 4517 4528	coronavirus
+T337	Action 4529 4534	murió
+T338	Concept 4536 4542	Europa
+T339	Concept 4556 4561	ahora
+T340	Concept 4565 4574	epicentro
+T341	Concept 4578 4586	COVID-19
+T342	Concept 4596 4608;4609 4616;4617 4619;4620 4622;4623 4628	Organización Mundial de la Salud
+T343	Predicate 4629 4630;4631 4637	a partir
+T344	Concept 4642 4644;4645 4647;4648 4653;4654 4656;4657 4661	13 de marzo de 2020
+T345	Concept 4670 4678	Alemania
+T346	Concept 4702 4706;4707 4713	diez países
+T347	Predicate 4721 4726	mayor
+T348	Predicate 4727 4733	número
+T349	Concept 4737 4742	casos
+T350	Concept 4743 4752	positivos
+T351	Concept 4759 4764	mundo
+T352	Predicate 4766 4771	hasta
+T353	Concept 4775 4777;4778 4780;4781 4786	13 de marzo
+T354	Action 4795 4806	registraron
+T355	Concept 4807 4811;4812 4819	ocho muertes
+T356	Concept 4829 4833;4834 4836;4837 4847	tasa de mortalidad
+T357	Concept 4852 4856	0,2%
+T358	Concept 4861 4863;4864 4866;4867 4872	12 de marzo
+T359	Predicate 4877 4882	nivel
+T360	Concept 4886 4892	riesgo
+T361	Concept 4897 4902;4903 4908	Reino Unido
+T362	Action 4909 4916	aumentó
+T363	Concept 4920 4928;4929 4930;4931 4935	moderado a alto
+T364	Concept 4940 4948	encierro
+T365	Concept 4960 4966	pánico
+T366	Concept 4973 4979	ciudad
+T367	Concept 4983 4988	Wuhan
+T368	Reference 4992 4998	muchos
+T369	Action 5003 5012	expresado
+T370	Concept 5016 5028	preocupación
+T371	Concept 5038 5047	capacidad
+T372	Concept 5054 5060	ciudad
+T373	Action 5066 5074	soportar
+T374	Concept 5078 5083	brote
+T375	Concept 5085 5089;5090 5100	Once municipios
+T376	Concept 5107 5112;5113 5115;5116 5122	norte de Italia
+T377	Action 5132 5145	identificados
+T378	Concept 5155 5165	epicentros
+T379	Concept 5173 5176	dos
+T380	Predicate 5177 5188	principales
+T381	Concept 5189 5195	grupos
+T382	Concept 5196 5205	italianos
+T383	Action 5208 5215	puestos
+T384	Concept 5219 5229	cuarentena
+T385	Concept 5234 5242	paciente
+T386	Concept 5251 5258	azafata
+T387	Concept 5259 5264	china
+T388	Action 5289 5295	estado
+A10	Uncertain T388
+T389	Concept 5299 5304	Wuhan
+T390	Concept 5305 5309	días
+T391	Predicate 5310 5315	antes
+T392	Action 5319 5327	regresar
+T393	Concept 5330 5335	Viena
+T394	Concept 5349 5360	importancia
+T395	Concept 5365 5372	turismo
+T396	Concept 5379 5388	actividad
+T397	Concept 5389 5398	económica
+T398	Concept 5399 5407	italiana
+T399	Concept 5409 5411;5411 5412	13 %
+T400	Concept 5417 5420	PIB
+T401	Action 5426 5430	teme
+T402	Concept 5440 5448	pandemia
+T403	Action 5449 5454	tenga
+T404	Concept 5455 5468	consecuencias
+T405	Concept 5484 5495	desastrosas
+T406	Concept 5497 5508	Científicos
+T407	Concept 5509 5518	israelíes
+T408	Action 5527 5532	tener
+A11	Uncertain T408
+T409	Concept 5533 5538	lista
+T410	Concept 5543 5549	vacuna
+T411	Concept 5550 5554	oral
+T412	Concept 5558 5560;5561 5565	90 días
+T413	Predicate 5567 5574	después
+T414	Concept 5591 5595	fase
+T415	Concept 5599 5606	pruebas
+T416	Concept 5610 5619	seguridad
+T417	Concept 5625 5633	personas
+T418	Action 5634 5643	recibirán
+T419	Concept 5644 5652	volantes
+T420	Concept 5655 5668	cuestionarios
+T421	Action 5678 5688	informados
+T422	Concept 5698 5706	COVID-19
+T423	Concept 5711 5713;5714 5716;5717 5726;5727 5729;5730 5734	31 de diciembre de 2019
+T424	Concept 5740 5751	autoridades
+T425	Concept 5752 5762	sanitarias
+T426	Concept 5769 5775	ciudad
+T427	Concept 5779 5784	Wuhan
+T428	Action 5785 5795	informaron
+T429	Action 5805 5814	aparición
+T430	Concept 5818 5829;5830 5838	veintisiete personas
+T431	Action 5839 5853	diagnosticadas
+T432	Concept 5857 5865;5866 5878;5879 5884;5885 5890	síndrome respiratorio agudo grave
+T433	Concept 5894 5900	origen
+T434	Concept 5901 5912	desconocido
+T435	Predicate 5917 5924	mayoría
+T436	Concept 5932 5937	casos
+T437	Action 5944 5956	relacionados
+T438	Concept 5961 5967	viajes
+T439	Concept 5971 5981	extranjero
+T440	Concept 5997 6003	Italia
+A12	Emphasized T440
+T441	Concept 6024 6031	Austria
+A13	Diminished T441
+T442	Concept 6048 6054	hombre
+T443	Concept 6063 6065;6066 6070	50 años
+T444	Action 6076 6080	dada
+T445	Concept 6084 6088	alta
+T446	Concept 6093 6101	hospital
+T447	Concept 6105 6106;6107 6109;6110 6117	1 de febrero
+T448	Concept 6121 6127	buenas
+T449	Concept 6128 6139	condiciones
+T450	Concept 6145 6156	aislamiento
+T451	Concept 6163 6168	hogar
