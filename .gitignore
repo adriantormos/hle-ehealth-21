@@ -1,3 +1,8 @@
+# other
+.idea/
+output/
+bert-base-spanish-wwm-cased-finetuned-ehealth21/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
