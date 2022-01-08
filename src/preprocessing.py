@@ -1,3 +1,5 @@
+from typing import Union
+
 import numpy as np
 import torch
 from pathlib import Path
@@ -147,7 +149,7 @@ def extract_relations(c: Collection, tokenizer, model, all_relations=False):
     return dataset_x, dataset_y
 
 
-def generate_RE_datasets(path: str, tokenizer_path: str, two_datasets=False, all_relations=False):
+def generate_RE_datasets(path: str, tokenizer_path: str, two_datasets=False, all_relations=False, label_0_ratio=1):
     c: Collection = Collection().load(Path(path))
     tokenizer = AutoTokenizer.from_pretrained(tokenizer_path)
     model = AutoModel.from_pretrained(tokenizer_path, output_hidden_states=True)
@@ -157,7 +159,7 @@ def generate_RE_datasets(path: str, tokenizer_path: str, two_datasets=False, all
         labels_binary = [0 if x == 0 else 1 for x in labels]
         data_0 = list([(x, y) for x, y in zip(embeddings, labels_binary) if y == 0])
         random.shuffle(data_0)
-        data_0 = data_0[:len([y for y in labels_binary if y == 1])]
+        data_0 = data_0[:int(len([y for y in labels_binary if y == 1]) * label_0_ratio)]
         data_1 = list([(x, y) for x, y in zip(embeddings, labels_binary) if y == 1])
         data_0 += data_1
         embeddings_binary, labels_binary = zip(*data_0)
@@ -170,13 +172,23 @@ def generate_RE_datasets(path: str, tokenizer_path: str, two_datasets=False, all
         return Dataset(train_embeddings_bin, train_labels_bin), Dataset(val_embeddings_bin, val_labels_bin), \
                Dataset(train_embeddings_rel, train_labels_rel), Dataset(val_embeddings_rel, val_labels_rel)
     else:
+        if label_0_ratio is not None:
+            data_0 = list([(x, y) for x, y in zip(embeddings, labels) if y == 0])
+            random.shuffle(data_0)
+            data_0 = data_0[:int(len([y for y in labels if y != 0]) * label_0_ratio)]
+            data_1 = list([(x, y) for x, y in zip(embeddings, labels) if y != 0])
+            data_0 += data_1
+            embeddings, labels = zip(*data_0)
         train_embeddings, val_embeddings, train_labels, val_labels = \
             train_test_split(embeddings, labels, test_size=0.2)
         return Dataset(train_embeddings, train_labels), Dataset(val_embeddings, val_labels)
 
 
-def generate_all_possible_relation_pairs(path: str, tokenizer, model):
-    test_c = Collection().load(Path(path))
+def generate_all_possible_relation_pairs(path: Union[str, Collection], tokenizer, model):
+    if isinstance(path, Collection):
+        test_c = path
+    else:
+        test_c = Collection().load(Path(path))
     dataset_x, sentences, keyphrases = [], [], []
     batch_size = 64
     c_pointer = 0

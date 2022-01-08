@@ -52,7 +52,7 @@ class RelationClassifier(nn.Module):
         return self.network(x)
 
 
-def train_task_A(pretrained_model: str):
+def train_task_A(pretrained_model: str, final_name: str, epochs=4):
 
     tokenizer = AutoTokenizer.from_pretrained(pretrained_model)
     model = AutoModelForTokenClassification.from_pretrained(pretrained_model, num_labels=9)
@@ -60,18 +60,17 @@ def train_task_A(pretrained_model: str):
         '2021/ref/training/medline.1200.es.txt',
         pretrained_model
     )
-    model_name = pretrained_model.split("/")[-1]
     data_collator = DataCollatorForTokenClassification(tokenizer)
 
     trainer = transformers.Trainer(
         model,
         TrainingArguments(
-            f"{model_name}-finetuned-ehealth21",
+            final_name,
             evaluation_strategy="epoch",
             learning_rate=2e-5,
-            per_device_train_batch_size=64,
-            per_device_eval_batch_size=64,
-            num_train_epochs=4,
+            per_device_train_batch_size=32,
+            per_device_eval_batch_size=32,
+            num_train_epochs=epochs,
             weight_decay=0.01
         ),
         train_dataset=train_dataset,
@@ -84,11 +83,14 @@ def train_task_A(pretrained_model: str):
     trainer.save_model()
 
 
-def train_task_B1(pretrained_model: str, epochs=5, model_name='taskB_model.pt'):
+def train_task_B1(pretrained_model: str, epochs=5, model_name='taskB_model.pt',
+                  all_relations=False, label_0_ratio=None):
     model_rel = RelationClassifier()
     train_dataset, val_dataset = generate_RE_datasets(
         '2021/ref/training/medline.1200.es.txt',
-        pretrained_model
+        pretrained_model,
+        all_relations=all_relations,
+        label_0_ratio=label_0_ratio
     )
     train_dataset = torch.utils.data.DataLoader(train_dataset, batch_size=64, shuffle=True)
     val_dataset = torch.utils.data.DataLoader(val_dataset, batch_size=64, shuffle=False)
@@ -122,14 +124,15 @@ def train_task_B1(pretrained_model: str, epochs=5, model_name='taskB_model.pt'):
     torch.save(model_rel.state_dict(), f'./{model_name}')
 
 
-def train_task_B2(pretrained_model: str, epochs=5):
+def train_task_B2(pretrained_model: str, epochs=5, model_name='taskB_model_es', label_0_ratio=1):
     model_bin = RelationClassifier(output=1).to('cuda')
     model_rel = RelationClassifier().to('cuda')
     train_dataset_bin, val_dataset_bin, train_dataset_rel, val_dataset_rel = generate_RE_datasets(
         '2021/ref/training/medline.1200.es.txt',
         pretrained_model,
         two_datasets=True,
-        all_relations=True
+        all_relations=True,
+        label_0_ratio=label_0_ratio
     )
     train_dataset = torch.utils.data.DataLoader(train_dataset_bin, batch_size=64, shuffle=True)
     val_dataset = torch.utils.data.DataLoader(val_dataset_bin, batch_size=64, shuffle=False)
@@ -166,7 +169,7 @@ def train_task_B2(pretrained_model: str, epochs=5):
                 total += labels.size(0)
                 correct += ((torch.sigmoid(outputs) > 0.5) == labels).sum().item()
         print(f'val acc {correct/total}')
-    torch.save(model_bin.state_dict(), './taskB_model_bin_es.pt')
+    torch.save(model_bin.state_dict(), f'./{model_name}_bin.pt')
 
     train_dataset = torch.utils.data.DataLoader(train_dataset_rel, batch_size=64, shuffle=True)
     val_dataset = torch.utils.data.DataLoader(val_dataset_rel, batch_size=64, shuffle=False)
@@ -205,7 +208,7 @@ def train_task_B2(pretrained_model: str, epochs=5):
                 total += labels.size(0)
                 correct += (predicted == labels).sum().item()
         print(f'val acc {correct/total}')
-    torch.save(model_rel.state_dict(), './taskB_model_rel_es.pt')
+    torch.save(model_rel.state_dict(), f'./{model_name}_rel.pt')
 
 
     # trainer = pl.Trainer(max_epochs=10, gpus=1)
