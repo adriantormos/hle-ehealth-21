@@ -12,13 +12,13 @@ def pipeline_task_A(model_path: str) -> Collection:
 
     tokenizer = AutoTokenizer.from_pretrained(model_path)
     model = AutoModelForTokenClassification.from_pretrained(model_path, num_labels=9)
-    test_c = Collection().load(Path('/content/2021/eval/testing/scenario2-taskA/input.txt'))
+    test_c = Collection().load(Path('./2021/eval/testing/scenario2-taskA/input.txt'))
     test_input = tokenizer([s.text for s in test_c.sentences], padding=True)
 
     trainer = Trainer(
         model,
         TrainingArguments(
-            '',
+            '.',
             evaluation_strategy="epoch",
             learning_rate=2e-5,
             per_device_train_batch_size=64,

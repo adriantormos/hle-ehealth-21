@@ -78,7 +78,7 @@ def extract_hidden_states(tokens, model):
     return torch.stack(sentence_output.hidden_states).sum(0).squeeze()
 
 
-def extract_relations(c: Collection, tokenizer, model):
+def extract_relations(c: Collection, tokenizer, model, all_relations=False):
     relations = {x: (i+1)
                  for i, x in
                  enumerate(["is-a", "same-as", "part-of", "has-property", "causes",
@@ -109,31 +109,103 @@ def extract_relations(c: Collection, tokenizer, model):
                         dataset_x.append(torch.cat((hidden_states[s_index][origin_k],
                                                     hidden_states[s_index][dest_k])))
                         dataset_y.append(relations[r.label])
-            label_0_counter = 0
-            while label_0_counter < 2:
-                origin, dest = random.randrange(len(hidden_states[s_index])),\
-                               random.randrange(len(hidden_states[s_index]))
-                is_relation = False
-                for r in s.relations:
-                    for origin_k in keyphrase_tokens[r.origin]:
-                        for dest_k in keyphrase_tokens[r.destination]:
-                            if origin_k == origin and dest_k == dest:
-                                is_relation = True
-                                break
-                if not is_relation:
-                    dataset_x.append(torch.cat((hidden_states[s_index][origin],
-                                                hidden_states[s_index][dest])))
-                    dataset_y.append(0)
-                    label_0_counter += 1
+            if all_relations:
+                for k1 in keyphrase_tokens.keys():
+                    for k2 in keyphrase_tokens.keys():
+                        if k1 == k2:
+                            continue
+                        for origin_k in keyphrase_tokens[k1]:
+                            for dest_k in keyphrase_tokens[k2]:
+                                is_relation = False
+                                for r in s.relations:
+                                    if k1 == r.origin and k2 == r.destination:
+                                        is_relation = True
+                                        break
+                                if not is_relation:
+                                    dataset_x.append(torch.cat((hidden_states[s_index][origin_k],
+                                                                hidden_states[s_index][dest_k])))
+                                    dataset_y.append(0)
+            else:
+                label_0_counter = 0
+                while label_0_counter < 3:
+                    origin, dest = random.randrange(len(hidden_states[s_index])),\
+                                   random.randrange(len(hidden_states[s_index]))
+                    is_relation = False
+                    for r in s.relations:
+                        for origin_k in keyphrase_tokens[r.origin]:
+                            for dest_k in keyphrase_tokens[r.destination]:
+                                if origin_k == origin and dest_k == dest:
+                                    is_relation = True
+                                    break
+                    if not is_relation:
+                        dataset_x.append(torch.cat((hidden_states[s_index][origin],
+                                                    hidden_states[s_index][dest])))
+                        dataset_y.append(0)
+                        label_0_counter += 1
 
         c_pointer += batch_size
     return dataset_x, dataset_y
 
 
-def generate_RE_dataset(path: str, tokenizer_path: str):
+def generate_RE_datasets(path: str, tokenizer_path: str, two_datasets=False, all_relations=False):
     c: Collection = Collection().load(Path(path))
     tokenizer = AutoTokenizer.from_pretrained(tokenizer_path)
     model = AutoModel.from_pretrained(tokenizer_path, output_hidden_states=True)
-    embeddings, labels = extract_relations(c, tokenizer, model)
-    train_embeddings, val_embeddings, train_labels, val_labels = train_test_split(embeddings, labels, test_size=0.2)
-    return Dataset(train_embeddings, train_labels), Dataset(val_embeddings, val_labels)
+    embeddings, labels = extract_relations(c, tokenizer, model, all_relations)
+    if two_datasets:
+        # Prepare binary dataset
+        labels_binary = [0 if x == 0 else 1 for x in labels]
+        data_0 = list([(x, y) for x, y in zip(embeddings, labels_binary) if y == 0])
+        random.shuffle(data_0)
+        data_0 = data_0[:len([y for y in labels_binary if y == 1])]
+        data_1 = list([(x, y) for x, y in zip(embeddings, labels_binary) if y == 1])
+        data_0 += data_1
+        embeddings_binary, labels_binary = zip(*data_0)
+        train_embeddings_bin, val_embeddings_bin, train_labels_bin, val_labels_bin = \
+            train_test_split(embeddings_binary, labels_binary, test_size=0.2)
+        # Prepare relation dataset
+        embeddings_with_relation, labels_with_relation = zip(*[(x, y) for x, y in zip(embeddings, labels) if y != 0])
+        train_embeddings_rel, val_embeddings_rel, train_labels_rel, val_labels_rel = \
+            train_test_split(embeddings_with_relation, labels_with_relation, test_size=0.2)
+        return Dataset(train_embeddings_bin, train_labels_bin), Dataset(val_embeddings_bin, val_labels_bin), \
+               Dataset(train_embeddings_rel, train_labels_rel), Dataset(val_embeddings_rel, val_labels_rel)
+    else:
+        train_embeddings, val_embeddings, train_labels, val_labels = \
+            train_test_split(embeddings, labels, test_size=0.2)
+        return Dataset(train_embeddings, train_labels), Dataset(val_embeddings, val_labels)
+
+
+def generate_all_possible_relation_pairs(path: str, tokenizer, model):
+    test_c = Collection().load(Path(path))
+    dataset_x, sentences, keyphrases = [], [], []
+    batch_size = 64
+    c_pointer = 0
+    while c_pointer < len(test_c):
+        sentence_tokens = tokenizer(
+            [s.text for s in test_c.sentences[c_pointer:c_pointer+batch_size]],
+            padding=True,
+            return_tensors="pt"
+        )
+        hidden_states = extract_hidden_states(sentence_tokens, model)
+        for s_index, s in enumerate(test_c.sentences[c_pointer:c_pointer+batch_size]):
+            keyphrase_tokens = {k.id: set() for k in s.keyphrases}
+            for k in s.keyphrases:
+                for span_m, span_M in k.spans:
+                    for token_pos in range(sentence_tokens[s_index].char_to_token(span_m),
+                                           sentence_tokens[s_index].char_to_token(span_M-1)+1):
+                        keyphrase_tokens[k.id].add(token_pos)
+            for k1 in keyphrase_tokens.keys():
+                for k2 in keyphrase_tokens.keys():
+                    if k1 == k2:
+                        continue
+                    for origin_k in keyphrase_tokens[k1]:
+                        for dest_k in keyphrase_tokens[k2]:
+                            dataset_x.append(torch.cat((hidden_states[s_index][origin_k],
+                                                        hidden_states[s_index][dest_k])))
+                            sentences.append(c_pointer+s_index)
+                            keyphrases.append((k1, k2))
+
+        c_pointer += batch_size
+    return dataset_x, sentences, keyphrases
+
+
