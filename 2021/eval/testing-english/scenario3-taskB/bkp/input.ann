@@ -1,0 +1,486 @@
+T437	Concept 6222 6234;6235 6245	conjunctival congestion
+T438	Concept 6250 6258	positive
+T439	Concept 6259 6265	RT-PCR
+T440	Concept 6269 6279	pharyngeal
+T441	Concept 6280 6285	swabs
+T442	Predicate 6317 6321	four
+T443	Concept 6322 6330	COVID-19
+T444	Concept 6331 6339	patients
+T445	Concept 6379 6382;6383 6390	eye disease
+T446	Concept 6391 6398	history
+A19	Negated T446
+T447	Concept 6403 6405;6406 6410;6411 6415	3D lung mask
+T448	Concept 6428 6433	chest
+T449	Concept 6434 6436	CT
+T450	Concept 6437 6443	volume
+T451	Action 6444 6450	helped
+T452	Action 6454 6460	reduce
+T453	Concept 6461 6471;6472 6483	background information
+T454	Action 6495 6501	detect
+A20	Emphasized T454
+T455	Concept 6502 6510	COVID-19
+T456	Concept 6554 6557	TCR
+T457	Concept 6558 6564	clones
+A21	Diminished T457
+T458	Concept 6575 6581	severe
+A22	Emphasized T458
+T459	Concept 6586 6594	COVID-19
+T460	Concept 6595 6604	condition
+T461	Action 6656 6667	containment
+T462	Concept 6675 6683	possible
+A23	Negated T462
+T463	Concept 6694 6703	necessary
+T464	Action 6707 6712	allow
+T465	Predicate 6713 6717	some
+T466	Action 6718 6728	infections
+T467	Concept 6749 6759;6760 6768	population immunity
+T468	Concept 6770 6783	interventions
+T469	Action 6789 6796	protect
+T470	Concept 6797 6807	vulnerable
+T471	Concept 6808 6819	populations
+T472	Action 6833 6841	infected
+T473	Concept 6862 6869	highest
+T474	Concept 6870 6878	priority
+T475	Predicate 6880 6888	followed
+T476	Concept 6892 6905	interventions
+T477	Action 6906 6915	targeting
+T478	Concept 6920 6927	general
+T479	Concept 6928 6938	population
+T480	Predicate 6944 6951	finally
+T481	Action 6958 6967	targeting
+T482	Concept 6972 6977;6978 6988	least vulnerable
+T483	Concept 7000 7008	COVID-19
+T484	Concept 7020 7028	children
+T485	Concept 7029 7039	SARS-CoV-2
+T486	Concept 7047 7056	causative
+T487	Concept 7057 7062	viral
+T488	Concept 7063 7071	pathogen
+T489	Concept 7075 7083	COVID-19
+T490	Action 7097 7106	outbreaks
+T491	Predicate 7119 7126	106,893
+T492	Concept 7137 7142	cases
+T493	Predicate 7153 7158	3,639
+T494	Concept 7159 7165	deaths
+T495	Predicate 7171 7174	103
+T496	Concept 7175 7184	countries
+T497	Concept 7186 7191	areas
+T498	Concept 7195 7206	territories
+T499	Concept 7213 7215;7216 7221;7222 7226	07 March 2020
+T500	Reference 7227 7232	Other
+T501	Concept 7233 7243	infections
+T502	Action 7258 7268	exacerbate
+A24	Uncertain T502
+T503	Concept 7269 7277	COVID-19
+T504	Predicate 7311 7316	82.1%
+T505	Concept 7320 7328	COVID-19
+T506	Concept 7329 7334	cases
+T507	Concept 7345 7348	low
+T508	Concept 7349 7360	circulating
+T509	Concept 7361 7371	lymphocyte
+T510	Predicate 7372 7378	counts
+T511	Concept 7432 7439	typical
+T512	Concept 7440 7452	asymptomatic
+T513	Action 7453 7465	transmission
+T514	Concept 7473 7483	cohabiting
+T515	Concept 7484 7490;7491 7498	family members
+T516	Concept 7525 7533	COVID-19
+T517	Concept 7534 7543	pneumonia
+T518	Concept 7550 7558	symptoms
+T519	Concept 7568 7577;7578 7580;7581 7587	shortness of breath
+T520	Concept 7589 7596	myalgia
+T521	Concept 7600 7610	arthralgia
+T522	Concept 7612 7616;7617 7623	sore throat
+T523	Concept 7625 7630;7631 7639	nasal symptoms
+T524	Concept 7644 7652	diarrhea
+T525	Concept 7681 7690	decreased
+T526	Concept 7691 7701	lymphocyte
+T527	Predicate 7702 7707	count
+T528	Predicate 7723 7728	38.1%
+T529	Concept 7736 7744	COVID-19
+T530	Concept 7745 7753	patients
+T531	Predicate 7761 7766	numbe
+T532	Concept 7771 7783	hospitalised
+T533	Concept 7784 7792	COVID-19
+T534	Concept 7793 7798	cases
+T535	Action 7812 7820	increase
+T536	Concept 7822 7831	hospitals
+T537	Action 7858 7864	ration
+T538	Concept 7865 7872	limited
+T539	Concept 7873 7882	resources
+T540	Action 7887 7894	improve
+T541	Concept 7895 7903;7904 7912	clinical pathways
+T542	Action 7928 7938	prioritise
+T543	Concept 7939 7947	patients
+T544	Concept 7962 7970;7971 7975	clinical need
+A25	Emphasized T544
+T545	Concept 7982 7994	RT-PCR-based
+T546	Concept 7995 8002	methods
+T547	Action 8020 8024	used
+A26	Emphasized T547
+T548	Concept 8028 8036	COVID-19
+T549	Concept 8037 8046	diagnosis
+T550	Action 8054 8065	application
+T551	Concept 8069 8077	accurate
+T552	Action 8078 8087	diagnosis
+T553	Concept 8091 8096	viral
+T554	Concept 8097 8106	infection
+T555	Concept 8111 8119	epidemic
+T556	Action 8120 8127	control
+T557	Concept 8140 8148	hampered
+A27	Emphasized T557
+T558	Concept 8158 8167	laborious
+T559	Concept 8172 8186	time-consuming
+T560	Concept 8187 8193;8194 8204	sample processing
+T561	Predicate 8205 8210	steps
+T562	Concept 8238 8241	N8R
+T563	Concept 8246 8249	NLR
+T564	Concept 8253 8261	powerful
+T565	Concept 8262 8272	prognostic
+T566	Concept 8273 8280	factors
+T567	Concept 8285 8290	early
+T568	Action 8291 8305	identification
+T569	Concept 8309 8315	severe
+T570	Concept 8316 8324	COVID-19
+T571	Concept 8325 8330	cases
+T572	Reference 8331 8335	This
+T573	Concept 8339 8347	critical
+T574	Concept 8354 8362	COVID-19
+T575	Action 8363 8372	infection
+T576	Concept 8377 8384	rapidly
+T577	Action 8385 8393	progress
+T578	Concept 8399 8407;8408 8417	hospital admission
+T579	Action 8421 8425	ARDS
+T580	Predicate 8439 8440	2
+T581	Concept 8441 8445	days
+T582	Concept 8451 8459	COVID-19
+T583	Action 8460 8469	infection
+T584	Concept 8477 8482	fatal
+A28	Uncertain T584
+T585	Action 8540 8549	secretion
+A29	Emphasized T585
+T586	Concept 8553 8562	cytokines
+T587	Concept 8573 8578	TNF-α
+T588	Concept 8580 8584	IL-6
+T589	Concept 8589 8594	IL-10
+T590	Concept 8612 8620	COVID-19
+T591	Concept 8621 8629	patients
+T592	Concept 8634 8640	signal
+T593	Concept 8658 8667	ubiquitin
+T594	Concept 8672 8680	elevated
+T595	Concept 8703 8709;8710 8712;8713 8718	TRIM25 KO cells
+T596	Concept 8719 8727	Patients
+T597	Action 8732 8740	required
+T598	Concept 8741 8744;8745 8749	ICU care
+T599	Concept 8765 8770	8.65%
+T600	Concept 8803 8811;8812 8814;8815 8822	SARS-CoV 3a protein
+T601	Action 8830 8838	regulate
+A30	Uncertain T601
+T602	Concept 8843 8853;8854 8856;8857 8867	expression of fibrinogen
+T603	Concept 8871 8875;8876 8886;8887 8892	lung epithelial cells
+T604	Concept 8920 8930;8931 8934	SARS-CoV-2 RNA
+T605	Action 8935 8943;8944 8954	remained detectable
+T606	Concept 8958 8962;8963 8967;8968 8973;8974 8977	real time RT-20 PCR
+T607	Concept 8981 8987	throat
+T608	Concept 8992 8998;8999 9004	rectal swabs
+T609	Concept 9005 9010;9011 9014;9015 9017;9018 9021;9022 9024	until day 11 and 18
+T610	Concept 9028 9043	hospitalization
+T611	Concept 9062 9069	SEIR-QD
+T612	Concept 9074 9081	SEIR-PO
+T613	Concept 9082 9088	models
+T614	Concept 9093 9101	suitable
+T615	Action 9106 9114	modeling
+T616	Concept 9115 9123;9124 9133	COVID-19 epidemics
+T617	Concept 9134 9140	People
+T618	Concept 9146 9151;9152 9157;9158 9159	blood group A
+T619	Concept 9181 9187	higher
+A31	Emphasized T619
+T620	Predicate 9188 9192	risk
+T621	Action 9197 9206	acquiring
+T622	Concept 9207 9215	COVID-19
+T623	Concept 9230 9235;9236 9241;9242 9248	non-A blood groups
+T624	Concept 9258 9263;9264 9269;9270 9271	blood group O
+T625	Concept 9292 9297	lower
+A32	Emphasized T625
+T626	Predicate 9298 9302	risk
+T627	Action 9311 9320	infection
+T628	Concept 9335 9340;9341 9346;9347 9353	non-O blood groups
+T629	Concept 9366 9372	school
+T630	Action 9373 9381	closures
+T631	Concept 9401 9408	earlier
+T632	Concept 9412 9420	COVID-19
+T633	Action 9421 9430	outbreaks
+T634	Concept 9468 9477	prevented
+T635	Concept 9478 9483	cases
+T636	Predicate 9498 9501	20%
+T637	Concept 9505 9511;9512 9518;9519 9526	allied health workers
+T638	Action 9527 9535	believed
+T639	Concept 9545 9548	flu
+T640	Concept 9549 9556	vaccine
+T641	Concept 9560 9570	sufficient
+T642	Concept 9575 9583	COVID-19
+T643	Action 9584 9594	prevention
+T644	Concept 9599 9607	COVID-19
+T645	Concept 9631 9638	persons
+T646	Concept 9651 9659	symptoms
+A33	Negated T646
+T647	Concept 9663 9673;9674 9682	clinically negative
+T648	Action 9686 9695	infection
+T649	Action 9706 9712	spread
+T650	Concept 9719 9725	others
+T651	Concept 9750 9757	primary
+T652	Action 9758 9770	transmission
+T653	Concept 9779 9787	COVID-19
+T654	Concept 9799 9804	large
+T655	Concept 9805 9816	respiratory
+T656	Concept 9817 9825	droplets
+T657	Concept 9830 9835	close
+T658	Action 9836 9843	contact
+T659	Action 9908 9914	spread
+T660	Concept 9923 9931	indirect
+T661	Action 9932 9939	contact
+T662	Concept 9945 9957	contaminated
+T663	Concept 9958 9970	environments
+T664	Concept 9975 9983	aerosols
+T665	Action 9994 10003	mutations
+A34	Emphasized T665
+T666	Action 10005 10014	insertion
+A35	Emphasized T666
+T667	Action 10019 10027	deletion
+A36	Emphasized T667
+T668	Action 10033 10043	discovered
+T669	Concept 10047 10055	COVID-19
+T670	Concept 10056 10062	strain
+T671	Concept 10073 10084;10085 10095	comparative sequencing
+T672	Concept 10102 10103;10104 10108	T cell
+T673	Predicate 10109 10115	number
+T674	Action 10134 10143	decreased
+A37	Emphasized T674
+T675	Concept 10147 10155	COVID-19
+T676	Concept 10156 10164	patients
+T677	Predicate 10185 10195	difference
+A38	Diminished T677
+T678	Concept 10217 10221	mild
+T679	Concept 10226 10232	severe
+T680	Concept 10233 10241	patients
+T681	Action 10254 10260	impact
+T682	Concept 10264 10272	COVID-19
+T683	Concept 10276 10284	patients
+T684	Concept 10286 10292;10293 10301	kidney function
+T685	Action 10318 10327	incidence
+T686	Concept 10331 10338;10339 10345;10346 10353	chronic kidney disease
+T687	Concept 10363 10371	patients
+T688	Concept 10386 10391	focus
+A39	Emphasized T688
+A40	Uncertain T688
+T689	Concept 10395 10401;10402 10410	future research
+T690	Concept 10415 10423	COVID-19
+T691	Concept 10424 10429	virus
+T692	Action 10441 10450	establish
+T693	Concept 10459 10473	human-to-human
+T694	Action 10474 10486	transmission
+T695	Action 10504 10513	spreading
+T696	Concept 10519 10524	Wuhan
+T697	Concept 10540 10543	268
+T698	Concept 10544 10550	cities
+T699	Concept 10555 10564	countries
+T700	Predicate 10595 10607;10608 10614	reproductive number
+T701	Concept 10618 10626	COVID-19
+T702	Concept 10636 10640	3.28
+T703	Concept 10645 10653	CoViD-19
+T704	Action 10654 10662	outbreak
+T705	Concept 10687 10693	severe
+A41	Emphasized T705
+T706	Concept 10702 10707	drugs
+T707	Concept 10708 10710;10711 10714	so far
+T708	Action 10738 10746	stemming
+A42	Negated T708
+T709	Action 10751 10756;10757 10763	viral growth
+T710	Concept 10791 10799	COVID-19
+T711	Action 10800 10809	mortality
+T712	Predicate 10822 10829	related
+A43	Uncertain T712
+T713	Concept 10837 10842	lower
+T714	Concept 10843 10851	humidity
+T715	Concept 10855 10861	winter
+T716	Concept 10865 10877	asymptomatic
+T717	Action 10878 10888	infections
+T718	Predicate 10893 10897	more
+T719	Concept 10898 10908	persistent
+T720	Concept 10914 10925	symptomatic
+T721	Concept 10936 10940;10941 10951;10952 10960	mean generation interval
+T722	Concept 10965 10973	COVID-19
+T723	Concept 10983 10989	longer
+A44	Uncertain T723
+T724	Predicate 10995 11004	estimated
+T725	Concept 11010 11021;11022 11027	symptomatic cases
+T726	Action 11038 11048	protection
+T727	Action 11050 11061	maintenance
+T728	Action 11065 11074	promotion
+T729	Concept 11078 11088;11089 11095	lymphocyte levels
+T730	Concept 11109 11113	good
+T731	Concept 11114 11120	effect
+T732	Action 11128 11138	prevention
+T733	Action 11143 11152	treatment
+T734	Concept 11156 11164	COVID-19
+T735	Concept 11176 11187	temperature
+T736	Action 11188 11197	screening
+T737	Concept 11205 11214	high-risk
+T738	Concept 11218 11228	population
+T739	Concept 11232 11241	important
+T740	Concept 11246 11251	early
+T741	Action 11252 11266	identification
+T742	Concept 11270 11278	COVID-19
+T743	Action 11279 11288	infection
+T744	Action 11301 11309	reducing
+T745	Predicate 11314 11318	risk
+T746	Concept 11322 11327	cross
+T747	Action 11328 11337	infection
+T748	Concept 11338 11349	Researchers
+T749	Action 11355 11360	found
+T750	Concept 11374 11384;11394 11407	SARS-CoV-2 coronaviruses
+T751	Concept 11389 11393;11394 11407	SARS coronaviruses
+T752	Action 11408 11414	invade
+T753	Concept 11415 11420;11421 11426	human cells
+T754	Concept 11430 11436;11437 11444	target tissues
+T755	Concept 11469 11482	high-affinity
+T756	Action 11483 11490	binding
+T757	Concept 11494 11516;11517 11523;11524 11525	angiotensin-converting enzyme 2
+T758	Concept 11527 11531	ACE2
+T759	Concept 11533 11538	Novel
+T760	Concept 11539 11552	coronaviruses
+T761	Concept 11554 11562	COVID-19
+T762	Action 11576 11581	found
+T763	Concept 11585 11590	Wuhan
+T764	Concept 11592 11597	China
+T765	Concept 11601 11609;11610 11614	December 2019
+T766	Concept 11627 11632	acute
+T767	Concept 11640 11646;11647 11653	health threat
+T768	Concept 11667 11672	world
+T769	Action 11677 11687	prevalence
+T770	Concept 11691 11699	COVID-19
+T771	Concept 11703 11708	cases
+T772	Concept 11714 11726	CT-confirmed
+T773	Concept 11727 11736	pneumonia
+T774	Concept 11746 11755	2019-nCoV
+T775	Action 11756 11763	testing
+T776	Concept 11768 11773	23.9%
+T777	Concept 11775 11780	21/88
+T778	Reference 11782 11786	This
+T779	Concept 11797 11799	R0
+T780	Predicate 11800 11805	above
+T781	Concept 11806 11808	2,
+T782	Concept 11854 11862;11863 11870	Clinical studies
+T783	Concept 11884 11896	hospitalised
+T784	Concept 11897 11902	cases
+T785	Action 11917 11922	onset
+T786	Concept 11926 11934	COVID-19
+T787	Concept 11954 11962	symptoms
+T788	Concept 11988 11993;11994 12003	viral pneumonia
+T789	Concept 12019 12024	fever
+T790	Concept 12026 12036;12037 12043	cough/sore throat
+T791	Concept 12048 12063	myalgia/fatigue
+T792	Concept 12067 12076	estimated
+T793	Concept 12081 12085	mean
+T794	Concept 12086 12096;12097 12103	incubation period
+T795	Concept 12107 12115	COVID-19
+T796	Action 12116 12126	infections
+T797	Concept 12133 12136	4.9
+T798	Predicate 12137 12141	days
+T799	Concept 12207 12213;12214 12224	Social distancing
+T800	Concept 12236 12242;12243 12251	school closures
+T801	Action 12257 12262	limit
+T802	Concept 12263 12271	COVID-19
+T803	Concept 12272 12277	cases
+T804	Action 12278 12288	Preventing
+T805	Action 12289 12300	recognition
+T806	Action 12304 12312	blocking
+T807	Concept 12331 12343	inflammatory
+T808	Action 12344 12350	action
+T809	Concept 12356 12361	drugs
+T810	Action 12362 12373	development
+T811	Concept 12377 12383;12384 12394	immune regulation
+T812	Concept 12409 12422	breakthroughs
+A45	Uncertain T812
+T813	Action 12430 12437	control
+T814	Concept 12441 12449	COVID-19
+T815	Concept 12450 12459	pneumonia
+T816	Concept 12462 12467;12468 12479;12480 12487	novel coronavirus disease
+T817	Concept 12489 12497	COVID-19
+T818	Concept 12499 12507	outbreak
+T819	Concept 12515 12525	SARS-CoV-2
+T820	Action 12526 12535	infection
+T821	Concept 12548 12553	China
+T822	Concept 12562 12570;12571 12575	December 2019
+T823	Concept 12580 12589;12590 12599	confirmed diagnosis
+T824	Concept 12603 12611	COVID-19
+T825	Concept 12629 12637	positive
+T826	Concept 12638 12644	result
+T827	Concept 12654 12663;12664 12685;12686 12711	real-time reverse-transcriptase polymerase-chain-reaction
+T828	Concept 12713 12719	RT-PCR
+T829	Action 12721 12730	detection
+T830	Concept 12743 12748;12764 12768;12769 12778	nasal swab specimens
+T831	Concept 12753 12763;12764 12768;12769 12778	pharyngeal swab specimens
+T832	Action 12779 12788	Isolation
+T833	Concept 12792 12797	cases
+T834	Action 12802 12809;12810 12817	contact tracing
+T835	Action 12827 12838	implemented
+T836	Concept 12843 12851	COVID-19
+T837	Concept 12919 12926	rounded
+T838	Concept 12927 12937	morphology
+T839	Concept 12939 12949	peripheral
+T840	Concept 12950 12962	distribution
+T841	Concept 12967 12974;12975 12981	fibrous lesion
+T842	Concept 13010 13018	COVID-19
+T843	Concept 13019 13027	COVID-19
+T844	Concept 13033 13049	beta-coronavirus
+T845	Action 13051 13061;13062 13064	presenting as
+T846	Concept 13065 13070	viral
+T847	Concept 13071 13080	pneumonia
+T848	Concept 13091 13105	infectiousness
+A46	Emphasized T848
+T849	Concept 13114 13125	respiratory
+T850	Concept 13126 13134	droplets
+T851	Concept 13138 13144	direct
+T852	Action 13145 13152	contact
+T853	Concept 13181 13192	infectivity
+A47	Emphasized T853
+T854	Concept 13210 13218	fatality
+A48	Diminished T854
+T855	Concept 13241 13247;13248 13253;13254 13265;13266 13274	severe acute respiratory syndrome
+T856	Concept 13276 13280	SARS
+T857	Concept 13286 13292;13293 13300;13301 13312;13313 13321	Middle Eastern respiratory syndrome
+T858	Concept 13322 13326	MERS
+T859	Concept 13337 13345	COVID-19
+T860	Action 13353 13363	incubation
+T861	Concept 13374 13377	2-7
+T862	Predicate 13378 13382	days
+T863	Concept 13404 13412	symptoms
+A49	Negated T863
+T864	Concept 13436 13441	virus
+T865	Action 13446 13452	spread
+A50	Uncertain T865
+T866	Concept 13470 13480	uninfected
+T867	Concept 13481 13492	individuals
+T868	Concept 13497 13501	2019
+T869	Concept 13502 13507	novel
+T870	Concept 13508 13519	coronavirus
+T871	Concept 13521 13530	2019-nCoV
+T872	Concept 13544 13550;13551 13556;13557 13568;13569 13577	severe acute respiratory syndrome
+T873	Concept 13579 13590	SARS)-CoV-2
+T874	Concept 13627 13638	coronavirus
+T875	Concept 13639 13646	disease
+T876	Concept 13648 13656	COVID-19
+T877	Concept 13682 13689	serious
+T878	Concept 13690 13696	public
+T879	Concept 13697 13703	health
+T880	Concept 13704 13711	concern
+T881	Concept 13716 13728	transmission
+T882	Concept 13729 13744	characteristics
+T883	Concept 13748 13756	COVID-19
+T884	Action 13770 13777	similar
+A51	Uncertain T884
+T885	Concept 13790 13798	pandemic
+T886	Concept 13799 13808	influenza
+T887	Action 13825 13835	facilitate
+T888	Concept 13844 13850	global
+T889	Concept 13851 13857	spread

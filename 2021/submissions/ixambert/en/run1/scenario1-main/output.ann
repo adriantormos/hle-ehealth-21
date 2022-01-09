@@ -1,0 +1,4112 @@
+T1	Concept 21 30	pneumonia
+T2	Predicate 36 41	third
+T3	Concept 45 53	COVID-19
+T4	Concept 54 62	patients
+T5	Concept 68 77	pneumonia
+T6	Concept 87 90	low
+T7	Concept 101 107	190/µL
+T8	Concept 112 125	CD8 + T cells
+R0	domain Arg1:T2 Arg2:T7
+R1	in-context Arg1:T4 Arg2:T3
+T9	Concept 128 134	recent
+T10	Concept 135 143	approach
+T11	Concept 153 164	mutagenesis
+T12	Concept 168 171	PCR
+T13	Concept 177 187	degenerate
+T14	Concept 189 192	NNK
+T15	Concept 194 201	primers
+T16	Concept 215 228	recombination
+T17	Action 232 238	create
+T18	Concept 239 248	variation
+T19	Concept 261 269	residues
+T20	Concept 277 287	tail fiber
+T21	Concept 291 293	T3
+T22	Concept 294 299	phage
+R2	is-a Arg1:T11 Arg2:T10
+R3	is-a Arg1:T13 Arg2:T10
+R4	target Arg1:T17 Arg2:T18
+R5	target Arg1:T18 Arg2:T19
+T23	Concept 316 333	replicative forms
+T24	Concept 335 345	anti-sense
+T25	Concept 346 358	viral genome
+T26	Concept 372 385	intracellular
+T27	Action 386 392	origin
+T28	Concept 400 409	viral RNA
+T29	Action 418 427	secretion
+T30	Concept 437 442	jelly
+T31	Action 459 466	derived
+T32	Concept 484 497	environmental
+T33	Concept 498 505	capsids
+*	same-as T23 T25
+R6	in-place Arg1:T31 Arg2:T29
+T34	Concept 523 532	variables
+T35	Concept 558 560	18
+T36	Concept 569 578	variation
+T37	Concept 600 602	82
+T38	Concept 621 628	factors
+T39	Concept 637 657	containment measures
+T40	Concept 659 666	general
+T41	Concept 667 673	health
+T42	Concept 674 682	policies
+T43	Concept 684 694	population
+T44	Concept 695 702	density
+T45	Concept 704 718	transportation
+T46	Concept 720 728	cultural
+T47	Concept 729 736	aspects
+R7	is-a Arg1:T39 Arg2:T38
+R8	is-a Arg1:T47 Arg2:T38
+T48	Concept 766 772	pocket
+T49	Concept 776 786	Zika NS2B-
+T50	Concept 786 792	NS3pro
+T51	Concept 811 821	allosteric
+T52	Concept 822 832	inhibition
+T53	Concept 851 856	small
+T54	Concept 857 866	molecules
+T55	Concept 880 888	scaffols
+R9	has-property Arg1:T48 Arg2:T53
+*	same-as T49 T50
+T56	Concept 899 908	prolonged
+T57	Action 909 918	detection
+T58	Concept 922 936	SARS-CoV-2 RNA
+T59	Concept 949 955	window
+T60	Action 960 969	diagnosis
+T61	Concept 973 981	COVID-19
+R10	target Arg1:T57 Arg2:T58
+R11	target Arg1:T60 Arg2:T58
+R12	target Arg1:T60 Arg2:T61
+T62	Action 1011 1019	carriers
+T63	Concept 1028 1031	SNP
+T64	Action 1041 1048	reduced
+T65	Concept 1049 1062	TLR4-mediated
+T66	Concept 1063 1075	inflammation
+R13	target Arg1:T62 Arg2:T65
+T67	Action 1081 1084	age
+T68	Concept 1088 1096	COVID-19
+T69	Concept 1097 1105	patients
+T70	Concept 1116 1128	concentrated
+T71	Concept 1136 1147	30-50 years
+T72	Concept 1148 1151	old
+T73	Concept 1153 1155	60
+R14	arg Arg1:T67 Arg2:T68
+R15	in-time Arg1:T71 Arg2:T72
+T74	Concept 1231 1247	transmissibility
+T75	Concept 1277 1285	SARS-CoV
+T76	Concept 1289 1293	2003
+T77	Concept 1300 1303	2.2
+T78	Concept 1395 1416	PCR product intensity
+T79	Concept 1432 1440	passages
+T80	Concept 1446 1456	Tupanvirus
+T81	Predicate 1462 1468	amount
+T82	Concept 1472 1486	mutant Guarani
+T83	Concept 1487 1490	DNA
+T84	Action 1491 1498	evolved
+T85	Action 1502 1510	decrease
+R16	subject Arg1:T79 Arg2:T80
+R17	in-place Arg1:T79 Arg2:T80
+R18	target Arg1:T79 Arg2:T80
+R19	arg Arg1:T81 Arg2:T80
+R20	subject Arg1:T84 Arg2:T80
+R21	subject Arg1:T84 Arg2:T82
+R22	target Arg1:T84 Arg2:T82
+R23	target Arg1:T85 Arg2:T80
+R24	target Arg1:T85 Arg2:T82
+T86	Concept 1527 1529	12
+T87	Concept 1530 1538	residues
+T88	Concept 1540 1543	40%
+T89	Concept 1548 1557	SARS-2002
+T90	Concept 1562 1571	conserved
+T91	Concept 1588 1596	COVID-19
+*	same-as T86 T88
+R25	domain Arg1:T86 Arg2:T89
+R26	has-property Arg1:T86 Arg2:T90
+R27	has-property Arg1:T89 Arg2:T90
+R28	has-property Arg1:T91 Arg2:T90
+T92	Concept 1609 1617	outbreak
+T93	Concept 1621 1645	coronavirus disease-2019
+T94	Concept 1647 1655	COVID-19
+T95	Concept 1669 1674	novel
+T96	Concept 1675 1681	severe
+T97	Concept 1682 1722	acute respiratory syndrome coronavirus 2
+T98	Concept 1724 1734	SARS-CoV-2
+T99	Concept 1766 1779	public health
+R29	target Arg1:T92 Arg2:T93
+R30	arg Arg1:T92 Arg2:T93
+*	same-as T93 T94
+R31	is-a Arg1:T97 Arg2:T93
+*	same-as T97 T98
+T100	Concept 1783 1795	pulmonary CT
+T101	Concept 1802 1818	objective method
+T102	Concept 1829 1838	key point
+T103	Concept 1843 1851	patients
+T104	Action 1860 1865	clear
+T105	Concept 1866 1881	contact history
+T106	Concept 1894 1902	symptoms
+R32	is-a Arg1:T100 Arg2:T101
+T107	Concept 1903 1911	Carriage
+T108	Concept 1917 1924	dynamic
+T109	Concept 1925 1932	process
+T110	Action 1943 1955	fluctuations
+T111	Concept 1959 1966	species
+T112	Concept 1971 1978	strains
+R33	is-a Arg1:T107 Arg2:T108
+R34	is-a Arg1:T107 Arg2:T109
+R35	is-a Arg1:T112 Arg2:T109
+T113	Concept 1979 1989	Lymphocyte
+T114	Concept 1990 2004	classification
+T115	Concept 2012 2017	study
+T116	Concept 2034 2037	CD4
+T117	Concept 2042 2045	CD8
+T118	Concept 2046 2051	cells
+T119	Action 2057 2066	decreased
+T120	Concept 2070 2078	COVID-19
+T121	Concept 2079 2087	patients
+T122	Concept 2094 2096	15
+T123	Concept 2098 2106	patients
+T124	Concept 2111 2114	340
+T125	Concept 2115 2118	CD4
+*	same-as T113 T114
+T126	Action 2150 2157	predict
+T127	Concept 2158 2163	drugs
+T128	Concept 2172 2177	M pro
+T129	Concept 2181 2189	SARS-CoV
+T130	Action 2194 2204	identified
+T131	Concept 2209 2214	HIV-1
+T132	Concept 2215 2234	protease inhibitors
+T133	Concept 2243 2252	lopinavir
+T134	Concept 2257 2266	ritonavir
+T135	Concept 2271 2280	potential
+T136	Concept 2281 2291	candidates
+T137	Action 2307 2311	bind
+T138	Concept 2324 2330	target
+T139	Concept 2339 2344	M pro
+R36	target Arg1:T126 Arg2:T128
+R37	in-context Arg1:T126 Arg2:T128
+R38	target Arg1:T126 Arg2:T129
+R39	in-context Arg1:T126 Arg2:T135
+R40	target Arg1:T126 Arg2:T139
+R41	is-a Arg1:T133 Arg2:T132
+R42	is-a Arg1:T133 Arg2:T136
+R43	is-a Arg1:T134 Arg2:T136
+T140	Action 2345 2355	Initiation
+T141	Concept 2359 2370	replication
+T142	Concept 2378 2383	donor
+T143	Action 2398 2404	switch
+T144	Concept 2412 2420	acceptor
+T145	Concept 2426 2430	site
+T146	Concept 2441 2451	oriI locus
+T147	Concept 2466 2476	infectious
+T148	Concept 2477 2483	genome
+T149	Action 2496 2502	scored
+T150	Concept 2506 2512	plaque
+T151	Concept 2513 2518	assay
+R44	target Arg1:T141 Arg2:T142
+R45	target Arg1:T149 Arg2:T147
+T152	Concept 2540 2549	evolution
+T153	Concept 2566 2577	coronavirus
+T154	Concept 2578 2585	strains
+T155	Action 2639 2650	convergence
+T156	Concept 2658 2663	spike
+T157	Concept 2664 2671	protein
+T158	Concept 2684 2693	ancestral
+T159	Concept 2694 2700	branch
+T160	Concept 2712 2716	SARS
+T161	Concept 2725 2728	CoV
+T162	Concept 2747 2753	branch
+T163	Concept 2757 2766	COVID-19-
+T164	Concept 2774 2777	CoV
+T165	Concept 2786 2792	sister
+T166	Concept 2793 2800	strains
+T167	Concept 2802 2809	CoVZC45
+T168	Concept 2814 2822	CoVZXC21
+T169	Concept 2842 2854	evolutionary
+T170	Concept 2855 2865	convergent
+T171	Concept 2866 2876	amino acid
+T172	Action 2889 2896	changes
+T173	Concept 2904 2913	structure
+T174	Action 2925 2931	moving
+T175	Concept 2936 2955	isopropyl ether 172
+T176	Concept 2956 2967	substituent
+T177	Concept 2975 2995	naphthyl ring system
+T178	Concept 2997 3001	B#59
+T179	Action 3011 3023	introduction
+T180	Concept 3041 3054	aromatic ring
+T181	Concept 3059 3064	bound
+T182	Concept 3065 3078	nitrogen atom
+T183	Concept 3080 3084	B#57
+T184	Concept 3118 3127	antiviral
+R46	target Arg1:T172 Arg2:T173
+R47	target Arg1:T174 Arg2:T184
+R48	in-place Arg1:T181 Arg2:T177
+T185	Concept 3141 3148	results
+T186	Concept 3167 3174	effects
+T187	Concept 3178 3181	DTR
+T188	Action 3219 3228	mortality
+T189	Concept 3232 3240	COVID-19
+R49	arg Arg1:T186 Arg2:T187
+R50	target Arg1:T188 Arg2:T189
+T190	Concept 3257 3262	study
+T191	Concept 3288 3296	regional
+T192	Concept 3297 3306	disparity
+T193	Concept 3310 3318	COVID-19
+T194	Concept 3322 3331	Chongqing
+T195	Action 3355 3363	compared
+T196	Concept 3388 3394	severe
+T197	Concept 3403 3409	severe
+T198	Concept 3410 3418	patients
+T199	Concept 3422 3431	Chongqing
+T200	Concept 3432 3444	municipality
+R51	target Arg1:T192 Arg2:T193
+T201	Concept 3460 3473	GFP-MAD2 L13A
+T202	Action 3477 3486	localized
+T203	Concept 3490 3499	metaphase
+T204	Concept 3500 3512	kinetochores
+T205	Concept 3524 3545	mCherry-Mis12-MAD1 AA
+T206	Concept 3557 3570	GFP-MAD2 L13A
+T207	Predicate 3590 3594	last
+T208	Concept 3599 3609	unattached
+T209	Concept 3610 3622	kinetochores
+T210	Concept 3654 3664	endogenous
+T211	Concept 3665 3669	MAD1
+R52	target Arg1:T202 Arg2:T205
+T212	Concept 3676 3681	Fever
+T213	Concept 3690 3700	widespread
+T214	Concept 3715 3723	infected
+T215	Concept 3729 3737	COVID-19
+T216	Concept 3754 3762	SARS-CoV
+T217	Concept 3764 3767	99%
+T218	Concept 3773 3781	MERS-CoV
+T219	Concept 3783 3786	98%
+R53	target Arg1:T214 Arg2:T215
+R54	subject Arg1:T214 Arg2:T215
+T220	Predicate 3808 3814	number
+T221	Concept 3818 3823	cases
+T222	Concept 3838 3841	low
+T223	Action 3859 3865	reduce
+T224	Concept 3870 3882	contact rate
+T225	Concept 3890 3904	administrative
+T226	Concept 3915 3925	quarantine
+R55	domain Arg1:T220 Arg2:T221
+R56	target Arg1:T223 Arg2:T224
+T227	Concept 3930 3938	82 years
+T228	Concept 3943 3947	male
+T229	Concept 3948 3955	patient
+T230	Concept 3960 3970	persistent
+T231	Concept 3971 3990	atrial fibrillation
+T232	Action 4002 4011	infection
+T233	Concept 4015 4023	COVID-19
+R57	target Arg1:T232 Arg2:T231
+R58	target Arg1:T232 Arg2:T233
+T234	Concept 4028 4036	dominant
+T235	Concept 4037 4045	symptoms
+T236	Concept 4049 4073	coronavirus disease 2019
+T237	Concept 4075 4083	COVID-19
+T238	Concept 4089 4094	fever
+T239	Concept 4099 4104	cough
+R59	arg Arg1:T235 Arg2:T236
+*	same-as T235 T237
+*	same-as T236 T237
+T240	Concept 4110 4120	pathogenic
+T241	Concept 4121 4130	mutations
+T242	Concept 4138 4143	human
+T243	Concept 4144 4158	telomerase RNA
+T244	Concept 4176 4189	wellconserved
+T245	Concept 4190 4192	PK
+T246	Concept 4193 4199	region
+T247	Concept 4207 4210	RNA
+T248	Concept 4255 4257	PK
+R60	in-place Arg1:T241 Arg2:T242
+R61	in-context Arg1:T241 Arg2:T243
+R62	in-place Arg1:T241 Arg2:T243
+R63	in-context Arg1:T243 Arg2:T242
+R64	in-place Arg1:T244 Arg2:T247
+T249	Concept 4258 4268	SARS-CoV-2
+T250	Concept 4269 4274	ORF9b
+T251	Concept 4275 4282	protein
+T252	Concept 4290 4294	mean
+T253	Concept 4295 4299	PPID
+T254	Concept 4303 4309	10.31%
+*	same-as T249 T250
+R65	is-a Arg1:T249 Arg2:T251
+*	same-as T249 T253
+R66	is-a Arg1:T250 Arg2:T249
+*	same-as T250 T249
+R67	is-a Arg1:T250 Arg2:T251
+R68	target Arg1:T252 Arg2:T253
+T255	Concept 4404 4410	filter
+T256	Action 4416 4421	learn
+T257	Concept 4427 4435	negative
+T258	Concept 4436 4443	weights
+T259	Concept 4455 4463	position
+T260	Concept 4489 4499	biological
+T261	Concept 4500 4513	justification
+R69	target Arg1:T256 Arg2:T257
+R70	target Arg1:T256 Arg2:T258
+R71	in-context Arg1:T261 Arg2:T260
+T262	Action 4523 4532	Encounter
+T263	Concept 4536 4543	extreme
+T264	Concept 4544 4554	starvation
+T265	Concept 4556 4561	water
+T266	Concept 4564 4568	wild
+T267	Concept 4569 4575	yeasts
+T268	Concept 4592 4603	sporulation
+T269	Concept 4604 4612	strategy
+T270	Concept 4622 4634	domesticated
+T271	Concept 4639 4651	unclassified
+T272	Concept 4652 4660	isolates
+T273	Concept 4662 4663	n
+T274	Concept 4664 4667	734
+T275	Concept 4692 4702	quiescence
+T276	Concept 4707 4710	new
+T277	Concept 4711 4725	viral pathogen
+T278	Concept 4726 4736	SARS-CoV-2
+T279	Action 4737 4744	emerged
+T280	Concept 4753 4757	2019
+T281	Action 4782 4786	rise
+T282	Concept 4790 4793	new
+T283	Concept 4794 4799	cases
+T284	Predicate 4812 4816	tens
+T285	Predicate 4820 4829	thousands
+T286	Concept 4833 4843	documented
+T287	Concept 4844 4849	cases
+T288	Concept 4853 4861	COVID-19
+T289	Concept 4862 4869	disease
+R72	in-context Arg1:T277 Arg2:T276
+*	same-as T277 T278
+R73	is-a Arg1:T278 Arg2:T277
+R74	target Arg1:T279 Arg2:T278
+R75	target Arg1:T281 Arg2:T278
+R76	target Arg1:T281 Arg2:T282
+R77	target Arg1:T281 Arg2:T288
+T290	Concept 4893 4903	SARS virus
+T291	Concept 4905 4910	viral
+T292	Concept 4911 4919	genomics
+T293	Concept 4924 4942	structural biology
+T294	Concept 4943 4950	studies
+T295	Concept 4967 4971	ACE2
+T296	Concept 4982 4992	functional
+T297	Concept 4993 5001	receptor
+T298	Concept 5010 5013	new
+T299	Concept 5014 5024	SARS-CoV-2
+T300	Concept 5025 5036	coronavirus
+R78	is-a Arg1:T295 Arg2:T297
+T301	Concept 5037 5042	HA-NA
+T302	Concept 5043 5056	distributions
+T303	Concept 5069 5077	wildtype
+T304	Concept 5078 5085	viruses
+T305	Concept 5109 5118	polarized
+T306	Concept 5125 5127	NA
+T307	Concept 5128 5136	enriched
+T308	Concept 5144 5149	virus
+T309	Concept 5150 5155	poles
+R79	is-a Arg1:T301 Arg2:T304
+R80	in-context Arg1:T302 Arg2:T301
+R81	in-context Arg1:T302 Arg2:T303
+T310	Concept 5163 5174	cold season
+T311	Predicate 5200 5204	risk
+T312	Concept 5208 5211	non
+T313	Concept 5212 5222	accidental
+T314	Concept 5224 5235	respiratory
+T315	Concept 5240 5254	cardiovascular
+T316	Concept 5255 5260	death
+T317	Action 5261 5270	increased
+T318	Concept 5279 5282	DTR
+T319	Concept 5283 5289	values
+T320	Concept 5300 5310	SARS-CoV-2
+T321	Concept 5321 5331	infectious
+T322	Action 5349 5358	depletion
+T323	Concept 5366 5371	local
+T324	Concept 5372 5386	social network
+T325	Action 5399 5406	explain
+T326	Action 5411 5417	change
+T327	Concept 5421 5424	R(t
+T328	Concept 5449 5457	COVID-19
+R82	in-place Arg1:T322 Arg2:T324
+R83	in-context Arg1:T323 Arg2:T324
+R84	target Arg1:T325 Arg2:T326
+R85	target Arg1:T325 Arg2:T327
+R86	target Arg1:T325 Arg2:T328
+R87	target Arg1:T326 Arg2:T327
+*	same-as T328 T327
+T329	Concept 5470 5480	microarray
+T330	Concept 5481 5491	approaches
+T331	Action 5510 5520	broadening
+T332	Predicate 5525 5530	scope
+T333	Concept 5534 5543	pathogens
+T334	Concept 5544 5554	detectable
+T335	Concept 5567 5571	LRTI
+T336	Concept 5587 5592	study
+T337	Concept 5615 5619	main
+T338	Concept 5620 5628	protease
+T339	Concept 5632 5640	SARS-CoV
+T340	Concept 5644 5653	essential
+T341	Concept 5662 5666	life
+T342	Concept 5667 5672	cycle
+T343	Concept 5680 5685	virus
+T344	Concept 5714 5724	attractive
+T345	Concept 5725 5731	target
+T346	Concept 5736 5752	drug development
+R88	target Arg1:T346 Arg2:T343
+T347	Concept 5765 5775	structural
+T348	Concept 5776 5779	506
+T349	Concept 5780 5788	proteins
+T350	Concept 5802 5807	cilia
+T351	Action 5812 5821	conserved
+T352	Concept 5833 5841	ciliated
+T353	Concept 5842 5852	Eukaryotes
+T354	Concept 5864 5870	humans
+T355	Concept 5880 5888	metazoan
+T356	Concept 5889 5898	signaling
+T357	Concept 5899 5907	proteins
+T358	Action 5912 5921	conserved
+T359	Concept 5937 5951	animal kingdom
+R89	is-a Arg1:T348 Arg2:T349
+R90	has-property Arg1:T348 Arg2:T351
+R91	is-a Arg1:T350 Arg2:T349
+R92	is-a Arg1:T354 Arg2:T349
+R93	is-a Arg1:T354 Arg2:T353
+R94	in-place Arg1:T358 Arg2:T355
+T360	Reference 5952 5957	These
+T361	Concept 5975 5984	imperfect
+T362	Concept 5985 5994	antivirus
+T363	Concept 5995 6002	therapy
+T364	Action 6036 6046	recurrence
+T365	Concept 6050 6058	COVID-19
+T366	Concept 6059 6064	virus
+R95	target Arg1:T364 Arg2:T365
+T367	Concept 6077 6082	cases
+T368	Concept 6088 6096	negative
+T369	Concept 6097 6105	clinical
+T370	Concept 6106 6113	testing
+T371	Concept 6115 6119	mNGS
+T372	Concept 6135 6143	patients
+T373	Action 6144 6150	harbor
+T374	Concept 6154 6171	transcriptionally
+T375	Concept 6172 6178	active
+T376	Concept 6179 6187	microbes
+T377	Concept 6193 6203	recognized
+T378	Concept 6204 6215	respiratory
+T379	Concept 6216 6226	pathogenic
+R96	target Arg1:T373 Arg2:T376
+T380	Concept 6248 6252	pair
+T381	Action 6257 6265	selected
+T382	Concept 6287 6291	bond
+T383	Concept 6292 6298	energy
+T384	Concept 6324 6327	CML
+T385	Concept 6333 6340	chronic
+T386	Concept 6341 6358	hematologic tumor
+T387	Concept 6364 6377	comprehensive
+T388	Concept 6378 6386	measures
+T389	Action 6406 6411	delay
+T390	Action 6416 6422	reduce
+T391	Concept 6435 6444	infection
+T392	Action 6448 6459	restricting
+T393	Concept 6460 6467	patient
+T394	Action 6468 6476	exposure
+T395	Concept 6480 6490	situations
+T396	Concept 6505 6517	transmission
+*	same-as T384 T386
+R97	is-a Arg1:T384 Arg2:T386
+*	same-as T385 T384
+R98	is-a Arg1:T385 Arg2:T386
+R99	target Arg1:T385 Arg2:T386
+R100	causes Arg1:T391 Arg2:T384
+R101	target Arg1:T396 Arg2:T391
+T397	Concept 6538 6552	SARS-CoV S-RBD
+T398	Concept 6553 6562	structure
+T399	Concept 6568 6576	template
+T400	Concept 6616 6624	homology
+T401	Concept 6625 6633	modeling
+T402	Concept 6634 6640	method
+T403	Action 6644 6654	accurately
+T404	Action 6655 6662	predict
+T405	Concept 6667 6675	3D model
+R102	is-a Arg1:T397 Arg2:T399
+R103	target Arg1:T404 Arg2:T397
+R104	in-context Arg1:T404 Arg2:T403
+R105	target Arg1:T404 Arg2:T405
+T406	Concept 6676 6684	Absolute
+T407	Concept 6685 6693	humidity
+T408	Concept 6698 6709	temperature
+T409	Concept 6720 6728	positive
+T410	Concept 6729 6741	relationship
+T411	Concept 6748 6754	slight
+T412	Concept 6755 6776	negative relationship
+R106	in-context Arg1:T406 Arg2:T407
+R107	in-context Arg1:T406 Arg2:T408
+R108	has-property Arg1:T406 Arg2:T409
+R109	is-a Arg1:T406 Arg2:T410
+R110	has-property Arg1:T406 Arg2:T412
+T413	Action 6798 6805	learned
+T414	Concept 6811 6819	SARS-Cov
+T415	Concept 6824 6832	MERS-Cov
+T416	Concept 6838 6843	human
+T417	Concept 6844 6855	populations
+T418	Concept 6863 6874	disparities
+T419	Action 6878 6892	susceptibility
+T420	Concept 6902 6909	viruses
+R111	target Arg1:T418 Arg2:T419
+R112	target Arg1:T419 Arg2:T418
+R113	target Arg1:T419 Arg2:T420
+T421	Concept 6910 6914	ACE2
+T422	Concept 6942 6950	receptor
+T423	Concept 6955 6963	SARS-Cov
+T424	Concept 6968 6972	NL63
+R114	is-a Arg1:T421 Arg2:T422
+T425	Concept 6987 6989	29
+T426	Predicate 6989 6990	%
+T427	Concept 6994 6996	US
+T428	Concept 6997 7007	households
+T429	Concept 7015 7032	healthcare worker
+T430	Concept 7051 7057	school
+T431	Concept 7069 7072	age
+T432	Concept 7073 7077	3-12
+T433	Action 7083 7091	requires
+T434	Concept 7092 7102	child care
+R115	arg Arg1:T431 Arg2:T432
+R116	in-context Arg1:T432 Arg2:T431
+R117	subject Arg1:T433 Arg2:T429
+R118	target Arg1:T433 Arg2:T434
+T435	Concept 7124 7136	Cas13d-based
+T436	Concept 7137 7144	genetic
+T437	Concept 7145 7154	targeting
+T438	Action 7159 7170	effectively
+T439	Action 7171 7177	target
+T440	Action 7182 7188	cleave
+T441	Concept 7193 7196	RNA
+T442	Concept 7210 7220	SARS-CoV-2
+T443	Concept 7221 7230	fragments
+T444	Concept 7235 7238	IAV
+T445	Concept 7242 7271	lung epithelial cell cultures
+R119	target Arg1:T439 Arg2:T442
+R120	subject Arg1:T440 Arg2:T435
+R121	subject Arg1:T440 Arg2:T437
+R122	target Arg1:T440 Arg2:T442
+R123	target Arg1:T440 Arg2:T443
+T446	Concept 7293 7297	data
+T447	Concept 7327 7352	super-transmission events
+T448	Concept 7356 7364	COVID-19
+T449	Concept 7365 7377	transmission
+T450	Predicate 7394 7399	range
+T451	Concept 7403 7416	interpersonal
+T452	Concept 7417 7442	transmission capabilities
+T453	Concept 7446 7454	COVID-19
+R124	arg Arg1:T450 Arg2:T448
+R125	arg Arg1:T450 Arg2:T453
+T454	Concept 7491 7498	current
+T455	Action 7499 7511	confirmation
+T456	Concept 7515 7525	SARS-CoV-2
+T457	Concept 7526 7535	infection
+T458	Concept 7561 7566	viral
+T459	Concept 7567 7576	real-time
+T460	Concept 7577 7598	reverse transcription
+T461	Concept 7599 7624	polymerase chain reaction
+T462	Concept 7626 7632	RT-PCR
+T463	Concept 7634 7645	test result
+R126	target Arg1:T455 Arg2:T456
+R127	target Arg1:T457 Arg2:T456
+*	same-as T461 T462
+T464	Concept 7646 7650	ACE2
+T465	Action 7661 7670	expressed
+T466	Concept 7674 7683	AT2 cells
+T467	Action 7693 7701	detected
+T468	Concept 7705 7714	AT1 cells
+T469	Concept 7716 7739	airway epithelial cells
+T470	Concept 7741 7752	fibroblasts
+T471	Concept 7754 7771	endothelial cells
+T472	Concept 7777 7788	macrophages
+R128	is-a Arg1:T464 Arg2:T465
+T473	Concept 7816 7828	unidentified
+T474	Concept 7829 7838	bacterial
+T475	Concept 7839 7848	pathogens
+T476	Concept 7850 7854	mNGS
+T477	Concept 7864 7883	Streptococcus mitis
+T478	Concept 7888 7901	oropharyngeal
+T479	Concept 7902 7909	microbe
+T480	Concept 7925 7935	bacteremia
+T481	Concept 7940 7966	acute respiratory distress
+T482	Concept 7970 7973	HCT
+T483	Concept 7974 7984	recipients
+T484	Concept 7991 8000	potential
+T485	Concept 8001 8010	pulmonary
+T486	Concept 8011 8019	pathogen
+T487	Concept 8027 8034	patient
+R129	domain Arg1:T473 Arg2:T474
+R130	is-a Arg1:T473 Arg2:T475
+R131	domain Arg1:T473 Arg2:T476
+R132	is-a Arg1:T477 Arg2:T474
+R133	is-a Arg1:T477 Arg2:T475
+R134	causes Arg1:T477 Arg2:T478
+R135	is-a Arg1:T477 Arg2:T479
+R136	causes Arg1:T477 Arg2:T480
+R137	causes Arg1:T477 Arg2:T481
+*	same-as T477 T482
+R138	is-a Arg1:T477 Arg2:T486
+R139	is-a Arg1:T478 Arg2:T474
+R140	is-a Arg1:T478 Arg2:T475
+R141	is-a Arg1:T478 Arg2:T479
+R142	causes Arg1:T478 Arg2:T481
+R143	is-a Arg1:T478 Arg2:T486
+T488	Concept 8043 8053	KNTC1-null
+T489	Concept 8054 8063	RPE cells
+T490	Concept 8081 8092	SAC failure
+T491	Concept 8098 8109	kinetochore
+T492	Concept 8110 8121	attachments
+T493	Action 8127 8134	ablated
+T494	Concept 8140 8150	nocodazole
+T495	Concept 8159 8163	STLC
+T496	Concept 8167 8172	taxol
+T497	Action 8186 8192	induce
+T498	Concept 8193 8202	erroneous
+T499	Concept 8203 8214	attachments
+*	same-as T488 T489
+R144	is-a Arg1:T488 Arg2:T489
+R145	in-context Arg1:T491 Arg2:T492
+R146	causes Arg1:T493 Arg2:T490
+R147	target Arg1:T493 Arg2:T491
+R148	target Arg1:T493 Arg2:T494
+R149	in-context Arg1:T494 Arg2:T492
+T500	Concept 8219 8226	results
+T501	Action 8267 8273	action
+T502	Concept 8277 8285	positive
+T503	Concept 8286 8295	selection
+T504	Concept 8299 8309	spike gene
+T505	Concept 8328 8337	evolution
+T506	Concept 8341 8351	SARS-CoV-2
+T507	Concept 8356 8362	RaTG13
+R150	in-context Arg1:T501 Arg2:T502
+R151	target Arg1:T505 Arg2:T506
+R152	arg Arg1:T505 Arg2:T506
+T508	Concept 8363 8375	Experimental
+T509	Concept 8376 8383	results
+T510	Concept 8405 8410	model
+T511	Concept 8411 8419	proposed
+T512	Action 8426 8433	predict
+T513	Concept 8438 8453	infection nodes
+T514	Concept 8480 8491	probability
+R153	target Arg1:T512 Arg2:T513
+R154	in-context Arg1:T512 Arg2:T514
+T515	Concept 8492 8494	CT
+T516	Concept 8501 8510	important
+T517	Concept 8511 8517	method
+T518	Action 8525 8534	diagnosis
+T519	Concept 8538 8542	lung
+T520	Concept 8543 8550	lesions
+T521	Concept 8560 8572	radiological
+T522	Action 8573 8580	changes
+T523	Concept 8588 8593	lungs
+T524	Concept 8597 8605	COVID-19
+T525	Concept 8606 8614	patients
+R155	target Arg1:T518 Arg2:T519
+R156	target Arg1:T518 Arg2:T520
+R157	in-place Arg1:T522 Arg2:T523
+T526	Concept 8653 8663	population
+T527	Concept 8664 8672	mobility
+T528	Concept 8677 8683	human-
+T529	Concept 8686 8691	human
+T530	Concept 8692 8699	contact
+T531	Concept 8701 8722	environmental factors
+T532	Action 8727 8733	impact
+T533	Concept 8734 8741	droplet
+T534	Action 8742 8754	transmission
+T535	Action 8759 8767	survival
+T536	Concept 8771 8778	viruses
+R158	subject Arg1:T532 Arg2:T531
+R159	target Arg1:T534 Arg2:T536
+T537	Concept 8856 8868	experimental
+T538	Concept 8869 8876	results
+T539	Action 8893 8903	expression
+T540	Concept 8913 8925	U1 snRNA 294
+T541	Action 8926 8935	decreased
+T542	Concept 8942 8944	4X
+T543	Concept 8946 8948	9X
+T544	Concept 8953 8955	6X
+T545	Concept 8956 8962	dosage
+T546	Concept 8964 8973	Materials
+T547	Concept 8978 8985	Methods
+T548	Concept 8994 9000	HEK293
+T549	Concept 9002 9007	human
+T550	Concept 9010 9014	SY5Y
+T551	Concept 9016 9021	human
+T552	Concept 9031 9036	PC-12
+T553	Concept 9038 9041	rat
+T554	Concept 9043 9053	cell lines
+*	same-as T552 T551
+*	same-as T552 T553
+T555	Concept 9105 9110	males
+T556	Action 9116 9124	infected
+T557	Concept 9128 9160	Middle East respiratory syndrome
+T558	Concept 9162 9166	MERS
+T559	Concept 9176 9184	SARS-CoV
+R160	target Arg1:T556 Arg2:T557
+R161	target Arg1:T556 Arg2:T558
+R162	subject Arg1:T556 Arg2:T558
+R163	subject Arg1:T556 Arg2:T559
+*	same-as T557 T558
+T560	Concept 9185 9189	Meta
+T561	Concept 9189 9196	genomic
+T562	Concept 9197 9212	next-generation
+T563	Concept 9213 9223	sequencing
+T564	Concept 9225 9229	mNGS
+T565	Concept 9249 9257	enhanced
+T566	Concept 9258 9281	diagnostic capabilities
+T567	Concept 9297 9316	culture-independent
+T568	Concept 9318 9331	comprehensive
+T569	Action 9332 9343	measurement
+T570	Concept 9351 9360	microbial
+T571	Concept 9361 9372	composition
+T572	Concept 9376 9384	clinical
+T573	Concept 9385 9392	samples
+R164	part-of Arg1:T560 Arg2:T561
+*	same-as T560 T562
+R165	part-of Arg1:T560 Arg2:T563
+*	same-as T560 T564
+*	same-as T561 T560
+*	same-as T561 T562
+*	same-as T561 T563
+R166	is-a Arg1:T561 Arg2:T563
+*	same-as T561 T564
+*	same-as T562 T564
+T574	Concept 9393 9398	CD147
+T575	Action 9410 9420	associated
+T576	Concept 9426 9436	SARS-CoV-2
+T577	Action 9437 9445	invasion
+T578	Concept 9450 9460	host cells
+T579	Concept 9466 9468	SP
+T580	Action 9469 9474	binds
+T581	Concept 9487 9496	receptors
+T582	Action 9500 9507	mediate
+T583	Action 9508 9517	infection
+T584	Concept 9521 9531	host cells
+T585	Concept 9579 9586	author/
+T586	Concept 9586 9592	funder
+R167	target Arg1:T575 Arg2:T574
+R168	target Arg1:T575 Arg2:T576
+R169	target Arg1:T575 Arg2:T577
+R170	target Arg1:T575 Arg2:T579
+R171	target Arg1:T575 Arg2:T580
+R172	target Arg1:T575 Arg2:T585
+R173	target Arg1:T575 Arg2:T586
+*	same-as T576 T579
+R174	target Arg1:T577 Arg2:T576
+R175	target Arg1:T580 Arg2:T579
+R176	target Arg1:T582 Arg2:T579
+R177	target Arg1:T582 Arg2:T583
+R178	target Arg1:T583 Arg2:T584
+R179	target Arg1:T586 Arg2:T574
+T587	Concept 9597 9605	solvated
+T588	Concept 9606 9619	Zika homology
+T589	Concept 9620 9639	NS2B-NS3pro complex
+T590	Concept 9650 9656	energy
+T591	Concept 9657 9666	minimized
+T592	Concept 9672 9676	1000
+T593	Concept 9677 9682	steps
+T594	Concept 9686 9694	steepest
+T595	Concept 9695 9702	descent
+T596	Concept 9709 9716	GROMACS
+T597	Concept 9725 9726	4
+R180	target Arg1:T587 Arg2:T588
+*	same-as T587 T589
+R181	target Arg1:T587 Arg2:T589
+R182	is-a Arg1:T587 Arg2:T589
+T598	Concept 9786 9793	T cells
+T599	Concept 9806 9814	resident
+T600	Concept 9815 9822	T cells
+T601	Action 9827 9838	controlling
+T602	Concept 9843 9859	disease severity
+T603	Concept 9863 9871	SARS-CoV
+T604	Concept 9872 9880	infected
+T605	Concept 9881 9889	patients
+T606	Concept 9898 9904	proved
+R183	causes Arg1:T599 Arg2:T603
+R184	target Arg1:T601 Arg2:T602
+R185	target Arg1:T601 Arg2:T603
+R186	target Arg1:T602 Arg2:T603
+R187	arg Arg1:T602 Arg2:T603
+R188	target Arg1:T603 Arg2:T604
+R189	target Arg1:T604 Arg2:T603
+R190	target Arg1:T604 Arg2:T605
+T607	Concept 9943 9947	DMSO
+T608	Concept 9948 9961	control group
+T609	Concept 9968 9974	CVL218
+T610	Concept 9979 9989	remdesivir
+T611	Concept 9997 10003	potent
+T612	Concept 10004 10013	antiviral
+T613	Concept 10036 10040	full
+T614	Action 10046 10055	procedure
+T615	Concept 10063 10073	SARS-CoV-2
+T616	Action 10074 10083	infection
+T617	Concept 10087 10100	Vero E6 cells
+*	same-as T610 T617
+R191	arg Arg1:T611 Arg2:T617
+R192	target Arg1:T616 Arg2:T615
+R193	target Arg1:T616 Arg2:T617
+T618	Concept 10118 10126	critical
+T619	Concept 10127 10139	key residues
+T620	Concept 10143 10155	MERS-CoV RBD
+T621	Action 10156 10163	binding
+T622	Concept 10171 10179	receptor
+T623	Concept 10180 10202	dipeptidyl peptidase 4
+T624	Concept 10204 10208	DPP4
+T625	Concept 10218 10227	different
+T626	Concept 10231 10239	SARS-CoV
+T627	Concept 10244 10254	SARS-CoV-2
+T628	Concept 10263 10274	coronavirus
+R194	target Arg1:T621 Arg2:T620
+*	same-as T623 T624
+R195	is-a Arg1:T623 Arg2:T628
+T629	Action 10283 10291	estimate
+T630	Predicate 10308 10313	rates
+T631	Concept 10317 10331	overdispersion
+T632	Concept 10349 10354	cases
+T633	Concept 10360 10370	individual
+T634	Action 10371 10377	causes
+T635	Concept 10413 10418	large
+T636	Concept 10419 10427	COVID-19
+T637	Concept 10428 10436	clusters
+T638	Concept 10451 10463	surveillance
+T639	Concept 10468 10477	isolation
+T640	Action 10482 10489	forcing
+T641	Concept 10490 10491	R
+T642	Concept 10503 10509	events
+T643	Action 10533 10542	overwhelm
+T644	Concept 10547 10559	surveillance
+T645	Concept 10560 10566	system
+R196	target Arg1:T629 Arg2:T630
+R197	in-context Arg1:T629 Arg2:T631
+R198	target Arg1:T629 Arg2:T631
+R199	target Arg1:T629 Arg2:T640
+R200	target Arg1:T629 Arg2:T643
+R201	in-context Arg1:T630 Arg2:T631
+R202	arg Arg1:T630 Arg2:T631
+R203	target Arg1:T634 Arg2:T631
+R204	subject Arg1:T640 Arg2:T638
+R205	in-place Arg1:T640 Arg2:T644
+R206	target Arg1:T643 Arg2:T631
+T646	Concept 10586 10594	research
+T647	Concept 10638 10646	families
+T648	Concept 10650 10654	HCWs
+T649	Action 10664 10670	suffer
+T650	Concept 10684 10697	psychological
+T651	Concept 10698 10706	problems
+T652	Concept 10710 10714	HCWs
+T653	Concept 10722 10730	COVID-19
+R207	in-context Arg1:T647 Arg2:T648
+R208	target Arg1:T649 Arg2:T647
+R209	target Arg1:T649 Arg2:T648
+R210	target Arg1:T649 Arg2:T650
+R211	target Arg1:T649 Arg2:T651
+R212	target Arg1:T649 Arg2:T652
+T654	Concept 10749 10763	manifestations
+T655	Concept 10767 10777	SARS-CoV-2
+T656	Concept 10778 10787	infection
+T657	Concept 10796 10801	fever
+T658	Concept 10803 10812	dry cough
+T659	Concept 10814 10822	weakness
+T660	Concept 10828 10848	breathing difficulty
+R213	target Arg1:T654 Arg2:T655
+R214	is-a Arg1:T657 Arg2:T654
+R215	is-a Arg1:T658 Arg2:T654
+R216	is-a Arg1:T658 Arg2:T655
+R217	is-a Arg1:T659 Arg2:T654
+T661	Concept 10853 10858	swine
+T662	Concept 10859 10867	proteins
+T663	Action 10874 10884	interacted
+T664	Concept 10894 10898	hits
+T665	Action 10917 10925	interact
+T666	Concept 10935 10939	ASFV
+R218	is-a Arg1:T661 Arg2:T662
+R219	target Arg1:T663 Arg2:T664
+R220	target Arg1:T665 Arg2:T666
+T667	Concept 10954 10962	patients
+T668	Action 10968 10976	received
+T669	Concept 10977 10991	glucocorticoid
+T670	Concept 10999 11010	intravenous
+T671	Concept 11011 11025	immunoglobulin
+R221	subject Arg1:T668 Arg2:T667
+R222	target Arg1:T668 Arg2:T669
+R223	target Arg1:T668 Arg2:T671
+R224	is-a Arg1:T670 Arg2:T671
+T672	Concept 11045 11051	former
+T673	Action 11059 11067	required
+T674	Concept 11076 11080	H7N1
+T675	Concept 11085 11105	H5N1 influenza virus
+T676	Concept 11106 11116	infections
+T677	Concept 11131 11152	hemagglutinin-induced
+T678	Concept 11153 11158	lysis
+T679	Action 11201 11208	mediate
+T680	Action 11213 11219	assist
+T681	Action 11227 11235	invasion
+T682	Concept 11239 11249	host cells
+T683	Concept 11253 11261	multiple
+T684	Concept 11262 11269	viruses
+R225	subject Arg1:T673 Arg2:T672
+R226	subject Arg1:T676 Arg2:T675
+R227	target Arg1:T679 Arg2:T681
+T685	Concept 11290 11295	first
+T686	Concept 11296 11300	mode
+T687	Action 11318 11328	activation
+T688	Concept 11336 11341	genes
+T689	Concept 11342 11346	EDS1
+T690	Concept 11351 11355	PAD4
+T691	Concept 11357 11367	components
+T692	Concept 11371 11372	R
+T693	Concept 11373 11377	gene
+T694	Action 11377 11384	mediate
+T695	Concept 11386 11393	disease
+T696	Concept 11394 11404	resistance
+T697	Action 11410 11418	homology
+T698	Concept 11422 11429	lipases
+T699	Concept 11440 11449	infection
+T700	Concept 11466 11470	work
+R228	is-a Arg1:T689 Arg2:T696
+R229	is-a Arg1:T690 Arg2:T691
+R230	is-a Arg1:T690 Arg2:T692
+R231	is-a Arg1:T690 Arg2:T696
+R232	is-a Arg1:T691 Arg2:T696
+R233	is-a Arg1:T694 Arg2:T696
+T701	Concept 11471 11481	SARS-CoV-2
+T702	Concept 11482 11488	assays
+T703	Concept 11499 11514	false positives
+T704	Action 11531 11539	targeted
+T705	Concept 11556 11566	SARS-CoV-2
+T706	Concept 11575 11580	virus
+T707	Concept 11609 11630	Coronavirus organisms
+R234	is-a Arg1:T701 Arg2:T702
+R235	target Arg1:T704 Arg2:T703
+R236	target Arg1:T704 Arg2:T705
+T708	Concept 11631 11634	CTD
+T709	Action 11635 11644	interacts
+T710	Concept 11650 11656	itself
+T711	Concept 11658 11664	lane 3
+T712	Action 11667 11675	agreeing
+T713	Concept 11681 11690	published
+T714	Concept 11691 11708	crystal structure
+T715	Action 11713 11719	acting
+T716	Concept 11725 11741	positive control
+T717	Concept 11750 11757	binding
+R237	subject Arg1:T709 Arg2:T708
+R238	target Arg1:T709 Arg2:T711
+R239	entails Arg1:T709 Arg2:T715
+R240	target Arg1:T712 Arg2:T716
+T718	Concept 11769 11774	delay
+T719	Concept 11815 11824	infection
+T720	Concept 11828 11834	severe
+T721	Concept 11839 11847	critical
+T722	Concept 11848 11858	conditions
+T723	Concept 11867 11875	COVID-19
+T724	Concept 11876 11884	patients
+T725	Action 11900 11907	require
+T726	Concept 11908 11911	ICU
+T727	Concept 11912 11916	care
+T728	Action 11917 11924	present
+T729	Concept 11950 11954	mild
+T730	Concept 11955 11963	symptoms
+T731	Action 11989 11998	discharge
+T732	Concept 12002 12007	death
+T733	Action 12026 12038	accumulation
+T734	Concept 12042 12054	hospitalized
+T735	Concept 12055 12060	cases
+T736	Concept 12076 12084	downturn
+T737	Concept 12093 12102	community
+R241	causes Arg1:T719 Arg2:T732
+R242	causes Arg1:T736 Arg2:T718
+R243	causes Arg1:T736 Arg2:T725
+R244	causes Arg1:T736 Arg2:T731
+T738	Concept 12121 12125	data
+T739	Concept 12141 12149	COVID-19
+T740	Concept 12162 12170	multiple
+T741	Concept 12171 12185	organic injury
+T742	Action 12213 12220	studies
+T743	Concept 12224 12238	lineage C CoVs
+T744	Concept 12252 12269	protease-enhanced
+T745	Action 12270 12275	entry
+T746	Concept 12279 12293	lineage B CoVs
+T747	Concept 12295 12303	figure 2
+R245	target Arg1:T744 Arg2:T746
+R246	target Arg1:T745 Arg2:T746
+T748	Concept 12325 12329	mNGS
+T749	Action 12334 12340	detect
+T750	Concept 12341 12347	entire
+T751	Concept 12348 12353	viral
+T752	Concept 12354 12361	genomes
+T753	Concept 12381 12390	Figure E1
+T754	Concept 12396 12405	attribute
+T755	Concept 12422 12432	genotyping
+T756	Action 12434 12443	detection
+T757	Concept 12447 12457	resistance
+T758	Concept 12458 12467	mutations
+T759	Concept 12473 12486	epidemiologic
+T760	Action 12487 12495	tracking
+T761	Concept 12499 12506	disease
+T762	Concept 12507 12516	outbreaks
+T763	Concept 12518 12520	41
+R247	subject Arg1:T749 Arg2:T748
+R248	target Arg1:T749 Arg2:T750
+R249	domain Arg1:T750 Arg2:T752
+R250	is-a Arg1:T753 Arg2:T754
+R251	is-a Arg1:T755 Arg2:T754
+R252	target Arg1:T760 Arg2:T759
+T764	Concept 12527 12534	average
+T765	Predicate 12535 12542	numbers
+T766	Concept 12546 12558	CD163+ cells
+T767	Concept 12563 12586	CD163+ cells per villus
+T768	Concept 12620 12630	ZIKV group
+T769	Concept 12632 12635	n=5
+T770	Concept 12649 12666	negative controls
+T771	Concept 12668 12669	n
+R253	target Arg1:T764 Arg2:T765
+R254	target Arg1:T764 Arg2:T766
+R255	target Arg1:T765 Arg2:T766
+T772	Concept 12677 12683	normal
+T773	Concept 12684 12691	diploid
+T774	Concept 12692 12699	genomes
+T775	Concept 12701 12705	wild
+T776	Concept 12706 12713	strains
+T777	Concept 12719 12725	inbred
+T778	Concept 12726 12737	lab strains
+T779	Concept 12740 12754	heterozygosity
+T780	Action 12762 12769	uniform
+T781	Concept 12785 12791	genome
+R256	in-context Arg1:T773 Arg2:T772
+R257	in-context Arg1:T774 Arg2:T772
+R258	entails Arg1:T777 Arg2:T773
+R259	in-context Arg1:T779 Arg2:T772
+R260	in-context Arg1:T779 Arg2:T773
+R261	target Arg1:T780 Arg2:T779
+T782	Predicate 12808 12816	majority
+T783	Concept 12820 12827	parents
+T784	Concept 12831 12835	HCWs
+T785	Concept 12849 12856	elderly
+T786	Action 12897 12909	transmission
+T787	Concept 12913 12921	COVID-19
+T788	Concept 12931 12941	death rate
+T789	Action 12947 12958	exacerbated
+T790	Concept 12971 12984	mental health
+T791	Concept 12985 12993	problems
+T792	Action 12998 13004	worsen
+T793	Concept 13014 13025	psychiatric
+T794	Concept 13026 13034	symptoms
+T795	Concept 13041 13046	older
+T796	Concept 13047 13053	adults
+R262	arg Arg1:T782 Arg2:T783
+R263	in-context Arg1:T783 Arg2:T784
+R264	in-context Arg1:T783 Arg2:T785
+R265	target Arg1:T786 Arg2:T784
+R266	target Arg1:T786 Arg2:T787
+R267	target Arg1:T792 Arg2:T794
+R268	target Arg1:T794 Arg2:T784
+T797	Concept 13058 13065	results
+T798	Concept 13078 13081	LPS
+T799	Action 13082 13091	treatment
+T800	Action 13092 13101	increased
+T801	Concept 13102 13109	LC3B-II
+T802	Concept 13114 13118	ATG5
+T803	Concept 13124 13138	dose-dependent
+T804	Concept 13139 13145	manner
+T805	Concept 13180 13183	LPS
+T806	Concept 13192 13218	pro-inflammatory cytokines
+T807	Action 13219 13226	release
+T808	Concept 13232 13246	dose-dependent
+T809	Concept 13247 13253	manner
+R269	target Arg1:T800 Arg2:T801
+R270	target Arg1:T800 Arg2:T806
+*	same-as T806 T808
+T810	Reference 13254 13258	This
+T811	Concept 13285 13292	strains
+T812	Action 13293 13302	retaining
+T813	Action 13314 13316	re
+T814	Action 13317 13325	acquired
+T815	Concept 13329 13339	life cycle
+T816	Concept 13358 13362	wild
+T817	Concept 13363 13368	yeast
+R271	in-context Arg1:T815 Arg2:T816
+R272	in-context Arg1:T817 Arg2:T816
+T818	Concept 13392 13404	antagonistic
+T819	Concept 13405 13416	contraction
+T820	Concept 13423 13436	perpendicular
+T821	Concept 13439 13447	oriented
+T822	Concept 13448 13456	families
+T823	Concept 13460 13466	fibers
+T824	Action 13473 13477	work
+T825	Concept 13485 13497	sub-cellualr
+T826	Concept 13498 13503	level
+T827	Concept 13524 13550	antagonistic motor protein
+T828	Concept 13551 13559	dynamics
+T829	Concept 13563 13579	contractile ring
+T830	Concept 13580 13590	structures
+T831	Concept 13622 13633	development
+R273	target Arg1:T818 Arg2:T819
+R274	in-context Arg1:T818 Arg2:T820
+R275	is-a Arg1:T819 Arg2:T818
+R276	is-a Arg1:T821 Arg2:T818
+R277	domain Arg1:T822 Arg2:T823
+T832	Concept 13639 13644	study
+T833	Concept 13647 13651	data
+T834	Concept 13675 13687	contaminated
+T835	Concept 13688 13694	gloves
+T836	Concept 13698 13703	hands
+T837	Concept 13722 13736	exposure route
+T838	Concept 13741 13751	SARS-CoV-2
+R278	target Arg1:T837 Arg2:T838
+R279	arg Arg1:T837 Arg2:T838
+T839	Concept 13759 13767	analysis
+T840	Concept 13768 13771	197
+T841	Concept 13775 13791	membrane protein
+T842	Concept 13793 13805	pangolin P1E
+T843	Concept 13806 13811	virus
+T844	Concept 13831 13842	codon usage
+T845	Concept 13846 13856	SARS-CoV-2
+T846	Concept 13880 13887	viruses
+R280	is-a Arg1:T842 Arg2:T841
+R281	target Arg1:T844 Arg2:T845
+T847	Concept 13919 13929	amino acid
+T848	Action 13930 13940	similarity
+T849	Concept 13953 13956	RBD
+T850	Concept 13964 13973	Guangdong
+T851	Concept 13974 13982	pangolin
+T852	Concept 13983 13996	coronaviruses
+T853	Concept 14001 14010	2019-nCoV
+T854	Concept 14021 14032	selectively
+T855	Concept 14042 14062	convergent evolution
+T856	Concept 14075 14088	recombination
+T857	Action 14118 14124	choose
+T858	Concept 14139 14148	scenarios
+T859	Concept 14160 14164	data
+R282	target Arg1:T848 Arg2:T847
+R283	arg Arg1:T848 Arg2:T847
+R284	target Arg1:T848 Arg2:T849
+R285	arg Arg1:T848 Arg2:T856
+T860	Concept 14203 14208	upper
+T861	Concept 14209 14214	bound
+T862	Concept 14232 14237	cases
+T863	Action 14250 14256	traced
+T864	Concept 14262 14266	case
+T865	Concept 14267 14276	isolation
+T866	Concept 14293 14302	imperfect
+T867	Concept 14321 14329	findings
+T868	Concept 14343 14355	standardized
+T869	Concept 14356 14366	management
+T870	Action 14370 14376	obtain
+T871	Concept 14386 14403	clinical response
+T872	Action 14404 14411	reduces
+T873	Concept 14424 14434	SARS-CoV-2
+T874	Concept 14435 14444	infection
+T875	Action 14449 14457	improves
+T876	Concept 14462 14471	prognosis
+T877	Action 14489 14497	infected
+R286	causes Arg1:T870 Arg2:T872
+R287	causes Arg1:T874 Arg2:T873
+R288	target Arg1:T875 Arg2:T876
+T878	Concept 14510 14520	SARS-CoV-2
+T879	Concept 14521 14529	proteins
+T880	Action 14546 14549	act
+T881	Concept 14586 14590	SARS
+T882	Concept 14602 14611	accessory
+T883	Concept 14612 14620	proteins
+T884	Action 14628 14637	localized
+T885	Concept 14645 14672	endoplasmic reticulum-Golgi
+T886	Concept 14673 14697	intermediate compartment
+T887	Concept 14725 14729	cell
+T888	Concept 14730 14738	membrane
+T889	Action 14750 14757	enhance
+T890	Concept 14764 14777	pathogenicity
+T891	Action 14782 14791	mortality
+T892	Concept 14800 14815	protein-protein
+T893	Concept 14816 14828	interactions
+R289	is-a Arg1:T878 Arg2:T879
+R290	is-a Arg1:T878 Arg2:T881
+R291	is-a Arg1:T884 Arg2:T881
+R292	is-a Arg1:T885 Arg2:T879
+R293	is-a Arg1:T885 Arg2:T881
+R294	target Arg1:T889 Arg2:T880
+R295	is-a Arg1:T890 Arg2:T881
+R296	is-a Arg1:T892 Arg2:T881
+T894	Concept 14842 14849	Table 1
+T895	Concept 14854 14863	Figure 1A
+T896	Action 14870 14878	fatality
+T897	Concept 14886 14895	confirmed
+T898	Concept 14900 14909	suspected
+T899	Concept 14910 14918	COVID-19
+T900	Concept 14919 14927	patients
+T901	Concept 14932 14933	5
+T902	Concept 14985 14991	severe
+T903	Concept 14992 15001	situation
+T904	Concept 15005 15013	COVID-19
+T905	Concept 15030 15034	HCWs
+T906	Concept 15036 15049	mental health
+T907	Concept 15050 15058	problems
+T908	Concept 15067 15073	stress
+T909	Concept 15075 15082	anxiety
+T910	Concept 15087 15097	depressive
+T911	Concept 15098 15106	symptoms
+T912	Concept 15110 15115	China
+R297	arg Arg1:T903 Arg2:T904
+T913	Concept 15156 15169	nanoparticles
+T914	Concept 15185 15188	RSV
+T915	Action 15189 15200	accelerated
+T916	Concept 15205 15213	kinetics
+T917	Concept 15217 15224	amyloid
+T918	Action 15225 15236	aggregation
+T919	Concept 15242 15247	model
+T920	Concept 15248 15269	amyloidogenic peptide
+T921	Concept 15283 15287	IAPP
+T922	Concept 15289 15296	NNFGAIL
+R298	target Arg1:T915 Arg2:T914
+R299	target Arg1:T915 Arg2:T916
+R300	target Arg1:T915 Arg2:T917
+R301	target Arg1:T915 Arg2:T918
+R302	target Arg1:T915 Arg2:T920
+R303	is-a Arg1:T917 Arg2:T920
+T923	Action 15308 15314	action
+T924	Concept 15318 15328	interferon
+T925	Concept 15330 15336	IFITMs
+T926	Action 15337 15345	disrupts
+T927	Concept 15346 15359	intracellular
+T928	Concept 15360 15371	cholesterol
+T929	Concept 15372 15383	homeostasis
+T930	Action 15388 15396	prevents
+T931	Concept 15401 15406	virus
+T932	Action 15412 15420	entering
+T933	Concept 15425 15434	host cell
+R304	arg Arg1:T923 Arg2:T924
+R305	subject Arg1:T926 Arg2:T925
+R306	target Arg1:T926 Arg2:T927
+R307	target Arg1:T926 Arg2:T929
+R308	subject Arg1:T930 Arg2:T925
+T934	Concept 15456 15468	correlations
+T935	Concept 15485 15492	viruses
+T936	Concept 15497 15509	RBD-targeted
+T937	Concept 15510 15529	SARS-CoV monoclonal
+T938	Concept 15530 15540	antibodies
+T939	Action 15567 15571	bind
+T940	Action 15576 15586	neutralize
+R309	target Arg1:T934 Arg2:T936
+R310	target Arg1:T936 Arg2:T937
+R311	target Arg1:T939 Arg2:T937
+T941	Concept 15614 15623	stringent
+T942	Concept 15624 15634	quarantine
+T943	Concept 15639 15652	public health
+T944	Concept 15653 15661	measures
+T945	Concept 15678 15685	January
+T946	Concept 15714 15731	transmission rate
+T947	Concept 15735 15743	COVID-19
+R312	target Arg1:T946 Arg2:T947
+T948	Concept 15744 15751	Genetic
+T949	Action 15752 15760	analysis
+T950	Concept 15764 15772	COVID-19
+T951	Concept 15791 15796	virus
+T952	Concept 15812 15818	severe
+T953	Concept 15819 15857	acute respiratory syndrome coronavirus
+T954	Concept 15859 15867	SARS-CoV
+R313	target Arg1:T952 Arg2:T953
+*	same-as T953 T954
+*	same-as T954 T953
+T955	Concept 15898 15911	distributions
+T956	Concept 15932 15948	serial intervals
+T957	Concept 15949 15958	estimates
+T958	Concept 15964 15968	SARS
+T959	Concept 15969 15973	data
+T960	Action 15989 15994	overe
+T961	Concept 16011 16016	COVID
+T962	Concept 16020 16025	basic
+T963	Concept 16026 16038	reproduction
+R314	in-context Arg1:T957 Arg2:T958
+T964	Concept 16050 16054	mean
+T965	Concept 16055 16065	PPID score
+T966	Concept 16069 16079	SARS-CoV-2
+T967	Concept 16081 16086	Human
+T968	Concept 16087 16091	SARS
+T969	Concept 16097 16104	Bat CoV
+R315	is-a Arg1:T966 Arg2:T965
+*	same-as T966 T965
+*	same-as T966 T968
+R316	has-property Arg1:T967 Arg2:T968
+R317	is-a Arg1:T968 Arg2:T965
+R318	is-a Arg1:T968 Arg2:T966
+T970	Predicate 16170 16174	best
+T971	Concept 16182 16191	knowledge
+T972	Concept 16211 16216	study
+T973	Concept 16238 16253	immunodepletion
+T974	Concept 16259 16269	refractory
+T975	Concept 16270 16279	hypoxemia
+T976	Concept 16295 16299	high
+T977	Concept 16300 16304	risk
+T978	Concept 16305 16312	subtype
+T979	Concept 16316 16326	COVID-2019
+T980	Concept 16335 16349	vicious circle
+T981	Concept 16358 16373	immune disorder
+T982	Concept 16378 16391	gut dysbiosis
+T983	Concept 16414 16419	fatal
+T984	Concept 16420 16429	pneumonia
+T985	Concept 16436 16443	results
+T986	Concept 16457 16467	SARS-CoV-2
+T987	Concept 16477 16486	canonical
+T988	Concept 16487 16499	TRS-mediated
+T989	Concept 16500 16513	144 mechanism
+T990	Concept 16518 16531	discontinuous
+T991	Concept 16532 16545	transcription
+T992	Action 16549 16556	produce
+T993	Concept 16557 16562	major
+T994	Concept 16563 16569	sgRNAs
+R319	in-context Arg1:T989 Arg2:T988
+R320	in-context Arg1:T989 Arg2:T990
+R321	target Arg1:T992 Arg2:T994
+T995	Action 16589 16593	know
+T996	Concept 16598 16606	accurate
+T997	Concept 16607 16624	incubation period
+T998	Concept 16628 16636	COVID-19
+T999	Action 16653 16664	deciphering
+T1000	Concept 16665 16673	dynamics
+T1001	Concept 16681 16687	spread
+R322	in-context Arg1:T995 Arg2:T996
+T1002	Concept 16708 16720	asymptomatic
+T1003	Concept 16721 16729	carriers
+T1004	Concept 16733 16741	COVID-19
+T1005	Concept 16749 16754	crowd
+T1006	Action 16764 16775	contributed
+T1007	Action 16783 16789	source
+T1008	Concept 16793 16804	virus-laden
+T1009	Concept 16805 16812	aerosol
+T1010	Concept 16824 16839	sampling period
+R323	target Arg1:T1003 Arg2:T1004
+R324	subject Arg1:T1006 Arg2:T1002
+R325	subject Arg1:T1006 Arg2:T1004
+R326	causes Arg1:T1006 Arg2:T1005
+R327	target Arg1:T1006 Arg2:T1008
+R328	target Arg1:T1007 Arg2:T1008
+T1011	Concept 16853 16860	patient
+T1012	Action 16870 16876	contag
+T1013	Concept 16891 16893	14
+T1014	Concept 16894 16898	days
+T1015	Concept 16909 16918	infection
+R329	domain Arg1:T1013 Arg2:T1014
+T1016	Action 16925 16933	analyses
+T1017	Concept 16937 16945	SARS-CoV
+T1018	Action 16963 16971	utilizes
+T1019	Concept 16987 16993	unique
+T1020	Concept 17008 17012	mRNA
+T1021	Concept 17013 17023	pseudoknot
+T1022	Action 17027 17036	stimulate
+T1023	Predicate 17042 17047	rates
+T1024	Concept 17051 17053	-1
+T1025	Concept 17054 17057	PRF
+T1026	Action 17072 17079	harbors
+T1027	Concept 17082 17084	-1
+T1028	Concept 17085 17088	PRF
+T1029	Concept 17089 17108	attenuation element
+R330	arg Arg1:T1023 Arg2:T1024
+T1030	Concept 17136 17148	DUB-negative
+T1031	Concept 17149 17156	viruses
+T1032	Concept 17192 17198	V1691R
+T1033	Concept 17199 17202	553
+T1034	Concept 17203 17215	substitution
+T1035	Concept 17242 17247	IFN-β
+T1036	Concept 17252 17255	ISG
+T1037	Concept 17256 17261	mRNAs
+T1038	Concept 17267 17275	wt virus
+T1039	Concept 17279 17283	MRC5
+T1040	Concept 17284 17289	cells
+T1041	Concept 17316 17322	PL pro
+T1042	Concept 17326 17351	innate immune suppression
+T1043	Concept 17377 17386	infection
+*	same-as T1032 T1033
+T1044	Concept 17403 17413	transplant
+T1045	Concept 17414 17422	patients
+T1046	Action 17424 17431	concern
+T1047	Concept 17436 17440	GVHD
+T1048	Action 17445 17451	compel
+T1049	Concept 17452 17462	clinicians
+T1050	Action 17466 17474	initiate
+T1051	Concept 17475 17482	empiric
+T1052	Concept 17483 17500	immunosuppressive
+T1053	Concept 17501 17507	agents
+T1054	Action 17519 17532	inadvertently
+T1055	Action 17533 17543	exacerbate
+T1056	Concept 17544 17551	disease
+T1057	Concept 17574 17586	unrecognized
+T1058	Concept 17587 17596	infection
+R331	subject Arg1:T1048 Arg2:T1049
+R332	target Arg1:T1050 Arg2:T1051
+R333	subject Arg1:T1051 Arg2:T1047
+R334	target Arg1:T1055 Arg2:T1047
+R335	subject Arg1:T1055 Arg2:T1047
+R336	subject Arg1:T1055 Arg2:T1049
+R337	subject Arg1:T1055 Arg2:T1053
+R338	target Arg1:T1055 Arg2:T1056
+T1059	Concept 17597 17598	X
+T1060	Concept 17613 17618	cases
+T1061	Action 17631 17639	included
+T1062	Concept 17648 17664	study population
+T1063	Action 17679 17688	confirmed
+T1064	Concept 17692 17700	COVID-19
+T1065	Concept 17701 17710	pneumonia
+T1066	Concept 17717 17730	virus-carrier
+R339	has-property Arg1:T1061 Arg2:T1063
+*	same-as T1064 T1066
+T1067	Concept 17747 17755	patients
+T1068	Concept 17760 17774	cardiovascular
+T1069	Concept 17775 17782	disease
+T1070	Concept 17786 17799	heart failure
+T1071	Concept 17819 17827	COVID-19
+T1072	Concept 17839 17843	goal
+T1073	Action 17868 17874	design
+T1074	Concept 17878 17891	optical probe
+T1075	Action 17901 17907	report
+T1076	Concept 17908 17921	extracellular
+T1077	Concept 17922 17935	catecholamine
+T1078	Concept 17936 17944	dynamics
+T1079	Concept 17955 17962	spatial
+T1080	Concept 17967 17975	temporal
+T1081	Concept 17976 17984	fidelity
+T1082	Concept 17994 18000	unique
+T1083	Concept 18001 18014	near-infrared
+T1084	Concept 18015 18023	spectral
+T1085	Concept 18024 18031	profile
+R340	subject Arg1:T1075 Arg2:T1074
+R341	target Arg1:T1075 Arg2:T1076
+R342	target Arg1:T1075 Arg2:T1077
+R343	target Arg1:T1075 Arg2:T1078
+T1086	Concept 18037 18039	78
+T1087	Predicate 18039 18040	%
+T1088	Concept 18048 18052	HCWs
+T1089	Concept 18065 18073	positive
+T1090	Action 18074 18084	perception
+T1091	Concept 18088 18096	COVID-19
+T1092	Concept 18122 18130	severely
+T1093	Concept 18131 18139	infected
+T1094	Concept 18140 18148	patients
+T1095	Action 18149 18158	diagnosed
+T1096	Concept 18164 18172	COVID-19
+T1097	Predicate 18176 18181	large
+T1098	Predicate 18182 18188	number
+T1099	Concept 18192 18200	patients
+T1100	Action 18201 18212	experienced
+T1101	Concept 18214 18229	cytokine storms
+T1102	Concept 18240 18245	fatal
+R344	target Arg1:T1095 Arg2:T1093
+R345	target Arg1:T1095 Arg2:T1096
+R346	arg Arg1:T1098 Arg2:T1096
+R347	target Arg1:T1100 Arg2:T1101
+T1103	Concept 18246 18253	RT-LAMP
+T1104	Concept 18266 18278	requirements
+T1105	Action 18313 18322	screening
+T1106	Action 18327 18334	testing
+T1107	Concept 18339 18347	COVID-19
+T1108	Concept 18363 18370	exposed
+T1109	Concept 18371 18382	populations
+R348	target Arg1:T1105 Arg2:T1107
+R349	target Arg1:T1106 Arg2:T1107
+T1110	Concept 18393 18399	RNAseq
+T1111	Action 18400 18410	identified
+T1112	Concept 18414 18417	RNA
+T1113	Concept 18418 18425	viruses
+T1114	Concept 18445 18456	established
+T1115	Concept 18457 18470	pathogenicity
+T1116	Concept 18478 18483	lungs
+T1117	Concept 18493 18496	RNA
+T1118	Concept 18497 18510	intermediates
+T1119	Concept 18514 18518	five
+T1120	Concept 18519 18530	DNA viruses
+T1121	Concept 18541 18550	uncertain
+T1122	Concept 18551 18560	pulmonary
+T1123	Concept 18561 18574	pathogenicity
+T1124	Concept 18575 18576	7
+T1125	Concept 18577 18581	mNGS
+T1126	Concept 18585 18590	field
+T1127	Concept 18591 18599	settings
+T1128	Concept 18634 18649	countermeasures
+T1129	Concept 18668 18679	Ebola virus
+T1130	Concept 18680 18688	epidemic
+T1131	Concept 18692 18703	West Africa
+T1132	Action 18721 18731	sequencing
+T1133	Concept 18735 18743	COVID-19
+T1134	Concept 18744 18749	cases
+T1135	Concept 18762 18771	developed
+T1136	Concept 18781 18795	Southeast Asia
+T1137	Action 18823 18836	understanding
+T1138	Concept 18840 18848	pathogen
+T1139	Concept 18849 18861	transmission
+T1140	Concept 18863 18869	origin
+T1141	Concept 18875 18884	evolution
+R350	domain Arg1:T1124 Arg2:T1125
+*	same-as T1124 T1125
+R351	in-context Arg1:T1124 Arg2:T1125
+*	same-as T1125 T1124
+R352	target Arg1:T1130 Arg2:T1129
+R353	in-place Arg1:T1130 Arg2:T1131
+R354	in-place Arg1:T1133 Arg2:T1131
+R355	arg Arg1:T1134 Arg2:T1129
+R356	in-place Arg1:T1134 Arg2:T1131
+T1142	Concept 18889 18899	mechanisms
+T1143	Concept 18911 18916	virus
+T1144	Concept 18925 18938	exacerbations
+T1145	Concept 18942 18946	COPD
+T1146	Concept 18955 18962	factors
+T1147	Action 18968 18973	drive
+T1148	Concept 18974 18986	inflammation
+T1149	Concept 18991 18999	clinical
+T1150	Concept 19000 19008	severity
+T1151	Concept 19022 19030	episodes
+T1152	Concept 19042 19052	understood
+R357	target Arg1:T1144 Arg2:T1145
+T1153	Concept 19080 19085	study
+T1154	Concept 19113 19118	phase
+T1155	Concept 19122 19130	COVID-19
+T1156	Concept 19131 19139	epidemic
+T1157	Predicate 19145 19149	most
+T1158	Concept 19153 19160	Chinese
+T1159	Concept 19161 19165	HCWs
+T1160	Action 19175 19181	facing
+T1161	Concept 19191 19197	severe
+T1162	Concept 19198 19207	situation
+T1163	Concept 19234 19256	psychological response
+R358	target Arg1:T1154 Arg2:T1155
+R359	arg Arg1:T1154 Arg2:T1155
+R360	target Arg1:T1156 Arg2:T1155
+R361	target Arg1:T1156 Arg2:T1159
+R362	arg Arg1:T1157 Arg2:T1155
+R363	arg Arg1:T1157 Arg2:T1158
+R364	domain Arg1:T1157 Arg2:T1159
+R365	arg Arg1:T1157 Arg2:T1163
+T1164	Concept 19263 19273	SARS-COV-2
+T1165	Concept 19274 19283	infection
+T1166	Predicate 19299 19304	major
+T1167	Concept 19323 19328	liver
+T1168	Concept 19329 19335	injury
+T1169	Concept 19354 19362	elevated
+T1170	Concept 19363 19368	IL-33
+T1171	Concept 19369 19375	levels
+T1172	Concept 19379 19386	smokers
+T1173	Concept 19390 19399	asthmatic
+T1174	Concept 19400 19408	patients
+T1175	Action 19409 19416	provoke
+T1176	Action 19418 19424	hypers
+T1177	Concept 19438 19444	type 1
+T1178	Concept 19445 19462	inflammatory cues
+T1179	Concept 19476 19481	virus
+T1180	Concept 19482 19491	infection
+R366	target Arg1:T1169 Arg2:T1170
+R367	arg Arg1:T1169 Arg2:T1170
+R368	target Arg1:T1169 Arg2:T1171
+R369	causes Arg1:T1180 Arg2:T1176
+T1181	Concept 19492 19498	Comorb
+T1182	Concept 19547 19555	severity
+T1183	Concept 19559 19567	COVID-19
+R370	target Arg1:T1182 Arg2:T1183
+R371	arg Arg1:T1182 Arg2:T1183
+R372	causes Arg1:T1183 Arg2:T1181
+T1184	Concept 19580 19601	seasonality factor of
+T1185	Concept 19602 19605	0.5
+R373	domain Arg1:T1185 Arg2:T1184
+T1186	Concept 19764 19772	COVID-19
+T1187	Action 19777 19783	spread
+T1188	Action 19811 19821	identified
+T1189	Concept 19825 19830	Wuhan
+T1190	Concept 19877 19885	severity
+T1191	Concept 19889 19899	SARS-CoV-2
+T1192	Action 19900 19905	binds
+T1193	Concept 19909 19923	ACE2 receptors
+T1194	Concept 19945 19953	affinity
+T1195	Concept 19959 19967	SARS-CoV
+T1196	Action 19968 19973	binds
+T1197	Concept 19986 19995	receptors
+R374	target Arg1:T1187 Arg2:T1186
+*	same-as T1191 T1195
+R375	subject Arg1:T1196 Arg2:T1191
+T1198	Concept 20002 20006	S416
+T1199	Concept 20028 20037	efficient
+T1200	Concept 20038 20046	chemical
+T1201	Concept 20062 20072	SARS-CoV-2
+T1202	Concept 20080 20088	cellular
+T1203	Concept 20089 20094	level
+T1204	Concept 20105 20111	Fudan-
+T1205	Concept 20111 20115	CCDC
+*	same-as T1204 T1205
+T1206	Action 20369 20382	understanding
+T1207	Concept 20390 20406	epidemic dynamic
+T1208	Action 20433 20440	control
+T1209	Action 20445 20455	prevention
+T1210	Concept 20459 20467	COVID-19
+T1211	Concept 20485 20495	infectious
+T1212	Concept 20496 20504	diseases
+T1213	Concept 20512 20525	dynamic model
+T1214	Predicate 20549 20555	oldest
+T1215	Concept 20571 20583	mathematical
+T1216	Concept 20584 20589	tools
+T1217	Action 20593 20598	study
+T1218	Concept 20610 20630	epidemic development
+R376	target Arg1:T1206 Arg2:T1207
+R377	target Arg1:T1208 Arg2:T1210
+R378	target Arg1:T1208 Arg2:T1211
+R379	target Arg1:T1209 Arg2:T1210
+R380	target Arg1:T1209 Arg2:T1211
+*	same-as T1210 T1218
+T1219	Concept 20635 20642	results
+T1220	Concept 20652 20667	incubation mean
+T1221	Concept 20672 20678	median
+T1222	Concept 20682 20690	COVID-19
+T1223	Concept 20695 20699	5.84
+R381	target Arg1:T1221 Arg2:T1222
+T1224	Concept 20790 20801	Lung injury
+T1225	Action 20817 20823	insult
+T1226	Concept 20831 20846	lung epithelium
+T1227	Action 20854 20862	attacked
+T1228	Concept 20866 20883	SARS-CoV-2 itself
+T1229	Concept 20895 20899	ACE2
+T1230	Concept 20917 20922	lungs
+T1231	Concept 20944 20950	common
+T1232	Concept 20951 20970	respiratory failure
+R382	is-a Arg1:T1224 Arg2:T1225
+R383	causes Arg1:T1225 Arg2:T1224
+R384	target Arg1:T1225 Arg2:T1226
+R385	target Arg1:T1225 Arg2:T1228
+R386	causes Arg1:T1225 Arg2:T1232
+R387	causes Arg1:T1227 Arg2:T1224
+R388	target Arg1:T1227 Arg2:T1228
+R389	causes Arg1:T1227 Arg2:T1232
+R390	causes Arg1:T1228 Arg2:T1224
+T1233	Action 20983 20991	employed
+T1234	Concept 20994 21008	Taq polymerase
+T1235	Concept 21009 21012	PCR
+T1236	Concept 21013 21023	stop assay
+T1237	Action 21027 21038	investigate
+T1238	Concept 21047 21071	9-amino acridine complex
+T1239	Action 21072 21081	formation
+T1240	Concept 21087 21094	SE-PGQs
+T1241	Action 21116 21120	stop
+T1242	Action 21125 21133	movement
+T1243	Concept 21137 21147	polymerase
+T1244	Concept 21148 21159	replication
+T1245	Concept 21160 21169	machinery
+R391	target Arg1:T1233 Arg2:T1234
+R392	target Arg1:T1233 Arg2:T1235
+R393	target Arg1:T1233 Arg2:T1238
+R394	is-a Arg1:T1236 Arg2:T1234
+*	same-as T1238 T1240
+R395	is-a Arg1:T1240 Arg2:T1234
+T1246	Concept 21180 21188	SARS-CoV
+T1247	Concept 21190 21194	K929
+T1248	Concept 21198 21201	HR1
+T1249	Action 21202 21207	binds
+T1250	Concept 21211 21216	E1163
+T1251	Concept 21220 21223	HR2
+T1252	Concept 21234 21245	salt bridge
+R396	is-a Arg1:T1247 Arg2:T1246
+R397	causes Arg1:T1249 Arg2:T1246
+R398	subject Arg1:T1249 Arg2:T1247
+R399	subject Arg1:T1249 Arg2:T1248
+R400	subject Arg1:T1249 Arg2:T1250
+R401	target Arg1:T1249 Arg2:T1250
+T1253	Concept 21331 21335	mild
+T1254	Concept 21336 21344	COVID-19
+T1255	Concept 21345 21353	patients
+T1256	Concept 21372 21381	pneumonia
+T1257	Concept 21385 21392	imaging
+T1258	Concept 21398 21405	imaging
+T1259	Concept 21423 21431	patients
+T1260	Concept 21436 21444	atypical
+T1261	Action 21446 21455	screening
+T1262	Concept 21465 21476	CT findings
+T1263	Concept 21505 21514	physician
+T1264	Concept 21517 21527	experience
+T1265	Concept 21536 21549	effectiveness
+R402	target Arg1:T1253 Arg2:T1254
+T1266	Concept 21565 21574	simulated
+T1267	Concept 21575 21586	experiments
+T1268	Concept 21602 21608	genome
+T1269	Concept 21609 21615	length
+T1270	Action 21620 21624	read
+T1271	Concept 21625 21631	length
+T1272	Concept 21632 21644	influence VI
+T1273	Concept 21650 21663	model outputs
+T1274	Action 21686 21697	identifying
+T1275	Concept 21698 21703	areas
+T1276	Concept 21707 21711	risk
+T1277	Action 21715 21727	transmission
+T1278	Concept 21731 21737	dengue
+T1279	Concept 21749 21756	malaria
+T1280	Concept 21758 21771	Gething et al
+R403	target Arg1:T1274 Arg2:T1275
+R404	target Arg1:T1274 Arg2:T1277
+R405	target Arg1:T1276 Arg2:T1277
+R406	arg Arg1:T1276 Arg2:T1278
+R407	target Arg1:T1277 Arg2:T1278
+R408	target Arg1:T1277 Arg2:T1279
+T1281	Concept 21777 21787	SARS-CoV-2
+T1282	Concept 21788 21793	virus
+T1283	Concept 21801 21807	severe
+T1284	Concept 21808 21827	respiratory disease
+T1285	Action 21845 21851	spread
+T1286	Concept 21857 21863	person
+T1287	Concept 21867 21873	person
+T1288	Concept 21900 21905	death
+R409	is-a Arg1:T1281 Arg2:T1282
+R410	causes Arg1:T1281 Arg2:T1288
+R411	causes Arg1:T1285 Arg2:T1281
+R412	target Arg1:T1285 Arg2:T1281
+R413	causes Arg1:T1285 Arg2:T1288
+T1289	Concept 21922 21926	main
+T1290	Concept 21933 21951	transmission route
+T1291	Concept 21955 21965	SARS-CoV-2
+T1292	Concept 21977 21988	respiratory
+T1293	Concept 21989 22001	air droplets
+R414	target Arg1:T1290 Arg2:T1291
+R415	arg Arg1:T1290 Arg2:T1291
+T1294	Concept 22007 22015	estimate
+T1295	Concept 22042 22053	case series
+T1296	Concept 22057 22060	ICU
+T1297	Concept 22061 22069	patients
+T1298	Concept 22075 22100	acute respiratory failure
+T1299	Concept 22106 22117	Influenza A
+T1300	Concept 22139 22149	mechanical
+T1301	Concept 22150 22161	ventilation
+T1302	Concept 22173 22176	CFR
+T1303	Concept 22180 22183	46%
+T1304	Concept 22185 22192	156/337
+R416	is-a Arg1:T1297 Arg2:T1294
+R417	in-context Arg1:T1297 Arg2:T1298
+R418	target Arg1:T1298 Arg2:T1299
+R419	causes Arg1:T1299 Arg2:T1295
+R420	causes Arg1:T1299 Arg2:T1298
+T1305	Concept 22203 22217	bioinformatics
+T1306	Concept 22218 22226	analyses
+T1307	Concept 22251 22260	2019-nCoV
+T1308	Concept 22261 22267	genome
+T1309	Concept 22271 22273	88
+T1310	Concept 22275 22284	identical
+T1311	Concept 22294 22297	bat
+T1312	Concept 22306 22312	severe
+T1313	Concept 22313 22339	acute respiratory syndrome
+T1314	Concept 22341 22345	SARS
+T1315	Concept 22352 22365	coronaviruses
+T1316	Concept 22367 22381	bat-SL-CoVZC45
+T1317	Concept 22386 22401	bat-SL-CoVZXC21
+T1318	Concept 22404 22406	79
+T1319	Concept 22406 22407	%
+T1320	Concept 22413 22421	SARS-CoV
+T1321	Concept 22427 22429	50
+T1322	Concept 22436 22440	MERS
+*	same-as T1307 T1315
+*	same-as T1307 T1316
+*	same-as T1307 T1317
+*	same-as T1315 T1316
+*	same-as T1315 T1317
+*	same-as T1316 T1307
+*	same-as T1317 T1307
+*	same-as T1317 T1316
+*	same-as T1320 T1314
+*	same-as T1320 T1316
+*	same-as T1320 T1317
+T1323	Concept 22441 22449	MERS-CoV
+T1324	Concept 22462 22484	Murine hepatitis virus
+T1325	Concept 22489 22497	SARS-CoV
+T1326	Concept 22514 22529	Betacoronavirus
+R421	is-a Arg1:T1324 Arg2:T1323
+R422	is-a Arg1:T1324 Arg2:T1326
+T1327	Action 22545 22553	analysis
+T1328	Concept 22557 22576	polymerase subunits
+T1329	Concept 22588 22599	Nidovirales
+T1330	Concept 22600 22605	order
+T1331	Concept 22622 22635	coronaviruses
+T1332	Concept 22652 22661	conserved
+T1333	Concept 22662 22670	sequence
+T1334	Concept 22690 22696	region
+T1335	Concept 22698 22700	AN
+T1336	Concept 22702 22710	SARS-CoV
+T1337	Concept 22793 22803	functional
+T1338	Concept 22804 22816	MTase region
+T1339	Action 22830 22840	eliminated
+T1340	Concept 22846 22854	plasmids
+T1341	Concept 22862 22871	evolution
+T1342	Concept 22890 22895	cells
+T1343	Concept 22903 22908	first
+T1344	Concept 22909 22919	cell cycle
+T1345	Action 22920 22927	entered
+T1346	Concept 22928 22935	S phase
+T1347	Predicate 22945 22952	amounts
+T1348	Concept 22956 22962	loaded
+T1349	Concept 22963 22965	MC
+R423	subject Arg1:T1345 Arg2:T1342
+R424	target Arg1:T1345 Arg2:T1346
+R425	target Arg1:T1345 Arg2:T1347
+R426	target Arg1:T1345 Arg2:T1349
+T1350	Concept 22971 22984	stoichiometry
+T1351	Concept 22992 22997	Ca 2+
+T1352	Concept 23005 23016	MERS-CoV FP
+T1353	Concept 23062 23067	FP1_2
+T1354	Concept 23071 23082	SARS-CoV FP
+*	same-as T1353 T1354
+T1355	Predicate 23179 23189	proportion
+T1356	Concept 23193 23201	patients
+T1357	Concept 23209 23220	multi-organ
+T1358	Action 23221 23227	damage
+T1359	Concept 23232 23243	dysfunction
+R427	domain Arg1:T1355 Arg2:T1356
+T1360	Concept 23250 23257	regions
+T1361	Action 23267 23273	damage
+T1362	Concept 23277 23311	left hemisphere posterior superior
+T1363	Concept 23313 23319	middle
+T1364	Concept 23324 23346	inferior temporal gyri
+T1365	Concept 23348 23355	angular
+T1366	Concept 23356 23361	gyrus
+T1367	Concept 23366 23376	underlying
+T1368	Concept 23377 23389	white matter
+T1369	Concept 23391 23423	superior longitudinal fasciculus
+T1370	Concept 23425 23457	inferior longitudinal fasciculus
+T1371	Concept 23463 23499	inferior fronto-occipital fasciculus
+R428	target Arg1:T1361 Arg2:T1362
+*	same-as T1367 T1371
+T1372	Concept 23501 23504	MSA
+T1373	Concept 23531 23539	ORF3b of
+T1374	Concept 23540 23550	SARS-CoV-2
+T1375	Concept 23568 23573	ORF3b
+T1376	Concept 23574 23581	protein
+T1377	Concept 23585 23595	Human SARS
+T1378	Concept 23603 23608	ORF3b
+T1379	Concept 23609 23616	protein
+T1380	Concept 23638 23646	sequence
+T1381	Concept 23647 23657	similarity
+T1382	Concept 23666 23668	54
+R429	is-a Arg1:T1373 Arg2:T1374
+R430	part-of Arg1:T1373 Arg2:T1374
+*	same-as T1373 T1374
+R431	has-property Arg1:T1373 Arg2:T1377
+R432	is-a Arg1:T1375 Arg2:T1376
+R433	part-of Arg1:T1375 Arg2:T1377
+R434	is-a Arg1:T1378 Arg2:T1376
+R435	part-of Arg1:T1378 Arg2:T1377
+R436	is-a Arg1:T1378 Arg2:T1380
+T1383	Predicate 23717 23726	beginning
+T1384	Concept 23734 23738	true
+T1385	Concept 23739 23756	infectious period
+T1386	Predicate 23778 23783	onset
+T1387	Concept 23787 23795	symptoms
+T1388	Action 23827 23834	measure
+T1389	Action 23856 23864	reported
+T1390	Concept 23872 23879	studies
+T1391	Action 23885 23891	report
+T1392	Concept 23892 23898	values
+T1393	Concept 23907 23924	incubation period
+R437	arg Arg1:T1383 Arg2:T1384
+R438	target Arg1:T1383 Arg2:T1385
+R439	target Arg1:T1391 Arg2:T1385
+R440	target Arg1:T1391 Arg2:T1387
+R441	subject Arg1:T1391 Arg2:T1390
+T1394	Concept 23929 23937	dynamics
+T1395	Concept 23945 23949	full
+T1396	Concept 23950 23956	system
+T1397	Concept 23998 24008	mean-field
+T1398	Concept 24009 24012	ODE
+T1399	Concept 24034 24045	transitions
+T1400	Concept 24051 24062	coexistence
+T1401	Concept 24075 24078	VDR
+T1402	Concept 24088 24092	host
+T1403	Concept 24093 24102	dominance
+T1404	Concept 24106 24123	carrying capacity
+T1405	Concept 24136 24139	HCR
+R442	in-place Arg1:T1394 Arg2:T1395
+*	same-as T1397 T1398
+R443	in-context Arg1:T1397 Arg2:T1398
+R444	target Arg1:T1399 Arg2:T1398
+R445	in-context Arg1:T1399 Arg2:T1398
+R446	target Arg1:T1399 Arg2:T1402
+R447	in-time Arg1:T1399 Arg2:T1404
+T1406	Concept 24163 24171	findings
+T1407	Concept 24177 24181	1099
+T1408	Concept 24182 24187	cases
+T1409	Concept 24191 24201	SARS-CoV-2
+T1410	Concept 24202 24211	pneumonia
+T1411	Concept 24247 24257	SARS-CoV-2
+T1412	Concept 24258 24267	infection
+T1413	Action 24268 24277	clustered
+T1414	Concept 24285 24291	groups
+T1415	Concept 24295 24301	humans
+T1416	Concept 24311 24318	contact
+T1417	Action 24343 24349	affect
+T1418	Concept 24350 24355	older
+T1419	Concept 24356 24359	men
+T1420	Concept 24365 24378	comorbidities
+R448	domain Arg1:T1408 Arg2:T1409
+R449	is-a Arg1:T1408 Arg2:T1409
+R450	target Arg1:T1408 Arg2:T1409
+R451	arg Arg1:T1408 Arg2:T1409
+R452	causes Arg1:T1409 Arg2:T1411
+R453	target Arg1:T1413 Arg2:T1411
+R454	in-place Arg1:T1413 Arg2:T1415
+R455	target Arg1:T1417 Arg2:T1409
+R456	target Arg1:T1417 Arg2:T1411
+R457	subject Arg1:T1417 Arg2:T1411
+R458	target Arg1:T1417 Arg2:T1419
+R459	target Arg1:T1420 Arg2:T1411
+T1421	Concept 24379 24382	DBP
+T1422	Concept 24388 24403	multifunctional
+T1423	Concept 24404 24411	protein
+T1424	Concept 24433 24442	vitamin D
+T1425	Action 24444 24449	binds
+T1426	Concept 24450 24455	actin
+T1427	Concept 24470 24475	actin
+T1428	Concept 24476 24485	scavenger
+T1429	Action 24496 24501	binds
+T1430	Concept 24502 24513	fatty acids
+T1431	Action 24517 24526	comparing
+T1432	Concept 24537 24543	values
+T1433	Concept 24559 24574	2019-nCoV S-RBD
+T1434	Action 24575 24582	reaches
+T1435	Concept 24589 24591	73
+T1436	Concept 24600 24616	binding strength
+T1437	Concept 24620 24634	SARS-CoV S-RBD
+T1438	Concept 24638 24642	ACE2
+R460	subject Arg1:T1434 Arg2:T1433
+R461	subject Arg1:T1434 Arg2:T1435
+R462	target Arg1:T1434 Arg2:T1436
+R463	subject Arg1:T1434 Arg2:T1437
+T1439	Concept 24659 24668	NP-exo WT
+T1440	Concept 24673 24679	NP-exo
+T1441	Concept 24680 24686	mutant
+T1442	Concept 24687 24694	viruses
+T1443	Concept 24722 24741	infectious particle
+T1444	Concept 24746 24750	3600
+T1445	Concept 24755 24760	23000
+T1446	Concept 24761 24763	NP
+T1447	Concept 24764 24767	RNA
+T1448	Concept 24768 24774	copies
+T1449	Concept 24789 24802	Domestication
+T1450	Concept 24803 24809	impair
+T1451	Concept 24813 24818	yeast
+T1452	Concept 24819 24830	sporulation
+T1453	Concept 24844 24849	truly
+T1454	Concept 24850 24857	seismic
+T1455	Action 24858 24864	change
+T1456	Action 24872 24879	biology
+T1457	Concept 24887 24895	organism
+R464	target Arg1:T1450 Arg2:T1452
+R465	in-context Arg1:T1455 Arg2:T1453
+T1458	Concept 24909 24920	statistical
+T1459	Concept 24921 24929	analysis
+T1460	Predicate 24946 24956	percentage
+T1461	Concept 24960 24980	PD-1 + CD8 + T cells
+T1462	Concept 24986 24998	ICU patients
+T1463	Concept 25039 25043	Non-
+T1464	Concept 25043 25046	ICU
+T1465	Concept 25047 25052	cases
+T1466	Concept 25057 25073	healthy controls
+T1467	Concept 25105 25115	SARS-CoV-2
+T1468	Concept 25116 25123	viruses
+T1469	Action 25124 25130	induce
+T1470	Concept 25131 25148	T cell exhaustion
+T1471	Concept 25152 25160	COVID-19
+T1472	Concept 25161 25169	patients
+T1473	Concept 25203 25206	ICU
+T1474	Concept 25207 25211	care
+R466	is-a Arg1:T1467 Arg2:T1459
+R467	target Arg1:T1469 Arg2:T1461
+T1475	Concept 25225 25235	enrichment
+T1476	Concept 25239 25246	glycine
+T1477	Concept 25248 25249	G
+T1478	Concept 25252 25258	serine
+T1479	Concept 25260 25261	S
+T1480	Concept 25275 25281	acidic
+T1481	Concept 25282 25290	residues
+T1482	Concept 25291 25304	glutamic acid
+T1483	Concept 25306 25307	E
+T1484	Concept 25313 25326	aspartic acid
+T1485	Concept 25328 25329	D
+T1486	Concept 25336 25342	rounds
+T1487	Concept 25368 25375	library
+R468	target Arg1:T1475 Arg2:T1476
+R469	target Arg1:T1475 Arg2:T1484
+T1488	Concept 25415 25427	S-29 protein
+T1489	Concept 25433 25441	SARS-CoV
+T1490	Action 25442 25448	shares
+T1491	Concept 25459 25462	70%
+T1492	Concept 25463 25471	identity
+T1493	Concept 25481 25490	S-protein
+T1494	Concept 25496 25503	2019-30
+R470	subject Arg1:T1490 Arg2:T1489
+R471	arg Arg1:T1490 Arg2:T1491
+R472	subject Arg1:T1490 Arg2:T1493
+T1495	Concept 25519 25526	results
+T1496	Concept 25546 25553	monkeys
+T1497	Concept 25559 25569	SARS-CoV-2
+T1498	Concept 25570 25579	infection
+T1499	Concept 25586 25594	recovery
+T1500	Action 25608 25610	re
+T1501	Action 25611 25619	infected
+T1502	Concept 25634 25640	strain
+R473	causes Arg1:T1497 Arg2:T1498
+R474	target Arg1:T1498 Arg2:T1497
+R475	subject Arg1:T1498 Arg2:T1497
+R476	subject Arg1:T1501 Arg2:T1496
+R477	target Arg1:T1501 Arg2:T1497
+R478	target Arg1:T1501 Arg2:T1498
+T1503	Concept 25653 25661	temporal
+T1504	Action 25662 25673	association
+T1505	Concept 25682 25689	traffic
+T1506	Concept 25694 25702	COVID-19
+T1507	Action 25712 25722	confounded
+T1508	Concept 25732 25742	preventive
+T1509	Concept 25743 25751	measures
+T1510	Concept 25771 25786	self-quarantine
+T1511	Concept 25809 25818	face mask
+T1512	Concept 25823 25840	hand sanitization
+R479	target Arg1:T1504 Arg2:T1505
+R480	target Arg1:T1504 Arg2:T1506
+R481	arg Arg1:T1504 Arg2:T1506
+R482	target Arg1:T1504 Arg2:T1512
+R483	is-a Arg1:T1512 Arg2:T1508
+R484	is-a Arg1:T1512 Arg2:T1509
+T1513	Concept 25860 25875	PARP1 inhibitor
+T1514	Concept 25876 25882	CVL218
+T1515	Action 25883 25893	discovered
+T1516	Concept 25911 25915	drug
+T1517	Action 25916 25919	rep
+T1518	Concept 25928 25937	framework
+T1519	Concept 25951 25972	therapeutic potential
+T1520	Action 25981 25990	treatment
+T1521	Concept 25994 26002	COVID-19
+R485	target Arg1:T1520 Arg2:T1521
+T1522	Concept 26003 26009	Infect
+T1523	Concept 26012 26016	cell
+T1524	Concept 26017 26021	foci
+T1525	Action 26027 26035	detected
+T1526	Concept 26036 26042	42-108
+T1527	Concept 26043 26048	46 hp
+R486	is-a Arg1:T1523 Arg2:T1524
+R487	target Arg1:T1525 Arg2:T1524
+R488	target Arg1:T1525 Arg2:T1526
+*	same-as T1526 T1527
+R489	domain Arg1:T1526 Arg2:T1527
+T1528	Concept 26065 26066	K
+T1529	Concept 26066 26070	276R
+T1530	Concept 26111 26112	G
+T1531	Concept 26168 26175	overall
+T1532	Concept 26321 26326	sites
+T1533	Concept 26341 26346	short
+T1534	Concept 26347 26352	helix
+T1535	Concept 26363 26370	changes
+T1536	Concept 26390 26395	human
+T1537	Concept 26396 26404	SARS-CoV
+T1538	Concept 26442 26451	monocytes
+T1539	Concept 26456 26467	macrophages
+T1540	Action 26472 26479	produce
+T1541	Concept 26480 26496	pro-inflammatory
+T1542	Concept 26497 26505	cytokine
+T1543	Concept 26513 26544	murine hepatitis virus strain-3
+T1544	Concept 26545 26554	infection
+T1545	Concept 26568 26578	SARS-CoV-2
+T1546	Action 26584 26592	triggers
+T1547	Concept 26593 26601	cytokine
+T1548	Action 26602 26609	release
+T1549	Concept 26615 26624	monocytes
+T1550	Concept 26629 26640	macrophages
+T1551	Concept 26644 26652	COVID-19
+T1552	Concept 26653 26661	patients
+T1553	Action 26675 26688	investigation
+T1554	Concept 26725 26733	hospital
+R490	causes Arg1:T1538 Arg2:T1545
+R491	subject Arg1:T1540 Arg2:T1538
+R492	target Arg1:T1540 Arg2:T1541
+R493	target Arg1:T1540 Arg2:T1542
+R494	target Arg1:T1540 Arg2:T1547
+R495	causes Arg1:T1543 Arg2:T1538
+R496	causes Arg1:T1543 Arg2:T1545
+R497	causes Arg1:T1543 Arg2:T1549
+R498	target Arg1:T1546 Arg2:T1547
+T1555	Action 26757 26766	increased
+T1556	Action 26767 26777	expression
+T1557	Concept 26781 26789	patients
+T1558	Concept 26795 26804	confirmed
+T1559	Concept 26805 26809	LRTI
+T1560	Concept 26810 26819	pathogens
+R499	target Arg1:T1556 Arg2:T1559
+R500	in-context Arg1:T1557 Arg2:T1558
+T1561	Concept 26845 26853	epidemic
+T1562	Action 26858 26864	spread
+T1563	Concept 26879 26893	epidemic areas
+T1564	Concept 26895 26900	Hubei
+T1565	Concept 26901 26909	Province
+T1566	Concept 26914 26919	Wuhan
+T1567	Concept 26920 26924	city
+T1568	Concept 26935 26944	provinces
+T1569	Concept 26949 26955	cities
+T1570	Concept 26963 26966	new
+T1571	Concept 26967 26977	successive
+T1572	Concept 26978 26983	cases
+T1573	Concept 26987 26995	COVID-19
+T1574	Concept 26996 27005	infection
+T1575	Action 27016 27024	reported
+R501	target Arg1:T1562 Arg2:T1561
+R502	target Arg1:T1572 Arg2:T1573
+T1576	Action 27029 27040	observation
+T1577	Concept 27044 27050	glycan
+T1578	Concept 27055 27073	fatty acid ligands
+T1579	Concept 27077 27093	S1-S2 interfaces
+T1580	Concept 27120 27127	ligands
+T1581	Action 27131 27141	modulating
+T1582	Concept 27148 27158	interfaces
+T1583	Concept 27189 27195	glycan
+T1584	Concept 27200 27210	fatty acid
+T1585	Concept 27211 27223	interactions
+T1586	Action 27233 27242	stabilize
+T1587	Concept 27247 27252	viral
+T1588	Concept 27253 27258	spike
+R503	target Arg1:T1576 Arg2:T1577
+R504	target Arg1:T1586 Arg2:T1583
+T1589	Concept 27288 27299	Coronavirus
+T1590	Concept 27316 27320	SARS
+T1591	Concept 27325 27333	COVID-19
+T1592	Action 27370 27377	improve
+T1593	Concept 27382 27393	oxygenation
+T1594	Concept 27401 27407	severe
+T1595	Concept 27408 27413	cases
+T1596	Concept 27415 27422	iNO gas
+T1597	Action 27423 27430	retains
+T1598	Concept 27438 27447	antiviral
+T1599	Concept 27465 27474	2019-nCoV
+T1600	Concept 27491 27501	SARS-CoV-2
+*	same-as T1591 T1600
+T1601	Concept 27509 27524	crystal packing
+T1602	Concept 27532 27541	NSP7-NSP8
+T1603	Concept 27542 27551	structure
+T1604	Concept 27557 27564	authors
+T1605	Action 27582 27591	formation
+T1606	Concept 27597 27615	hetero-hexadecamer
+T1607	Concept 27616 27623	protein
+T1608	Concept 27645 27653	findings
+T1609	Concept 27670 27677	drastic
+T1610	Action 27678 27684	change
+T1611	Concept 27688 27697	infection
+T1612	Concept 27698 27703	rates
+R505	target Arg1:T1610 Arg2:T1612
+T1613	Action 27885 27894	treatment
+T1614	Concept 27898 27906	COVID-19
+T1615	Action 27914 27924	prevention
+T1616	Concept 27928 27945	kidney impairment
+T1617	Concept 27966 27985	hemodynamic support
+T1618	Action 27990 27998	avoiding
+T1619	Concept 27999 28010	nephrotoxic
+T1620	Concept 28011 28016	drugs
+T1621	Concept 28034 28043	important
+T1622	Concept 28048 28053	early
+T1623	Concept 28054 28071	renal replacement
+T1624	Concept 28072 28081	treatment
+T1625	Action 28086 28093	improve
+T1626	Concept 28098 28106	patients
+T1627	Concept 28108 28117	prognosis
+R506	target Arg1:T1613 Arg2:T1614
+R507	target Arg1:T1615 Arg2:T1616
+R508	has-property Arg1:T1618 Arg2:T1621
+R509	target Arg1:T1625 Arg2:T1627
+R510	target Arg1:T1627 Arg2:T1614
+T1628	Concept 28125 28133	hospital
+T1629	Action 28135 28148	establishment
+T1630	Concept 28152 28155	NCP
+T1631	Concept 28156 28166	department
+T1632	Concept 28177 28191	administrative
+T1633	Action 28194 28197	led
+T1634	Concept 28205 28214	president
+T1635	Concept 28227 28235	directly
+T1636	Action 28252 28259	conduct
+T1637	Concept 28263 28284	respiratory professor
+T1638	Action 28300 28307	success
+T1639	Action 28311 28321	management
+T1640	Action 28326 28335	treatment
+T1641	Concept 28339 28347	COVID-19
+T1642	Concept 28348 28356	patients
+R511	is-a Arg1:T1629 Arg2:T1628
+*	same-as T1629 T1630
+R512	target Arg1:T1629 Arg2:T1631
+*	same-as T1629 T1639
+R513	target Arg1:T1640 Arg2:T1641
+T1643	Concept 28370 28380	rod-shaped
+T1644	Concept 28381 28383	Ce
+T1645	Concept 28384 28388	GAGG
+T1646	Concept 28389 28397	crystals
+T1647	Action 28398 28407	implanted
+T1648	Concept 28417 28422	brain
+T1649	Concept 28427 28431	four
+T1650	Concept 28432 28437	weeks
+T1651	Action 28452 28462	activation
+T1652	Concept 28466 28477	glial cells
+T1653	Concept 28500 28513	biocompatible
+T1654	Concept 28514 28526	optic fibers
+R514	target Arg1:T1651 Arg2:T1652
+T1655	Action 28530 28539	evaluated
+T1656	Concept 28550 28559	solutions
+T1657	Action 28563 28568	solve
+T1658	Concept 28575 28583	problems
+T1659	Action 28602 28611	splitting
+T1660	Concept 28619 28627	original
+T1661	Concept 28628 28633	virus
+T1662	Concept 28634 28640	genome
+T1663	Action 28670 28677	merging
+T1664	Concept 28682 28692	prediction
+T1665	Concept 28708 28717	generated
+T1666	Concept 28718 28730	subsequences
+T1667	Concept 28740 28744	fast
+T1668	Concept 28749 28758	efficient
+T1669	Action 28759 28767	learning
+T1670	Concept 28771 28775	long
+T1671	Concept 28776 28785	sequences
+R515	target Arg1:T1659 Arg2:T1661
+T1672	Concept 28790 28795	novel
+T1673	Concept 28796 28807	coronavirus
+T1674	Concept 28826 28836	infectious
+T1675	Concept 28844 28861	incubation period
+T1676	Concept 28870 28878	symptoms
+T1677	Action 28883 28888	shown
+T1678	Concept 28896 28904	patients
+T1679	Concept 28924 28939	characteristics
+T1680	Concept 28956 28964	COVID-19
+T1681	Concept 28974 28988	close relative
+T1682	Concept 28989 28993	SARS
+T1683	Concept 29005 29015	increasing
+T1684	Action 29016 29022	threat
+T1685	Concept 29026 29032	global
+T1686	Concept 29033 29039	health
+T1687	Concept 29041 29044	WHO
+T1688	Concept 29067 29075	COVID-19
+T1689	Concept 29076 29084	epidemic
+T1690	Concept 29091 29097	global
+T1691	Concept 29098 29121	public health emergency
+R516	target Arg1:T1683 Arg2:T1684
+R517	in-context Arg1:T1684 Arg2:T1685
+*	same-as T1688 T1689
+T1692	Concept 29135 29148	conformations
+T1693	Concept 29174 29186	ligand bound
+T1694	Concept 29199 29202	RBD
+T1695	Concept 29214 29220	second
+T1696	Concept 29221 29233	conformation
+T1697	Action 29240 29245	clash
+T1698	Concept 29255 29268	ACE2 receptor
+R518	target Arg1:T1693 Arg2:T1694
+R519	target Arg1:T1697 Arg2:T1695
+R520	target Arg1:T1697 Arg2:T1698
+R521	is-a Arg1:T1698 Arg2:T1694
+T1699	Concept 29288 29299	therapeutic
+T1700	Concept 29310 29319	ritonavir
+T1701	Concept 29324 29333	lopinavir
+T1702	Concept 29337 29345	COVID-19
+T1703	Concept 29356 29367	coronavirus
+T1704	Concept 29368 29375	disease
+T1705	Concept 29424 29431	CEP_C30
+T1706	Concept 29439 29448	ritonavir
+T1707	Concept 29467 29475	efficacy
+T1708	Concept 29502 29511	darunavir
+T1709	Concept 29515 29525	SARS-CoV-2
+T1710	Concept 29544 29555	therapeutic
+T1711	Concept 29609 29613	PLVP
+T1712	Concept 29625 29631	genome
+T1713	Concept 29635 29645	SARS-CoV-2
+T1714	Concept 29683 29691	SARS-CoV
+T1715	Concept 29704 29706	79
+T1716	Concept 29711 29719	sequence
+T1717	Concept 29720 29728	identity
+T1718	Concept 29738 29739	M
+T1719	Concept 29741 29749	membrane
+T1720	Concept 29752 29753	N
+T1721	Concept 29755 29767	nucleocapsid
+T1722	Concept 29773 29774	E
+T1723	Concept 29776 29784	envelope
+T1724	Concept 29786 29794	proteins
+T1725	Concept 29808 29821	coronaviruses
+T1726	Concept 29832 29834	90
+T1727	Concept 29836 29844	sequence
+R522	is-a Arg1:T1721 Arg2:T1713
+R523	is-a Arg1:T1721 Arg2:T1725
+T1728	Action 29863 29872	examining
+T1729	Concept 29873 29881	SARS-CoV
+T1730	Concept 29882 29889	antigen
+T1731	Concept 29890 29898	staining
+T1732	Concept 29939 29959	antigen distribution
+T1733	Concept 29979 29986	Muc4 -/
+T1734	Concept 29990 29992	WT
+T1735	Concept 29993 29997	mice
+T1736	Concept 30008 30014	airway
+T1737	Concept 30018 30021	106
+T1738	Concept 30022 30033	parenchymal
+T1739	Concept 30034 30042	staining
+R524	target Arg1:T1728 Arg2:T1729
+R525	is-a Arg1:T1729 Arg2:T1731
+T1740	Action 30047 30056	emergence
+T1741	Concept 30062 30067	novel
+T1742	Concept 30068 30079	coronavirus
+T1743	Concept 30081 30091	SARS-CoV-2
+T1744	Concept 30096 30101	Wuhan
+T1745	Concept 30103 30108	China
+T1746	Concept 30118 30126	December
+T1747	Concept 30154 30166	transmission
+T1748	Concept 30203 30209	deaths
+R526	target Arg1:T1740 Arg2:T1741
+R527	target Arg1:T1740 Arg2:T1742
+R528	in-context Arg1:T1742 Arg2:T1741
+*	same-as T1742 T1743
+R529	is-a Arg1:T1743 Arg2:T1742
+T1749	Concept 30261 30262	9
+T1750	Predicate 30262 30263	%
+T1751	Concept 30271 30279	infected
+T1752	Concept 30280 30291	individuals
+T1753	Action 30296 30307	ascertained
+T1754	Action 30312 30320	reported
+T1755	Concept 30326 30335	infection
+T1756	Concept 30336 30349	fatality risk
+T1757	Concept 30351 30354	IFR
+R530	domain Arg1:T1749 Arg2:T1751
+R531	causes Arg1:T1755 Arg2:T1756
+T1758	Concept 30468 30480	asymptomatic
+T1759	Concept 30481 30490	infection
+T1760	Concept 30510 30520	SARS-CoV-2
+T1761	Action 30535 30541	evolve
+T1762	Concept 30549 30554	virus
+T1763	Concept 30566 30575	influenza
+T1764	Action 30590 30596	latent
+T1765	Concept 30600 30606	humans
+R532	is-a Arg1:T1760 Arg2:T1762
+R533	target Arg1:T1761 Arg2:T1760
+R534	subject Arg1:T1761 Arg2:T1760
+T1766	Concept 30623 30627	Nsp8
+T1767	Concept 30628 30636	proteins
+T1768	Concept 30660 30664	long
+T1769	Concept 30665 30673	disorder
+T1770	Concept 30674 30681	segment
+T1771	Concept 30687 30689	44
+T1772	Concept 30693 30701	residues
+T1773	Concept 30710 30720	SARS-CoV-2
+T1774	Concept 30731 30735	SARS
+T1775	Concept 30740 30742	48
+T1776	Concept 30746 30754	residues
+T1777	Concept 30758 30765	Bat CoV
+R535	is-a Arg1:T1766 Arg2:T1767
+R536	causes Arg1:T1777 Arg2:T1774
+T1778	Concept 30768 30776	positive
+T1779	Concept 30777 30796	nasopharyngeal swab
+T1780	Concept 30797 30803	RT-PCR
+T1781	Concept 30808 30811	309
+T1782	Concept 30812 30820	COVID-19
+T1783	Concept 30830 30838	patients
+T1784	Action 30883 30889	infect
+*	same-as T1781 T1782
+R537	target Arg1:T1781 Arg2:T1782
+R538	subject Arg1:T1784 Arg2:T1779
+T1785	Concept 30901 30908	results
+T1786	Concept 30924 30935	preliminary
+T1787	Action 30936 30949	demonstration
+T1788	Concept 30953 30970	T cell exhaustion
+T1789	Concept 30978 30986	COVID-19
+T1790	Concept 30987 30996	infection
+T1791	Concept 31019 31029	aggressive
+T1792	Concept 31030 31048	early intervention
+T1793	Concept 31068 31076	patients
+T1794	Concept 31082 31085	low
+T1795	Concept 31086 31105	T lymphocyte counts
+R539	target Arg1:T1787 Arg2:T1788
+R540	target Arg1:T1790 Arg2:T1788
+R541	target Arg1:T1790 Arg2:T1789
+T1796	Predicate 31110 31115	rates
+T1797	Concept 31119 31131	co-infection
+T1798	Concept 31149 31156	viruses
+T1799	Concept 31158 31166	bacteria
+T1800	Concept 31171 31177	fungus
+T1801	Action 31198 31207	increased
+T1802	Concept 31211 31217	severe
+T1803	Concept 31218 31226	patients
+T1804	Concept 31232 31240	COVID-19
+T1805	Concept 31259 31265	severe
+T1806	Concept 31266 31274	patients
+R542	target Arg1:T1796 Arg2:T1797
+T1807	Concept 31283 31288	study
+T1808	Predicate 31290 31293	all
+T1809	Concept 31301 31309	patients
+T1810	Concept 31318 31338	basic kidney disease
+T1811	Concept 31349 31356	obvious
+T1812	Concept 31357 31368	abnormality
+T1813	Concept 31372 31386	renal function
+T1814	Action 31398 31413	hospitalization
+T1815	Concept 31417 31425	COVID-19
+T1816	Concept 31443 31451	patients
+T1817	Concept 31462 31465	ARF
+R543	is-a Arg1:T1808 Arg2:T1807
+R544	domain Arg1:T1808 Arg2:T1809
+R545	in-context Arg1:T1808 Arg2:T1810
+R546	has-property Arg1:T1808 Arg2:T1812
+R547	domain Arg1:T1808 Arg2:T1816
+R548	has-property Arg1:T1808 Arg2:T1817
+T1818	Predicate 31476 31481	batch
+T1819	Concept 31485 31493	clinical
+T1820	Concept 31494 31506	data reports
+T1821	Concept 31510 31520	SARS-CoV-2
+T1822	Concept 31521 31530	infection
+T1823	Concept 31531 31536	cases
+T1824	Concept 31540 31545	China
+T1825	Concept 31556 31571	cytokine storms
+T1826	Concept 31576 31590	critically ill
+T1827	Concept 31591 31599	patients
+R549	target Arg1:T1820 Arg2:T1821
+R550	is-a Arg1:T1823 Arg2:T1821
+R551	arg Arg1:T1823 Arg2:T1821
+R552	target Arg1:T1823 Arg2:T1821
+R553	in-place Arg1:T1823 Arg2:T1824
+T1828	Concept 31600 31604	CA12
+T1829	Concept 31624 31628	drug
+T1830	Concept 31629 31639	resistance
+T1831	Concept 31643 31651	multiple
+T1832	Concept 31652 31664	cancer types
+T1833	Concept 31666 31670	Boyd
+T1834	Concept 31833 31840	similar
+T1835	Concept 31841 31858	immune-regulating
+T1836	Concept 31867 31873	DHODHi
+T1837	Concept 31888 31896	COVID-19
+R554	arg Arg1:T1834 Arg2:T1835
+R555	domain Arg1:T1834 Arg2:T1835
+R556	arg Arg1:T1834 Arg2:T1836
+R557	domain Arg1:T1834 Arg2:T1836
+R558	arg Arg1:T1834 Arg2:T1837
+T1838	Concept 31962 31974	asymptomatic
+T1839	Concept 31978 31992	presymptomatic
+T1840	Concept 31993 31998	cases
+T1841	Concept 32029 32039	stem cells
+T1842	Concept 32051 32060	mammalian
+T1843	Concept 32061 32068	species
+T1844	Concept 32070 32073	bat
+T1845	Concept 32074 32078	RSCs
+T1846	Concept 32079 32081	27
+T1847	Action 32102 32112	responding
+T1848	Action 32120 32129	producing
+T1849	Concept 32130 32135	IFN-I
+T1850	Concept 32158 32179	interferon-stimulated
+T1851	Concept 32180 32187	28 gene
+T1852	Concept 32189 32192	ISG
+T1853	Concept 32194 32208	transcriptomic
+T1854	Concept 32209 32218	signature
+T1855	Concept 32236 32247	fundamental
+T1856	Concept 32268 32272	bats
+T1857	Concept 32286 32293	mammals
+R559	target Arg1:T1847 Arg2:T1849
+R560	target Arg1:T1848 Arg2:T1847
+R561	target Arg1:T1848 Arg2:T1849
+*	same-as T1851 T1849
+*	same-as T1851 T1852
+*	same-as T1851 T1853
+*	same-as T1851 T1857
+T1858	Concept 32300 32307	network
+T1859	Concept 32308 32326	proximity analysis
+T1860	Action 32347 32358	association
+T1861	Concept 32367 32377	Irbesartan
+T1862	Concept 32380 32387	targets
+T1863	Concept 32392 32396	HCoV
+T1864	Concept 32408 32412	host
+T1865	Concept 32413 32421	proteins
+T1866	Concept 32429 32434	human
+T1867	Concept 32435 32446	interactome
+R562	target Arg1:T1860 Arg2:T1861
+R563	target Arg1:T1860 Arg2:T1862
+R564	arg Arg1:T1860 Arg2:T1867
+T1868	Concept 32451 32476	World Health Organization
+T1869	Concept 32478 32481	WHO
+T1870	Concept 32501 32506	novel
+T1871	Concept 32507 32518	coronavirus
+T1872	Concept 32519 32527	outbreak
+T1873	Concept 32530 32536	global
+T1874	Concept 32537 32553	health emergency
+T1875	Action 32559 32570	benchmarked
+T1876	Concept 32596 32607	standard of
+T1877	Concept 32608 32612	care
+T1878	Concept 32613 32620	testing
+T1879	Concept 32650 32655	study
+T1880	Concept 32656 32666	enrollment
+T1881	Concept 32668 32672	mNGS
+T1882	Concept 32686 32689	100
+T1883	Concept 32689 32690	%
+T1884	Action 32691 32702	sensitivity
+T1885	Concept 32707 32716	microbial
+T1886	Action 32717 32726	detection
+T1887	Action 32741 32755	identification
+T1888	Concept 32769 32772	new
+T1889	Concept 32773 32778	viral
+T1890	Concept 32783 32792	bacterial
+T1891	Concept 32793 32802	pathogens
+T1892	Concept 32813 32815	15
+T1893	Concept 32817 32820	40%
+T1894	Concept 32822 32830	subjects
+T1895	Concept 32846 32854	negative
+T1896	Concept 32855 32862	testing
+R565	is-a Arg1:T1875 Arg2:T1878
+R566	entails Arg1:T1875 Arg2:T1896
+R567	target Arg1:T1887 Arg2:T1888
+R568	target Arg1:T1887 Arg2:T1891
+T1897	Concept 32884 32891	empiric
+T1898	Concept 32892 32900	regimens
+T1899	Action 32905 32909	lack
+T1900	Action 32910 32918	activity
+T1901	Concept 32930 32940	underlying
+T1902	Concept 32941 32948	microbe
+T1903	Concept 32961 32970	treatment
+T1904	Concept 32971 32978	failure
+T1905	Concept 32980 32987	disease
+T1906	Concept 32988 32999	progression
+T1907	Concept 33016 33023	adverse
+T1908	Concept 33024 33032	outcomes
+R569	target Arg1:T1900 Arg2:T1902
+R570	target Arg1:T1901 Arg2:T1902
+R571	target Arg1:T1906 Arg2:T1902
+R572	causes Arg1:T1906 Arg2:T1904
+T1909	Concept 33038 33042	AIPs
+T1910	Action 33048 33056	targeted
+T1911	Concept 33060 33068	multiple
+T1912	Concept 33069 33074	drugs
+T1913	Concept 33088 33139	heat shock protein 90 alpha family class A member 1
+T1914	Concept 33141 33149	HSP90AA1
+T1915	Concept 33155 33176	tumor necrosis factor
+T1916	Concept 33178 33181	TNF
+R573	target Arg1:T1910 Arg2:T1909
+*	same-as T1913 T1914
+T1917	Concept 33187 33196	empirical
+T1918	Concept 33197 33207	estimation
+T1919	Predicate 33222 33229	numbers
+T1920	Concept 33239 33248	confirmed
+T1921	Concept 33249 33257	COVID-19
+T1922	Concept 33258 33263	cases
+T1923	Concept 33282 33285	new
+T1924	Concept 33286 33295	infection
+T1925	Concept 33296 33300	case
+T1926	Action 33305 33313	decrease
+T1927	Concept 33328 33331	new
+T1928	Concept 33332 33337	cases
+R574	domain Arg1:T1919 Arg2:T1921
+T1929	Concept 33501 33516	binding surface
+T1930	Concept 33520 33528	olaparib
+T1931	Concept 33532 33548	SARS-CoV-2-N-NTD
+T1932	Concept 33596 33602	CVL218
+R575	target Arg1:T1929 Arg2:T1930
+*	same-as T1929 T1931
+R576	is-a Arg1:T1930 Arg2:T1929
+*	same-as T1930 T1931
+T1933	Concept 33604 33610	Expert
+T1934	Concept 33611 33620	consensus
+T1935	Concept 33635 33648	breastfeeding
+T1936	Concept 33664 33673	expressed
+T1937	Concept 33674 33684	breastmilk
+T1938	Concept 33689 33695	infant
+T1939	Action 33696 33703	feeding
+T1940	Concept 33708 33715	mothers
+T1941	Action 33716 33724	affected
+T1942	Concept 33728 33736	COVID-19
+T1943	Concept 33748 33759	informative
+T1944	Concept 33798 33803	women
+T1945	Concept 33809 33817	COVID-19
+T1946	Concept 33826 33837	symptomatic
+T1947	Concept 33855 33865	viral load
+T1948	Action 33874 33880	breast
+T1949	Action 33880 33884	feed
+T1950	Concept 33885 33891	babies
+T1951	Concept 33897 33904	unknown
+T1952	Concept 33905 33911	status
+R577	target Arg1:T1936 Arg2:T1937
+R578	in-place Arg1:T1936 Arg2:T1940
+R579	target Arg1:T1936 Arg2:T1950
+R580	in-context Arg1:T1940 Arg2:T1941
+R581	target Arg1:T1941 Arg2:T1940
+R582	arg Arg1:T1941 Arg2:T1942
+R583	target Arg1:T1941 Arg2:T1942
+R584	target Arg1:T1941 Arg2:T1945
+R585	arg Arg1:T1941 Arg2:T1945
+R586	target Arg1:T1941 Arg2:T1947
+R587	target Arg1:T1948 Arg2:T1950
+R588	subject Arg1:T1949 Arg2:T1944
+R589	target Arg1:T1949 Arg2:T1950
+R590	in-context Arg1:T1950 Arg2:T1951
+T1953	Action 33930 33936	robust
+T1954	Concept 33944 33950	fredox
+T1955	Concept 33956 33962	marker
+T1956	Concept 33967 33975	organism
+T1957	Concept 33976 33986	complexity
+T1958	Predicate 33997 34004	largest
+T1959	Concept 34005 34015	breakpoint
+T1960	Action 34037 34043	advent
+T1961	Concept 34047 34063	multicellularity
+R591	target Arg1:T1953 Arg2:T1954
+R592	in-context Arg1:T1955 Arg2:T1956
+T1962	Concept 34087 34103	immuno-depletion
+T1963	Predicate 34121 34125	risk
+T1964	Concept 34129 34134	death
+T1965	Concept 34139 34149	COVID-2019
+R593	arg Arg1:T1963 Arg2:T1964
+R594	arg Arg1:T1963 Arg2:T1965
+T1966	Concept 34159 34167	COVID-19
+T1967	Action 34168 34175	spreads
+T1968	Concept 34181 34186	human
+T1969	Concept 34190 34195	human
+T1970	Action 34222 34231	isolation
+T1971	Concept 34235 34241	people
+T1972	Concept 34243 34249	social
+T1973	Concept 34250 34259	avoidance
+T1974	Concept 34264 34274	quarantine
+T1975	Concept 34275 34283	policies
+T1976	Action 34292 34301	detection
+T1977	Concept 34305 34313	infected
+T1978	Concept 34314 34319	cases
+T1979	Action 34327 34333	reduce
+T1980	Concept 34342 34348	growth
+R595	target Arg1:T1967 Arg2:T1966
+R596	subject Arg1:T1967 Arg2:T1966
+R597	target Arg1:T1967 Arg2:T1968
+R598	target Arg1:T1967 Arg2:T1969
+R599	target Arg1:T1967 Arg2:T1977
+R600	causes Arg1:T1967 Arg2:T1980
+R601	target Arg1:T1970 Arg2:T1971
+R602	target Arg1:T1970 Arg2:T1977
+T1981	Action 34349 34355	Longer
+T1982	Concept 34356 34369	working times
+T1983	Concept 34381 34385	HCWs
+T1984	Action 34394 34399	spent
+T1985	Action 34413 34423	contacting
+T1986	Concept 34429 34438	confirmed
+T1987	Concept 34442 34451	suspected
+T1988	Concept 34452 34460	COVID-19
+T1989	Concept 34461 34469	patients
+T1990	Action 34481 34489	increase
+T1991	Action 34513 34521	infected
+T1992	Concept 34527 34535	COVID-19
+T1993	Concept 34564 34574	depressive
+T1994	Concept 34575 34583	symptoms
+T1995	Concept 34593 34607	family members
+R603	in-time Arg1:T1981 Arg2:T1982
+R604	target Arg1:T1985 Arg2:T1988
+R605	target Arg1:T1985 Arg2:T1992
+R606	target Arg1:T1991 Arg2:T1983
+R607	target Arg1:T1991 Arg2:T1988
+R608	target Arg1:T1991 Arg2:T1992
+R609	in-context Arg1:T1994 Arg2:T1983
+T1996	Concept 34608 34618	Nucleotide
+T1997	Concept 34619 34627	sequence
+T1998	Concept 34628 34638	preference
+T1999	Action 34639 34646	improve
+T2000	Concept 34647 34652	siRNA
+T2001	Action 34653 34662	silencing
+T2002	Concept 34663 34673	efficiency
+T2003	Concept 34677 34682	bases
+T2004	Concept 34697 34706	positions
+T2005	Concept 34714 34720	target
+T2006	Action 34721 34732	recognition
+T2007	Concept 34737 34745	cleavage
+R610	is-a Arg1:T1996 Arg2:T2000
+R611	is-a Arg1:T1996 Arg2:T2001
+R612	subject Arg1:T1999 Arg2:T1996
+R613	subject Arg1:T1999 Arg2:T1997
+R614	subject Arg1:T1999 Arg2:T1998
+R615	target Arg1:T1999 Arg2:T2000
+R616	subject Arg1:T1999 Arg2:T2000
+R617	target Arg1:T1999 Arg2:T2001
+R618	target Arg1:T2001 Arg2:T2003
+T2008	Concept 34754 34758	core
+T2009	Concept 34759 34766	genomic
+T2010	Concept 34767 34775	features
+T2011	Action 34780 34788	required
+T2012	Concept 34797 34802	virus
+T2013	Concept 34809 34819	functional
+T2014	Concept 34821 34830	accessory
+T2015	Concept 34831 34839	features
+T2016	Action 34844 34854	candidates
+T2017	Action 34866 34874	insights
+T2018	Action 34884 34891	drivers
+T2019	Concept 34899 34905	unique
+T2020	Concept 34906 34916	capacities
+T2021	Concept 34920 34930	SARS-CoV-2
+T2022	Concept 34946 34952	spread
+T2023	Concept 34957 34966	virulence
+R619	is-a Arg1:T2008 Arg2:T2009
+R620	is-a Arg1:T2008 Arg2:T2010
+R621	is-a Arg1:T2008 Arg2:T2011
+R622	target Arg1:T2022 Arg2:T2012
+R623	target Arg1:T2022 Arg2:T2021
+T2024	Concept 34993 35003	simplicity
+T2025	Concept 35005 35011	robust
+T2026	Concept 35031 35043	performances
+T2027	Concept 35049 35055	pcMNPs
+T2028	Concept 35062 35068	method
+T2029	Action 35108 35113	solve
+T2030	Concept 35118 35127	laborious
+T2031	Concept 35147 35167	viral RNA extraction
+T2032	Concept 35168 35178	operations
+T2033	Concept 35228 35238	throughput
+T2034	Concept 35239 35249	SARS-CoV-2
+T2035	Concept 35250 35269	molecular diagnosis
+R624	target Arg1:T2026 Arg2:T2034
+*	same-as T2027 T2034
+*	same-as T2034 T2031
+R625	target Arg1:T2035 Arg2:T2031
+T2036	Concept 35301 35313	neutralizing
+T2037	Concept 35314 35324	protective
+T2038	Concept 35325 35335	antibodies
+T2039	Concept 35339 35353	SARS-CoV-2 148
+T2040	Concept 35381 35390	effective
+T2041	Concept 35391 35401	SARS-CoV-2
+T2042	Concept 35402 35411	infection
+T2043	Concept 35412 35423	mouse model
+T2044	Concept 35449 35460	established
+R626	target Arg1:T2036 Arg2:T2038
+R627	target Arg1:T2036 Arg2:T2041
+T2045	Concept 35475 35481	emdoin
+T2046	Concept 35492 35522	SARS-CoV associated 3a protein
+T2047	Action 35529 35536	blocked
+T2048	Action 35540 35551	interaction
+T2049	Concept 35564 35572	SARS-CoV
+T2050	Concept 35573 35586	spike protein
+T2051	Concept 35591 35595	ACE2
+R628	target Arg1:T2048 Arg2:T2049
+R629	target Arg1:T2048 Arg2:T2050
+T2052	Concept 35599 35606	crystal
+T2053	Concept 35607 35616	structure
+T2054	Concept 35620 35637	ZIKV NS3 helicase
+T2055	Concept 35643 35648	bound
+T2056	Concept 35649 35652	ATP
+T2057	Concept 35660 35668	residues
+T2058	Concept 35686 35695	functions
+T2059	Concept 35709 35714	Mn 2+
+T2060	Concept 35715 35727	coordination
+T2061	Concept 35733 35736	GLU
+T2062	Concept 35737 35740	286
+T2063	Action 35741 35750	stabilize
+T2064	Concept 35756 35759	ATP
+T2065	Concept 35760 35768	molecule
+T2066	Concept 35774 35780	P-loop
+T2067	Concept 35781 35789	residues
+T2068	Concept 35791 35794	GLY
+T2069	Concept 35795 35798	197
+T2070	Concept 35800 35803	ARG
+T2071	Concept 35804 35807	202
+T2072	Concept 35809 35812	LYS
+T2073	Concept 35813 35816	200
+T2074	Concept 35822 35827	motif
+T2075	Concept 35828 35830	VI
+T2076	Concept 35831 35839	residues
+T2077	Concept 35845 35848	459
+T2078	Concept 35850 35853	ARG
+T2079	Concept 35854 35857	462
+T2080	Concept 35884 35887	NTP
+T2081	Concept 35888 35898	hydrolysis
+T2082	Action 35902 35913	interacting
+T2083	Concept 35919 35935	transition state
+T2084	Concept 35936 35947	nucleotides
+R630	is-a Arg1:T2054 Arg2:T2057
+*	same-as T2068 T2072
+*	same-as T2068 T2080
+T2085	Concept 35972 35980	specific
+T2086	Concept 35981 35991	treatments
+T2087	Concept 35995 36003	vaccines
+T2088	Concept 36008 36016	COVID-19
+T2089	Concept 36025 36047	proof of concept study
+T2090	Concept 36069 36073	mNGS
+T2091	Action 36093 36099	detect
+T2092	Concept 36100 36109	pathogens
+T2093	Concept 36118 36122	host
+T2094	Concept 36123 36131	response
+T2095	Concept 36135 36138	HCT
+T2096	Concept 36139 36147	patients
+T2097	Concept 36153 36180	acute respiratory illnesses
+R631	target Arg1:T2091 Arg2:T2092
+R632	target Arg1:T2091 Arg2:T2094
+R633	arg Arg1:T2094 Arg2:T2095
+T2098	Concept 36189 36193	work
+T2099	Action 36198 36207	developed
+T2100	Concept 36210 36222	Prophylactic
+T2101	Concept 36223 36232	Antiviral
+T2102	Concept 36233 36239	CRISPR
+T2103	Concept 36243 36254	huMAN cells
+T2104	Concept 36256 36263	PAC-MAN
+T2105	Concept 36265 36273	strategy
+T2106	Concept 36287 36294	genetic
+T2107	Concept 36295 36307	intervention
+T2108	Action 36311 36317	target
+T2109	Concept 36318 36328	SARS-CoV-2
+T2110	Concept 36330 36333	IAV
+T2111	Concept 36355 36364	sequenced
+T2112	Concept 36365 36378	coronaviruses
+R634	subject Arg1:T2099 Arg2:T2100
+R635	target Arg1:T2099 Arg2:T2101
+R636	subject Arg1:T2099 Arg2:T2101
+R637	is-a Arg1:T2100 Arg2:T2098
+R638	is-a Arg1:T2100 Arg2:T2101
+R639	target Arg1:T2100 Arg2:T2101
+*	same-as T2100 T2102
+*	same-as T2100 T2104
+*	same-as T2101 T2102
+*	same-as T2101 T2103
+*	same-as T2101 T2104
+*	same-as T2102 T2104
+R640	is-a Arg1:T2103 Arg2:T2112
+*	same-as T2104 T2103
+*	same-as T2104 T2112
+R641	target Arg1:T2108 Arg2:T2101
+R642	target Arg1:T2108 Arg2:T2109
+*	same-as T2109 T2103
+*	same-as T2109 T2104
+T2113	Concept 36381 36411	constant-strength intervention
+T2114	Action 36412 36419	reduces
+T2115	Concept 36424 36431	density
+T2116	Concept 36437 36445	constant
+T2117	Concept 36446 36456	proportion
+T2118	Concept 36458 36459	K
+T2119	Predicate 36482 36490	strength
+T2120	Concept 36494 36506	intervention
+T2121	Predicate 36519 36527	strength
+T2122	Concept 36531 36539	epidemic
+T2123	Concept 36545 36546	R
+T2124	Concept 36563 36575	distribution
+T2125	Concept 36597 36606	intrinsic
+T2126	Concept 36607 36626	generation-interval
+T2127	Concept 36627 36639	distribution
+T2128	Concept 36641 36642	K
+T2129	Concept 36648 36649	g
+R643	subject Arg1:T2114 Arg2:T2113
+R644	subject Arg1:T2114 Arg2:T2119
+R645	is-a Arg1:T2122 Arg2:T2115
+T2130	Concept 36654 36663	McLaellen
+T2131	Concept 36668 36676	colleges
+T2132	Concept 36689 36693	ACE2
+T2133	Action 36694 36699	binds
+T2134	Concept 36703 36723	SARS-CoV-2 S protein
+T2135	Concept 36741 36749	affinity
+T2136	Concept 36761 36779	SARS-CoV S protein
+R646	subject Arg1:T2133 Arg2:T2130
+R647	subject Arg1:T2133 Arg2:T2132
+R648	target Arg1:T2133 Arg2:T2134
+T2137	Concept 36782 36797	straightforward
+T2138	Concept 36798 36816	reference-sequence
+T2139	Concept 36823 36833	comparison
+T2140	Concept 36874 36875	M
+T2141	Concept 36877 36878	N
+T2142	Concept 36884 36885	E
+T2143	Concept 36886 36894	proteins
+T2144	Concept 36898 36908	SARS-CoV-2
+T2145	Concept 36913 36921	SARS-CoV
+T2146	Concept 36936 36943	genetic
+T2147	Concept 36944 36954	similarity
+T2148	Concept 36974 36983	S protein
+T2149	Concept 36996 37003	reduced
+R649	is-a Arg1:T2140 Arg2:T2138
+T2150	Concept 37031 37037	Bgh pA
+T2151	Concept 37042 37045	Rgl
+T2152	Concept 37046 37048	pA
+T2153	Concept 37049 37056	signals
+T2154	Concept 37061 37070	redundant
+T2155	Concept 37076 37082	simian
+T2156	Concept 37083 37091	virus 40
+T2157	Concept 37093 37097	SV40
+T2158	Concept 37099 37101	pA
+T2159	Concept 37102 37108	signal
+T2160	Concept 37122 37123	1
+*	same-as T2152 T2157
+*	same-as T2155 T2157
+*	same-as T2156 T2157
+*	same-as T2156 T2158
+*	same-as T2158 T2157
+T2161	Concept 37202 37214	pathological
+T2162	Concept 37215 37223	features
+T2163	Concept 37227 37235	COVID-19
+T2164	Concept 37236 37245	pneumonia
+T2165	Concept 37277 37281	SARS
+T2166	Concept 37286 37290	MERS
+T2167	Concept 37301 37308	diffuse
+T2168	Concept 37309 37317	alveolar
+T2169	Action 37318 37324	damage
+T2170	Concept 37330 37338	cellular
+T2171	Concept 37339 37350	fibromyxoid
+T2172	Concept 37351 37359	exudates
+T2173	Action 37361 37364	des
+T2174	Concept 37377 37388	pneumocytes
+T2175	Concept 37393 37409	hyaline membrane
+T2176	Action 37410 37419	formation
+T2177	Concept 37432 37467	acute respiratory distress syndrome
+T2178	Concept 37469 37473	ARDS
+R650	arg Arg1:T2162 Arg2:T2163
+*	same-as T2163 T2178
+*	same-as T2165 T2178
+*	same-as T2167 T2178
+R651	target Arg1:T2177 Arg2:T2174
+*	same-as T2177 T2178
+T2179	Concept 37479 37497	seasonality factor
+T2180	Concept 37523 37531	seasonal
+T2181	Concept 37532 37541	variation
+T2182	Concept 37549 37562	SARS-CoV-2 R0
+T2183	Concept 37585 37590	human
+T2184	Concept 37591 37608	betacoronaviruses
+R652	target Arg1:T2181 Arg2:T2182
+T2185	Concept 37616 37623	results
+T2186	Action 37634 37642	blocking
+T2187	Concept 37643 37648	CD147
+T2188	Concept 37656 37666	host cells
+T2189	Concept 37674 37684	inhibitory
+T2190	Concept 37695 37705	SARS-CoV-2
+T2191	Concept 37721 37730	essential
+T2192	Concept 37739 37744	CD147
+T2193	Action 37748 37760	facilitating
+T2194	Concept 37761 37771	SARS-CoV-2
+T2195	Action 37772 37780	invasion
+T2196	Concept 37785 37795	host cells
+R653	target Arg1:T2186 Arg2:T2187
+*	same-as T2194 T2190
+T2197	Concept 37796 37804	Children
+T2198	Concept 37810 37832	chronic kidney disease
+T2199	Concept 37834 37837	CKD
+T2200	Concept 37845 37849	high
+T2201	Concept 37850 37860	risk group
+T2202	Concept 37883 37893	SARS-CoV-2
+T2203	Concept 37901 37911	underlying
+T2204	Concept 37912 37919	disease
+T2205	Concept 37924 37928	poor
+T2206	Concept 37929 37937	immunity
+R654	in-context Arg1:T2197 Arg2:T2198
+*	same-as T2197 T2199
+*	same-as T2198 T2199
+R655	is-a Arg1:T2198 Arg2:T2201
+T2207	Concept 37968 37978	viral load
+T2208	Concept 37982 37992	SARS-CoV-2
+T2209	Concept 37996 38001	early
+T2210	Concept 38002 38007	stage
+T2211	Concept 38014 38027	symptom onset
+T2212	Concept 38039 38046	RT-LAMP
+T2213	Concept 38047 38053	assays
+T2214	Concept 38078 38087	screening
+T2215	Concept 38088 38093	tests
+R656	target Arg1:T2207 Arg2:T2208
+R657	domain Arg1:T2210 Arg2:T2208
+R658	target Arg1:T2211 Arg2:T2208
+T2216	Concept 38094 38110	Hospital-related
+T2217	Concept 38111 38123	transmission
+T2218	Action 38150 38159	infection
+T2219	Concept 38163 38182	health-care workers
+T2220	Concept 38219 38236	COVID-19 epidemic
+T2221	Action 38262 38271	knowledge
+T2222	Concept 38278 38290	transmission
+T2223	Concept 38291 38301	approaches
+T2224	Concept 38305 38315	SARS-CoV-2
+T2225	Concept 38368 38378	protective
+T2226	Concept 38379 38388	materials
+R659	is-a Arg1:T2216 Arg2:T2217
+R660	target Arg1:T2218 Arg2:T2219
+*	same-as T2220 T2224
+R661	target Arg1:T2222 Arg2:T2219
+R662	target Arg1:T2222 Arg2:T2224
+T2227	Action 38392 38403	investigate
+T2228	Concept 38408 38419	RNA binding
+T2229	Concept 38432 38440	prepared
+T2230	Concept 38441 38447	pxMNPs
+T2231	Concept 38461 38467	assays
+T2232	Action 38486 38496	incubating
+T2233	Concept 38497 38515	2 μg RNA molecules
+T2234	Concept 38521 38523	20
+T2235	Concept 38524 38533	μg pcMNPs
+T2236	Concept 38537 38540	200
+T2237	Concept 38541 38549	μL lysis
+T2238	Concept 38550 38557	binding
+T2239	Concept 38558 38564	buffer
+R663	target Arg1:T2232 Arg2:T2233
+R664	target Arg1:T2232 Arg2:T2235
+T2240	Concept 38573 38578	study
+T2241	Concept 38594 38597	ABO
+T2242	Concept 38598 38610	blood groups
+T2243	Concept 38631 38642	association
+T2244	Concept 38643 38648	risks
+T2245	Action 38657 38666	infection
+T2246	Concept 38672 38682	SARS-CoV-2
+T2247	Concept 38696 38704	COVID-19
+R665	causes Arg1:T2246 Arg2:T2247
+T2248	Concept 38714 38719	liver
+T2249	Concept 38720 38726	damage
+T2250	Action 38730 38738	emerging
+T2251	Concept 38744 38754	co-existed
+T2252	Concept 38755 38762	symptom
+T2253	Concept 38775 38783	patients
+T2254	Concept 38789 38797	COVID-19
+R666	target Arg1:T2250 Arg2:T2249
+R667	in-context Arg1:T2253 Arg2:T2254
+T2255	Concept 38815 38822	network
+T2256	Concept 38823 38828	based
+T2257	Concept 38829 38835	models
+T2258	Concept 38840 38855	computationally
+T2259	Concept 38856 38867	inefficient
+T2260	Concept 38886 38901	metapopulations
+T2261	Concept 38912 38921	efficient
+T2262	Action 38939 38947	maintain
+T2263	Concept 38948 38955	initial
+T2264	Concept 38956 38967	populations
+T2265	Concept 38971 38978	patches
+R668	in-context Arg1:T2255 Arg2:T2256
+R669	is-a Arg1:T2255 Arg2:T2257
+R670	is-a Arg1:T2257 Arg2:T2258
+R671	target Arg1:T2262 Arg2:T2264
+R672	target Arg1:T2263 Arg2:T2264
+T2266	Concept 38995 39003	SARS-CoV
+T2267	Concept 39004 39018	infected cells
+T2268	Concept 39024 39028	ACE2
+T2269	Concept 39047 39057	correlated
+T2270	Concept 39063 39074	neutrophils
+T2271	Concept 39076 39084	NK cells
+T2272	Concept 39086 39096	Th17 cells
+T2273	Concept 39098 39107	Th2 cells
+T2274	Concept 39109 39118	Th1 cells
+T2275	Concept 39120 39122	DC
+*	same-as T2266 T2267
+R673	target Arg1:T2267 Arg2:T2266
+R674	target Arg1:T2267 Arg2:T2270
+R675	target Arg1:T2269 Arg2:T2268
+R676	target Arg1:T2269 Arg2:T2270
+T2276	Concept 39127 39133	energy
+T2277	Concept 39134 39144	landscapes
+T2278	Concept 39148 39161	CTT sequences
+T2279	Concept 39188 39194	rugged
+T2280	Concept 39196 39206	increasing
+T2281	Concept 39207 39208	D
+T2282	Concept 39226 39227	κ
+T2283	Concept 39242 39252	landscapes
+T2284	Concept 39257 39265	variants
+T2285	Concept 39266 39271	CTLV1
+T2286	Concept 39273 39278	CTLV2
+T2287	Concept 39280 39285	CTLV3
+T2288	Concept 39291 39296	CTLV4
+T2289	Action 39297 39303	retain
+T2290	Concept 39308 39313	width
+T2291	Concept 39323 39331	s values
+T2292	Concept 39340 39346	WT CTT
+R677	is-a Arg1:T2277 Arg2:T2278
+R678	in-context Arg1:T2277 Arg2:T2279
+*	same-as T2277 T2280
+*	same-as T2277 T2291
+T2293	Action 39368 39376	presence
+T2294	Concept 39380 39401	respiratory pathogens
+T2295	Action 39423 39432	increased
+T2296	Action 39433 39443	expression
+T2297	Concept 39447 39473	host immune response genes
+T2298	Action 39478 39483	lower
+T2299	Concept 39484 39510	airway microbial diversity
+R679	subject Arg1:T2293 Arg2:T2294
+R680	target Arg1:T2293 Arg2:T2294
+T2300	Concept 39512 39520	Positive
+T2301	Concept 39525 39535	SARS-CoV-2
+T2302	Concept 39536 39548	nucleic acid
+T2303	Concept 39552 39563	respiratory
+T2304	Concept 39567 39572	blood
+T2305	Concept 39573 39580	samples
+T2306	Concept 39593 39599	RT-PCR
+T2307	Concept 39628 39639	respiratory
+T2308	Concept 39643 39656	blood samples
+T2309	Concept 39669 39677	homology
+T2310	Concept 39705 39715	SARS-CoV-2
+R681	target Arg1:T2300 Arg2:T2301
+R682	causes Arg1:T2301 Arg2:T2306
+T2311	Concept 39716 39726	WU polyoma
+T2312	Concept 39727 39732	virus
+T2313	Action 39737 39745	detected
+T2314	Concept 39749 39752	DNA
+T2315	Concept 39753 39763	sequencing
+T2316	Concept 39772 39776	case
+T2317	Concept 39793 39798	virus
+T2318	Action 39808 39818	associated
+T2319	Concept 39824 39835	respiratory
+T2320	Concept 39836 39846	infections
+T2321	Concept 39850 39867	immunocompromised
+T2322	Concept 39868 39876	patients
+T2323	Concept 39912 39920	pathogen
+R683	is-a Arg1:T2311 Arg2:T2312
+R684	is-a Arg1:T2311 Arg2:T2323
+R685	target Arg1:T2318 Arg2:T2319
+R686	target Arg1:T2318 Arg2:T2320
+R687	arg Arg1:T2318 Arg2:T2321
+R688	target Arg1:T2318 Arg2:T2321
+T2324	Action 39943 39948	early
+T2325	Action 39949 39961	intervention
+T2326	Concept 39965 39967	VT
+T2327	Concept 39972 39985	psychological
+T2328	Concept 39986 39992	stress
+T2329	Concept 40001 40003	GP
+T2330	Concept 40008 40021	medical staff
+T2331	Action 40050 40062	announcement
+T2332	Concept 40066 40074	epidemic
+T2333	Concept 40075 40086	information
+T2334	Concept 40106 40119	psychological
+T2335	Action 40120 40129	treatment
+T2336	Action 40134 40141	control
+T2337	Concept 40145 40153	COVID-19
+*	same-as T2324 T2325
+R689	target Arg1:T2331 Arg2:T2332
+R690	target Arg1:T2331 Arg2:T2334
+R691	target Arg1:T2331 Arg2:T2335
+T2338	Concept 40158 40178	phylogenetic uniting
+T2339	Concept 40182 40194	SARS-related
+T2340	Concept 40195 40198	CoV
+T2341	Concept 40203 40219	COVID-19-related
+T2342	Concept 40220 40223	CoV
+T2343	Concept 40269 40272	RBD
+T2344	Concept 40273 40290	protein sequences
+R692	target Arg1:T2338 Arg2:T2339
+R693	target Arg1:T2338 Arg2:T2340
+R694	target Arg1:T2338 Arg2:T2343
+*	same-as T2341 T2342
+R695	domain Arg1:T2341 Arg2:T2342
+T2345	Concept 40291 40301	Tremendous
+T2346	Concept 40302 40309	efforts
+T2347	Concept 40341 40346	world
+T2348	Concept 40360 40364	fast
+T2349	Concept 40369 40377	reliable
+T2350	Concept 40378 40388	diagnostic
+T2351	Concept 40389 40395	method
+T2352	Concept 40400 40410	SARS-CoV-2
+R696	target Arg1:T2350 Arg2:T2352
+T2353	Action 40414 40423	capturing
+T2354	Concept 40429 40438	microbial
+T2355	Concept 40443 40448	human
+T2356	Concept 40449 40452	RNA
+T2357	Concept 40454 40458	mNGS
+T2358	Concept 40485 40500	transcriptional
+T2359	Action 40501 40510	profiling
+T2360	Concept 40518 40522	host
+T2361	Concept 40523 40543	immunologic response
+T2362	Concept 40563 40576	complementary
+T2363	Concept 40577 40584	insight
+T2364	Action 40599 40607	presence
+T2365	Concept 40620 40629	infection
+R697	target Arg1:T2353 Arg2:T2356
+R698	target Arg1:T2353 Arg2:T2357
+R699	target Arg1:T2359 Arg2:T2361
+T2366	Concept 40658 40668	SARS-CoV-2
+T2367	Action 40673 40679	invade
+T2368	Concept 40684 40698	urinary system
+T2369	Concept 40700 40720	hematological system
+T2370	Concept 40725 40741	digestive system
+T2371	Concept 40757 40775	respiratory system
+T2372	Concept 40793 40801	relative
+T2373	Concept 40802 40810	symptoms
+R700	target Arg1:T2367 Arg2:T2366
+R701	target Arg1:T2367 Arg2:T2368
+R702	target Arg1:T2367 Arg2:T2370
+T2374	Concept 40847 40858	accelerated
+T2375	Action 40859 40868	evolution
+T2376	Concept 40872 40875	RBD
+T2377	Concept 40879 40883	SARS
+T2378	Concept 40892 40895	CoV
+T2379	Concept 40900 40916	COVID-19-related
+T2380	Concept 40917 40920	CoV
+T2381	Concept 40938 40964	phylogenetic intermediates
+R703	target Arg1:T2374 Arg2:T2376
+R704	target Arg1:T2375 Arg2:T2376
+R705	target Arg1:T2375 Arg2:T2377
+*	same-as T2379 T2380
+T2382	Action 40974 40982	analysis
+T2383	Concept 40986 41005	polyampholytic IDRs
+T2384	Concept 41021 41026	human
+T2385	Concept 41027 41035	proteome
+T2386	Concept 41046 41053	inverse
+T2387	Action 41054 41065	correlation
+T2388	Concept 41074 41080	median
+T2389	Concept 41081 41089	κ-values
+T2390	Concept 41094 41107	median values
+T2391	Predicate 41116 41124	fraction
+T2392	Concept 41128 41135	charged
+T2393	Concept 41136 41144	residues
+R706	target Arg1:T2382 Arg2:T2383
+R707	is-a Arg1:T2383 Arg2:T2382
+R708	in-context Arg1:T2387 Arg2:T2388
+R709	in-place Arg1:T2387 Arg2:T2391
+T2394	Concept 41173 41183	SARS-CoV-2
+T2395	Concept 41188 41202	SARS-CoV spike
+T2396	Concept 41227 41231	ACE2
+T2397	Concept 41260 41270	293T cells
+T2398	Concept 41289 41302	coronaviruses
+T2399	Concept 41354 41355	A
+T2400	Concept 41355 41356	&
+T2401	Concept 41356 41357	B
+T2402	Concept 41466 41469	new
+T2403	Concept 41470 41479	SARS-CoV-
+T2404	Concept 41481 41487	corona
+T2405	Concept 41487 41492	virus
+T2406	Concept 41505 41513	transmis
+T2407	Concept 41525 41539	SARS-CoV virus
+*	same-as T2394 T2407
+*	same-as T2395 T2407
+*	same-as T2403 T2407
+R710	target Arg1:T2406 Arg2:T2394
+R711	target Arg1:T2406 Arg2:T2395
+R712	target Arg1:T2406 Arg2:T2398
+R713	target Arg1:T2406 Arg2:T2403
+R714	target Arg1:T2406 Arg2:T2407
+*	same-as T2407 T2395
+T2408	Concept 41552 41560	pathways
+T2409	Concept 41566 41581	interferon-MAPK
+T2410	Concept 41582 41599	signaling pathway
+T2411	Concept 41608 41613	major
+T2412	Concept 41614 41635	blood immune response
+T2413	Concept 41640 41648	COVID-19
+T2414	Concept 41649 41658	infection
+R715	is-a Arg1:T2409 Arg2:T2408
+R716	is-a Arg1:T2409 Arg2:T2410
+R717	is-a Arg1:T2409 Arg2:T2412
+T2415	Concept 41679 41692	distributions
+T2416	Concept 41696 41702	CVL218
+T2417	Concept 41706 41713	tissues
+T2418	Concept 41728 41732	lung
+T2419	Concept 41745 41751	plasma
+T2420	Concept 41773 41780	arbidol
+T2421	Concept 41802 41817	pharmacokinetic
+T2422	Concept 41829 41835	CVL218
+T2423	Concept 41869 41878	potential
+T2424	Concept 41879 41888	antiviral
+T2425	Action 41889 41898	treatment
+T2426	Concept 41902 41912	SARS-CoV-2
+T2427	Concept 41913 41922	infection
+R718	target Arg1:T2415 Arg2:T2416
+R719	in-place Arg1:T2415 Arg2:T2417
+R720	target Arg1:T2415 Arg2:T2422
+R721	in-context Arg1:T2415 Arg2:T2423
+R722	target Arg1:T2415 Arg2:T2426
+R723	target Arg1:T2425 Arg2:T2416
+R724	target Arg1:T2425 Arg2:T2422
+R725	target Arg1:T2425 Arg2:T2426
+R726	target Arg1:T2427 Arg2:T2426
+T2428	Predicate 41935 41941	number
+T2429	Concept 41945 41958	substitutions
+T2430	Action 41979 41988	reduction
+T2431	Concept 41992 42005	host-specific
+T2432	Concept 42006 42013	fitness
+T2433	Action 42015 42024	increases
+T2434	Concept 42030 42041	genome size
+T2435	Action 42054 42065	elimination
+T2436	Concept 42069 42078	HCoV-OC43
+T2437	Concept 42083 42092	HCoV-HKU1
+T2438	Concept 42114 42124	SARS-CoV-2
+T2439	Action 42125 42132	induced
+T2440	Concept 42133 42135	70
+T2441	Concept 42137 42151	cross immunity
+T2442	Predicate 42194 42199	level
+T2443	Concept 42203 42217	cross-immunity
+T2444	Concept 42223 42232	HCoV-OC43
+T2445	Action 42233 42240	induces
+T2446	Concept 42249 42258	HCoV-HKU1
+R727	target Arg1:T2435 Arg2:T2436
+R728	target Arg1:T2435 Arg2:T2438
+R729	target Arg1:T2435 Arg2:T2443
+R730	target Arg1:T2435 Arg2:T2444
+R731	is-a Arg1:T2437 Arg2:T2443
+R732	is-a Arg1:T2438 Arg2:T2443
+R733	target Arg1:T2439 Arg2:T2438
+R734	subject Arg1:T2439 Arg2:T2438
+R735	is-a Arg1:T2439 Arg2:T2443
+R736	subject Arg1:T2445 Arg2:T2436
+R737	subject Arg1:T2445 Arg2:T2437
+R738	target Arg1:T2445 Arg2:T2437
+R739	target Arg1:T2445 Arg2:T2438
+R740	subject Arg1:T2445 Arg2:T2438
+R741	target Arg1:T2445 Arg2:T2443
+R742	subject Arg1:T2445 Arg2:T2444
+R743	target Arg1:T2445 Arg2:T2444
+R744	target Arg1:T2445 Arg2:T2446
+T2447	Concept 42264 42272	heat map
+T2448	Concept 42273 42281	patterns
+T2449	Concept 42328 42337	composite
+T2450	Concept 42338 42343	plots
+T2451	Concept 42352 42361	Reb1bound
+T2452	Concept 42362 42367	genes
+T2453	Predicate 42406 42414	distance
+T2454	Concept 42418 42424	arrays
+T2455	Concept 42432 42444	barrier Reb1
+T2456	Concept 42460 42474	linker lengths
+T2457	Concept 42487 42497	nucleosome
+T2458	Concept 42498 42505	density
+T2459	Concept 42511 42520	remodeler
+R745	arg Arg1:T2453 Arg2:T2457
+T2460	Concept 42534 42540	DNAseq
+T2461	Action 42541 42551	identified
+T2462	Concept 42556 42563	genomes
+T2463	Concept 42578 42582	five
+T2464	Concept 42583 42594	DNA viruses
+T2465	Concept 42606 42610	five
+T2466	Concept 42611 42617	others
+T2467	Concept 42628 42631	CMV
+T2468	Concept 42636 42641	HHV-6
+T2469	Action 42659 42669	associated
+T2470	Concept 42675 42686	pneumonitis
+R746	is-a Arg1:T2467 Arg2:T2466
+R747	is-a Arg1:T2468 Arg2:T2466
+R748	target Arg1:T2469 Arg2:T2462
+R749	target Arg1:T2469 Arg2:T2468
+R750	target Arg1:T2469 Arg2:T2470
+R751	is-a Arg1:T2470 Arg2:T2466
+T2471	Reference 42687 42692	These
+T2472	Concept 42693 42700	results
+T2473	Concept 42731 42739	findings
+T2474	Concept 42753 42761	patients
+T2475	Concept 42767 42773	severe
+T2476	Concept 42774 42781	illness
+T2477	Action 42791 42803	perturbation
+T2478	Concept 42807 42820	immune system
+T2479	Concept 42836 42848	pathogenesis
+T2480	Concept 42852 42862	SARS-CoV-2
+R752	is-a Arg1:T2471 Arg2:T2472
+R753	is-a Arg1:T2471 Arg2:T2473
+R754	causes Arg1:T2471 Arg2:T2477
+R755	in-context Arg1:T2477 Arg2:T2475
+R756	target Arg1:T2479 Arg2:T2480
+T2481	Concept 42867 42874	SEIR-QD
+T2482	Concept 42879 42886	SEIR-PO
+T2483	Concept 42887 42893	models
+T2484	Action 42911 42919	modeling
+T2485	Concept 42920 42928	COVID-10
+*	same-as T2481 T2482
+R757	is-a Arg1:T2481 Arg2:T2483
+R758	is-a Arg1:T2482 Arg2:T2483
+R759	is-a Arg1:T2482 Arg2:T2484
+R760	target Arg1:T2484 Arg2:T2485
+T2486	Predicate 42945 42949	most
+T2487	Concept 42957 42962	cases
+T2488	Concept 42963 42972	published
+T2489	Action 42992 42995	use
+T2490	Concept 42996 43010	nasopharyngeal
+T2491	Concept 43011 43015	swab
+T2492	Concept 43016 43025	specimens
+T2493	Concept 43030 43042	nucleic acid
+T2494	Concept 43043 43048	tests
+R761	domain Arg1:T2486 Arg2:T2487
+R762	causes Arg1:T2486 Arg2:T2489
+R763	target Arg1:T2489 Arg2:T2486
+R764	target Arg1:T2489 Arg2:T2490
+R765	target Arg1:T2489 Arg2:T2491
+R766	target Arg1:T2489 Arg2:T2492
+R767	target Arg1:T2489 Arg2:T2494
+T2495	Concept 43072 43079	results
+T2496	Concept 43094 43101	binding
+T2497	Concept 43102 43108	energy
+T2498	Concept 43117 43126	interface
+T2499	Concept 43127 43135	sequence
+T2500	Concept 43139 43157	SARS-CoV-2 234 RBD
+T2501	Concept 43172 43188	SARS-CoV related
+T2502	Concept 43189 43197	isolates
+T2503	Concept 43211 43216	Human
+T2504	Concept 43226 43229	235
+T2505	Concept 43230 43237	species
+R768	arg Arg1:T2499 Arg2:T2500
+T2506	Concept 43240 43258	Receptor-dependent
+T2507	Concept 43259 43270	viral entry
+T2508	Predicate 43278 43283	first
+T2509	Predicate 43284 43288	step
+T2510	Concept 43292 43302	SARS-CoV-2
+T2511	Concept 43303 43312	infection
+R769	target Arg1:T2506 Arg2:T2507
+R770	target Arg1:T2511 Arg2:T2510
+T2512	Concept 43314 43325	Gemcitabine
+T2513	Action 43348 43356	approved
+T2514	Action 43361 43369	treating
+T2515	Concept 43387 43394	cancers
+T2516	Action 43420 43429	targeting
+T2517	Concept 43430 43438	SARS-CoV
+T2518	Action 43444 43454	validation
+T2519	Concept 43467 43475	in vitro
+T2520	Concept 43476 43483	studies
+R771	has-property Arg1:T2512 Arg2:T2513
+R772	target Arg1:T2514 Arg2:T2515
+R773	target Arg1:T2514 Arg2:T2517
+R774	target Arg1:T2516 Arg2:T2517
+T2521	Concept 43489 43497	COVID-19
+T2522	Concept 43502 43511	SARS-2002
+T2523	Concept 43512 43522	interfaces
+T2524	Concept 43531 43535	long
+T2525	Concept 43536 43544	flexible
+T2526	Concept 43545 43550	loops
+T2527	Concept 43555 43559	nine
+T2528	Concept 43560 43577	aromatic residues
+T2529	Concept 43579 43582	Tyr
+T2530	Concept 43584 43587	Trp
+T2531	Concept 43589 43592	Phe
+T2532	Concept 43601 43610	interface
+T2533	Concept 43616 43620	ACE2
+*	same-as T2521 T2522
+R775	domain Arg1:T2521 Arg2:T2522
+R776	domain Arg1:T2527 Arg2:T2528
+T2534	Concept 43621 43629	COVID-19
+T2535	Concept 43630 43640	population
+T2536	Concept 43655 43670	incubation time
+T2537	Predicate 43681 43685	rate
+T2538	Concept 43689 43702	ICU admission
+T2539	Concept 43704 43713	discharge
+T2540	Concept 43718 43726	fatality
+T2541	Concept 43741 43746	MRES-
+T2542	Concept 43746 43749	COV
+*	same-as T2541 T2542
+T2543	Action 43764 43775	investigate
+T2544	Concept 43780 43788	dynamics
+T2545	Concept 43792 43800	COVID-19
+T2546	Concept 43801 43808	binding
+T2547	Concept 43821 43830	SARS-2002
+T2548	Action 43835 43844	calculate
+T2549	Concept 43849 43865	root-mean-square
+T2550	Concept 43866 43877	fluctuation
+T2551	Concept 43879 43883	RMSF
+T2552	Concept 43893 43900	residue
+T2553	Concept 43921 43927	lowest
+T2554	Concept 43928 43934	energy
+T2555	Concept 43935 43943	snapshot
+T2556	Concept 43966 43971	100ns
+T2557	Concept 43972 43974	MD
+T2558	Concept 43975 43985	simulation
+T2559	Concept 43986 43996	trajectory
+R777	target Arg1:T2544 Arg2:T2546
+*	same-as T2549 T2551
+*	same-as T2550 T2551
+R778	domain Arg1:T2553 Arg2:T2554
+T2560	Concept 44006 44011	study
+T2561	Concept 44026 44036	SARS-CoV-2
+T2562	Concept 44051 44070	cell entry receptor
+T2563	Concept 44072 44103	angiotensin converting enzyme 2
+T2564	Concept 44105 44109	ACE2
+T2565	Concept 44112 44116	4, 5
+T2566	Concept 44128 44136	SARS-CoV
+*	same-as T2563 T2564
+R779	is-a Arg1:T2564 Arg2:T2562
+*	same-as T2564 T2566
+T2567	Concept 44176 44181	motif
+T2568	Action 44188 44194	confer
+T2569	Concept 44195 44199	poor
+T2570	Concept 44200 44209	substrate
+T2571	Concept 44210 44220	properties
+T2572	Concept 44228 44234	nsp8-9
+T2573	Concept 44235 44248	cleavage site
+T2574	Action 44287 44296	influence
+T2575	Concept 44300 44316	processing order
+T2576	Concept 44321 44324	RTC
+T2577	Concept 44325 44333	assembly
+R780	in-context Arg1:T2568 Arg2:T2569
+R781	target Arg1:T2568 Arg2:T2570
+R782	target Arg1:T2568 Arg2:T2571
+R783	target Arg1:T2568 Arg2:T2572
+R784	arg Arg1:T2571 Arg2:T2572
+R785	target Arg1:T2577 Arg2:T2572
+T2578	Concept 44337 44346	locations
+T2579	Concept 44353 44358	early
+T2580	Predicate 44359 44364	stage
+T2581	Concept 44368 44376	COVID-19
+T2582	Concept 44384 44393	resources
+T2583	Concept 44400 44410	investment
+T2584	Concept 44445 44458	interventions
+T2585	Concept 44468 44475	contact
+T2586	Concept 44476 44483	tracing
+T2587	Concept 44506 44516	individual
+T2588	Concept 44517 44527	quarantine
+T2589	Concept 44531 44537	active
+T2590	Action 44538 44548	monitoring
+T2591	Concept 44586 44593	disease
+T2592	Concept 44610 44617	assumed
+T2593	Concept 44618 44624	serial
+T2594	Concept 44625 44633	interval
+T2595	Concept 44648 44662	presymptomatic
+T2596	Concept 44663 44675	transmission
+T2597	Concept 44700 44707	setting
+T2598	Concept 44734 44742	contacts
+R786	arg Arg1:T2579 Arg2:T2581
+R787	arg Arg1:T2580 Arg2:T2581
+R788	is-a Arg1:T2595 Arg2:T2591
+T2599	Action 44753 44760	created
+T2600	Concept 44763 44771	NOT gate
+T2601	Concept 44783 44789	P-type
+T2602	Concept 44790 44800	transistor
+T2603	Concept 44812 44823	ampicillin-
+T2604	Concept 44823 44829	loaded
+T2605	Concept 44830 44844	heat-triggered
+T2606	Concept 44845 44854	liposomes
+T2607	Concept 44869 44877	bacteria
+T2608	Action 44881 44884	die
+T2609	Concept 44893 44905	temperatures
+R789	target Arg1:T2599 Arg2:T2600
+R790	is-a Arg1:T2603 Arg2:T2600
+R791	subject Arg1:T2605 Arg2:T2606
+R792	causes Arg1:T2608 Arg2:T2599
+T2610	Action 44971 44978	induces
+T2611	Concept 44979 44988	autophagy
+T2612	Action 44992 45002	activating
+T2613	Concept 45007 45024	omegasome pathway
+T2614	Action 45043 45050	implied
+T2615	Concept 45054 45059	cells
+T2616	Concept 45075 45085	starvation
+R793	target Arg1:T2610 Arg2:T2611
+R794	subject Arg1:T2614 Arg2:T2615
+T2617	Concept 45093 45106	sample period
+T2618	Concept 45115 45126	wind speeds
+T2619	Concept 45135 45148	precipitation
+T2620	Action 45149 45157	decrease
+T2621	Predicate 45162 45168	number
+T2622	Concept 45172 45182	infections
+T2623	Concept 45190 45196	future
+R795	in-time Arg1:T2618 Arg2:T2623
+R796	target Arg1:T2620 Arg2:T2621
+R797	in-time Arg1:T2620 Arg2:T2623
+R798	domain Arg1:T2621 Arg2:T2622
+R799	arg Arg1:T2621 Arg2:T2623
+T2624	Concept 45240 45244	CCoV
+T2625	Concept 45245 45255	strain A76
+T2626	Concept 45267 45278	recombinant
+T2627	Concept 45279 45284	S 103
+T2628	Concept 45285 45292	protein
+T2629	Concept 45307 45320	recombination
+T2630	Concept 45329 45339	serotype I
+T2631	Concept 45344 45346	II
+T2632	Concept 45347 45361	CCoV sequences
+R800	target Arg1:T2626 Arg2:T2627
+T2633	Concept 45379 45385	models
+T2634	Concept 45387 45398	temperature
+T2635	Action 45399 45408	increases
+T2636	Concept 45413 45421	doubling
+T2637	Concept 45422 45426	time
+T2638	Action 45448 45454	delays
+T2639	Action 45459 45465	spread
+T2640	Concept 45469 45477	COVID-19
+R801	subject Arg1:T2635 Arg2:T2634
+R802	target Arg1:T2639 Arg2:T2640
+T2641	Concept 45490 45499	treatment
+T2642	Action 45510 45518	increase
+T2643	Concept 45519 45527	survival
+T2644	Action 45532 45540	decrease
+T2645	Concept 45554 45565	ventilatory
+T2646	Concept 45566 45573	support
+T2647	Concept 45577 45585	patients
+T2648	Concept 45591 45597	severe
+T2649	Concept 45598 45624	acute respiratory syndrome
+T2650	Concept 45632 45640	COVID-19
+T2651	Concept 45641 45645	High
+T2652	Concept 45646 45659	mutation rate
+T2653	Concept 45661 45666	human
+T2654	Concept 45670 45675	human
+T2655	Concept 45676 45688	transmission
+T2656	Action 45690 45698	survival
+T2657	Concept 45699 45703	time
+T2658	Concept 45713 45714	4
+T2659	Concept 45715 45719	days
+T2660	Concept 45734 45747	environmental
+T2661	Concept 45748 45758	conditions
+T2662	Concept 45771 45780	treatment
+T2663	Concept 45802 45814	bioterrorism
+T2664	Concept 45815 45820	agent
+R803	target Arg1:T2655 Arg2:T2654
+R804	domain Arg1:T2658 Arg2:T2659
+T2665	Concept 45829 45837	positive
+T2666	Concept 45838 45848	SARS-CoV-2
+T2667	Action 45849 45858	detection
+T2668	Concept 45862 45870	clinical
+T2669	Concept 45871 45880	specimens
+T2670	Concept 45890 45913	upper respiratory tract
+T2671	Concept 45941 45953	observations
+T2672	Concept 45999 46003	SARS
+T2673	Concept 46008 46016	COVID-19
+T2674	Concept 46029 46037	clinical
+T2675	Concept 46038 46047	pathology
+R805	target Arg1:T2665 Arg2:T2666
+R806	target Arg1:T2667 Arg2:T2666
+T2676	Concept 46048 46058	SARS-CoV-2
+T2677	Concept 46065 46075	disordered
+T2678	Concept 46076 46083	segment
+T2679	Concept 46089 46092	168
+T2680	Concept 46097 46105	residues
+T2681	Concept 46112 46117	Human
+T2682	Concept 46118 46122	SARS
+T2683	Concept 46148 46160	unstructured
+T2684	Concept 46161 46168	segment
+T2685	Concept 46174 46177	145
+T2686	Action 46191 46200	Diagnosis
+T2687	Concept 46204 46208	LRTI
+T2688	Concept 46212 46226	HCT recipients
+T2689	Concept 46243 46254	challenging
+T2690	Predicate 46267 46272	rates
+T2691	Concept 46276 46289	noninfectious
+T2692	Concept 46290 46302	inflammatory
+T2693	Concept 46303 46313	conditions
+T2694	Concept 46322 46347	graft versus host disease
+T2695	Concept 46349 46353	GVHD
+T2696	Action 46364 46369	drive
+T2697	Concept 46370 46379	pulmonary
+T2698	Concept 46380 46392	inflammation
+T2699	Action 46394 46400	induce
+T2700	Concept 46401 46406	fever
+T2701	Action 46411 46416	mimic
+T2702	Concept 46417 46426	infection
+R807	target Arg1:T2686 Arg2:T2687
+R808	target Arg1:T2686 Arg2:T2688
+R809	has-property Arg1:T2686 Arg2:T2689
+R810	target Arg1:T2686 Arg2:T2699
+*	same-as T2687 T2688
+R811	arg Arg1:T2690 Arg2:T2691
+R812	causes Arg1:T2694 Arg2:T2687
+R813	causes Arg1:T2694 Arg2:T2688
+R814	is-a Arg1:T2694 Arg2:T2692
+R815	is-a Arg1:T2694 Arg2:T2693
+*	same-as T2694 T2695
+R816	is-a Arg1:T2702 Arg2:T2692
+R817	is-a Arg1:T2702 Arg2:T2693
+T2703	Concept 46431 46438	trained
+T2704	Concept 46439 46448	DeCoV-Net
+T2705	Action 46449 46453	took
+T2706	Concept 46458 46470	preprocessed
+T2707	Concept 46471 46485	CT-Mask volume
+T2708	Concept 46494 46501	patient
+T2709	Action 46506 46512	output
+T2710	Concept 46517 46543	COVID-positive probability
+T2711	Concept 46555 46569	COVID-negative
+T2712	Concept 46570 46581	probability
+R818	subject Arg1:T2705 Arg2:T2704
+R819	target Arg1:T2705 Arg2:T2704
+R820	target Arg1:T2705 Arg2:T2706
+R821	target Arg1:T2705 Arg2:T2707
+R822	target Arg1:T2705 Arg2:T2711
+R823	target Arg1:T2705 Arg2:T2712
+R824	target Arg1:T2709 Arg2:T2710
+R825	is-a Arg1:T2709 Arg2:T2710
+T2713	Concept 46591 46601	SARS-CoV-2
+T2714	Concept 46606 46609	bat
+T2715	Concept 46610 46619	SARSr-CoV
+T2716	Concept 46633 46635	58
+T2717	Concept 46636 46646	amino acid
+R826	domain Arg1:T2716 Arg2:T2717
+T2718	Action 46669 46679	complexity
+T2719	Concept 46683 46689	sexual
+T2720	Concept 46690 46698	behavior
+T2721	Action 46707 46719	transmission
+T2722	Concept 46733 46745	asymptomatic
+T2723	Concept 46746 46756	infectives
+T2724	Concept 46798 46812	epidemic areas
+T2725	Concept 46819 46826	tourism
+T2726	Concept 46876 46882	asympt
+T2727	Concept 46889 46897	infected
+T2728	Action 46913 46921	cautious
+T2729	Concept 46928 46931	sex
+T2730	Concept 46932 46940	behavior
+T2731	Action 46945 46950	avoid
+T2732	Concept 46951 46955	oral
+T2733	Concept 46956 46960	anal
+T2734	Concept 46961 46964	sex
+T2735	Action 47017 47026	spreading
+T2736	Concept 47030 47040	SARS-CoV-2
+R827	arg Arg1:T2718 Arg2:T2719
+R828	target Arg1:T2721 Arg2:T2723
+R829	target Arg1:T2731 Arg2:T2730
+R830	target Arg1:T2735 Arg2:T2723
+R831	target Arg1:T2735 Arg2:T2724
+R832	target Arg1:T2735 Arg2:T2736
+R833	in-place Arg1:T2736 Arg2:T2724
+T2737	Concept 47045 47053	emerging
+T2738	Concept 47054 47065	coronavirus
+T2739	Concept 47066 47076	SARS-CoV-2
+T2740	Action 47091 47099	outbreak
+T2741	Concept 47103 47114	coronavirus
+T2742	Concept 47137 47143	solved
+T2743	Concept 47144 47153	structure
+T2744	Concept 47157 47171	SARS-CoV-2 3CL
+T2745	Concept 47177 47189	PDB ID: 6LU7
+R834	target Arg1:T2737 Arg2:T2738
+R835	target Arg1:T2737 Arg2:T2739
+R836	is-a Arg1:T2738 Arg2:T2739
+R837	target Arg1:T2740 Arg2:T2741
+R838	target Arg1:T2740 Arg2:T2744
+T2746	Action 47220 47230	persisting
+T2747	Action 47231 47239	decrease
+T2748	Concept 47243 47254	lymphocytes
+T2749	Concept 47278 47284	severe
+T2750	Concept 47285 47292	disease
+T2751	Concept 47308 47317	criterion
+T2752	Action 47326 47335	diagnosis
+T2753	Concept 47339 47347	COVID-19
+R839	target Arg1:T2747 Arg2:T2748
+R840	target Arg1:T2752 Arg2:T2749
+R841	target Arg1:T2752 Arg2:T2753
+T2754	Concept 47388 47400	nucleocapsid
+T2755	Concept 47402 47403	N
+T2756	Concept 47405 47412	protein
+T2757	Concept 47419 47427	abundant
+T2758	Concept 47428 47433	viral
+T2759	Concept 47434 47441	protein
+T2760	Concept 47466 47477	efficiently
+T2761	Action 47478 47488	translated
+T2762	Concept 47511 47521	structural
+T2763	Concept 47522 47530	proteins
+T2764	Concept 47550 47558	approach
+T2765	Action 47567 47575	estimate
+T2766	Concept 47576 47586	transcript
+T2767	Concept 47587 47596	abundance
+*	same-as T2754 T2755
+R842	is-a Arg1:T2754 Arg2:T2756
+R843	is-a Arg1:T2754 Arg2:T2757
+R844	is-a Arg1:T2754 Arg2:T2759
+R845	is-a Arg1:T2754 Arg2:T2762
+R846	is-a Arg1:T2754 Arg2:T2763
+*	same-as T2754 T2766
+R847	target Arg1:T2765 Arg2:T2767
+T2768	Concept 47602 47611	potential
+T2769	Concept 47612 47631	evolution direction
+T2770	Concept 47662 47666	mild
+T2771	Concept 47667 47674	subtype
+T2772	Concept 47678 47686	COVID-19
+R848	target Arg1:T2771 Arg2:T2772
+T2773	Action 47709 47720	development
+T2774	Concept 47726 47729	new
+T2775	Concept 47730 47734	drug
+T2776	Concept 47751 47756	years
+T2777	Concept 47776 47787	therapeutic
+T2778	Concept 47788 47793	short
+T2779	Action 47803 47808	apply
+T2780	Action 47818 47828	reposition
+T2781	Concept 47832 47840	strategy
+R849	target Arg1:T2773 Arg2:T2774
+R850	target Arg1:T2779 Arg2:T2780
+T2782	Concept 48037 48047	conclusion
+T2783	Concept 48049 48057	COVID-19
+T2784	Action 48058 48065	affects
+T2785	Predicate 48068 48072	wide
+T2786	Predicate 48073 48078	range
+T2787	Concept 48082 48090	patients
+T2788	Concept 48097 48102	youth
+T2789	Concept 48110 48117	elderly
+R851	subject Arg1:T2784 Arg2:T2783
+R852	target Arg1:T2784 Arg2:T2785
+R853	target Arg1:T2784 Arg2:T2786
+T2790	Concept 48122 48129	results
+T2791	Concept 48146 48150	mean
+T2792	Concept 48151 48155	PPID
+T2793	Concept 48159 48169	SARS-CoV-2
+T2794	Concept 48171 48176	Human
+T2795	Concept 48177 48181	SARS
+T2796	Concept 48187 48194	Bat CoV
+R854	target Arg1:T2791 Arg2:T2792
+R855	target Arg1:T2791 Arg2:T2793
+R856	target Arg1:T2792 Arg2:T2793
+*	same-as T2793 T2792
+R857	is-a Arg1:T2793 Arg2:T2792
+*	same-as T2793 T2795
+R858	is-a Arg1:T2794 Arg2:T2793
+R859	has-property Arg1:T2794 Arg2:T2795
+T2797	Action 48222 48227	enter
+T2798	Concept 48240 48251	generalized
+T2799	Concept 48252 48263	circulation
+T2800	Concept 48271 48281	SARS-CoV-2
+T2801	Concept 48282 48287	virus
+T2802	Action 48289 48301	surveillance
+T2803	Concept 48311 48319	clinical
+T2804	Concept 48320 48331	description
+T2805	Action 48336 48338	sw
+T2806	Concept 48348 48351	GPs
+T2807	Action 48384 48390	assess
+T2808	Concept 48395 48404	situation
+R860	target Arg1:T2797 Arg2:T2799
+R861	target Arg1:T2798 Arg2:T2799
+R862	target Arg1:T2799 Arg2:T2800
+*	same-as T2800 T2799
+*	same-as T2800 T2801
+R863	target Arg1:T2804 Arg2:T2803
+R864	target Arg1:T2804 Arg2:T2806
+R865	target Arg1:T2804 Arg2:T2808
+R866	subject Arg1:T2805 Arg2:T2806
+R867	target Arg1:T2807 Arg2:T2808
+T2809	Concept 48413 48424	comparative
+T2810	Concept 48425 48434	alignment
+T2811	Concept 48447 48449	GZ
+T2812	Concept 48449 48451	02
+T2813	Concept 48453 48457	SARS
+T2814	Concept 48458 48463	viral
+T2815	Concept 48464 48470	strain
+T2816	Concept 48473 48479	Wuhan-
+T2817	Concept 48479 48482	Hu-
+T2818	Concept 48482 48483	1
+T2819	Concept 48489 48497	earliest
+T2820	Concept 48508 48517	SARS-CoV-
+T2821	Concept 48521 48523	Ra
+T2822	Concept 48523 48524	T
+T2823	Concept 48524 48527	G13
+T2824	Concept 48529 48532	HKU
+T2825	Concept 48532 48534	9-
+T2826	Concept 48541 48550	potential
+T2827	Concept 48551 48559	ancestor
+T2828	Concept 48563 48567	SARS
+T2829	Concept 48588 48597	SARS-CoV-
+T2830	Concept 48610 48612	OC
+T2831	Concept 48612 48614	43
+T2832	Concept 48628 48631	FCS
+T2833	Concept 48632 48641	exhibited
+T2834	Concept 48644 48649	clear
+T2835	Concept 48650 48658	sequence
+T2836	Concept 48663 48667	rule
+T2837	Concept 48671 48677	corona
+T2838	Concept 48677 48682	virus
+T2839	Concept 48683 48692	evolution
+R868	is-a Arg1:T2809 Arg2:T2810
+R869	is-a Arg1:T2812 Arg2:T2813
+*	same-as T2812 T2813
+R870	target Arg1:T2827 Arg2:T2838
+R871	target Arg1:T2833 Arg2:T2812
+R872	target Arg1:T2833 Arg2:T2815
+R873	target Arg1:T2833 Arg2:T2820
+R874	target Arg1:T2833 Arg2:T2828
+R875	target Arg1:T2833 Arg2:T2829
+R876	target Arg1:T2833 Arg2:T2838
+R877	subject Arg1:T2839 Arg2:T2838
+T2840	Concept 48705 48714	HLA types
+T2841	Concept 48719 48739	amino acid positions
+T2842	Action 48769 48779	associated
+T2843	Concept 48783 48786	JIA
+T2844	Concept 48788 48795	uveitis
+T2845	Concept 48808 48827	autoimmune diseases
+T2846	Concept 48836 48847	genome-wide
+T2847	Concept 48848 48859	association
+T2848	Concept 48864 48873	candidate
+T2849	Concept 48874 48886	gene studies
+R878	target Arg1:T2842 Arg2:T2841
+R879	target Arg1:T2842 Arg2:T2843
+R880	arg Arg1:T2842 Arg2:T2843
+R881	target Arg1:T2842 Arg2:T2844
+R882	in-time Arg1:T2842 Arg2:T2846
+R883	target Arg1:T2842 Arg2:T2846
+R884	target Arg1:T2842 Arg2:T2849
+T2850	Concept 48893 48900	results
+T2851	Action 48913 48924	interaction
+T2852	Concept 48928 48933	CD147
+T2853	Concept 48938 48940	SP
+T2854	Concept 48955 48960	novel
+T2855	Concept 48961 48970	potential
+T2856	Concept 48971 48976	route
+T2857	Concept 48981 48991	SARS-CoV-2
+T2858	Action 48995 49001	invade
+T2859	Concept 49002 49006	host
+R885	arg Arg1:T2851 Arg2:T2853
+R886	arg Arg1:T2856 Arg2:T2857
+R887	target Arg1:T2858 Arg2:T2857
+T2860	Concept 49030 49040	SARS-CoV-2
+T2861	Concept 49060 49070	originated
+T2862	Concept 49076 49096	Bat-SARSr-CoV RaTG13
+T2863	Concept 49112 49122	synonymous
+T2864	Action 49123 49135	substitution
+T2865	Concept 49144 49154	SARS-CoV-2
+T2866	Concept 49159 49165	RaTG13
+T2867	Concept 49166 49172	strain
+T2868	Concept 49187 49197	SARS-CoV-2
+T2869	Concept 49198 49204	genome
+T2870	Concept 49224 49232	negative
+T2871	Action 49234 49237	pur
+R888	target Arg1:T2861 Arg2:T2860
+R889	subject Arg1:T2861 Arg2:T2860
+R890	arg Arg1:T2861 Arg2:T2862
+R891	target Arg1:T2861 Arg2:T2862
+R892	target Arg1:T2861 Arg2:T2865
+R893	subject Arg1:T2861 Arg2:T2865
+R894	target Arg1:T2861 Arg2:T2866
+R895	target Arg1:T2861 Arg2:T2868
+*	same-as T2862 T2865
+R896	target Arg1:T2864 Arg2:T2860
+R897	target Arg1:T2864 Arg2:T2865
+R898	target Arg1:T2864 Arg2:T2868
+R899	target Arg1:T2870 Arg2:T2862
+T2872	Action 49255 49267	Construction
+T2873	Concept 49275 49302	Protein-protein interaction
+T2874	Concept 49304 49307	PPI
+T2875	Concept 49327 49335	proteins
+T2876	Concept 49341 49348	tightly
+T2877	Concept 49349 49360	interactive
+T2878	Concept 49409 49420	significant
+T2879	Concept 49421 49423	PP
+R900	target Arg1:T2872 Arg2:T2873
+R901	is-a Arg1:T2872 Arg2:T2873
+*	same-as T2872 T2874
+R902	is-a Arg1:T2873 Arg2:T2872
+*	same-as T2873 T2874
+R903	is-a Arg1:T2873 Arg2:T2875
+T2880	Concept 49425 49428	New
+T2881	Concept 49429 49434	genes
+T2882	Concept 49436 49440	ORF8
+T2883	Concept 49445 49449	ORF6
+T2884	Action 49462 49470	inserted
+T2885	Concept 49474 49482	COVID-19
+T2886	Action 49494 49500	absent
+T2887	Concept 49504 49513	HCov-HKU1
+T2888	Action 49528 49536	acquired
+T2889	Concept 49544 49554	horizontal
+T2890	Concept 49555 49572	gene transmission
+R904	target Arg1:T2886 Arg2:T2887
+R905	target Arg1:T2888 Arg2:T2887
+T2891	Concept 49606 49612	strong
+T2892	Concept 49613 49624	salt-bridge
+T2893	Action 49625 49634	presented
+T2894	Concept 49643 49647	R426
+T2895	Concept 49651 49663	SARS-CoV RBD
+T2896	Concept 49668 49672	E329
+T2897	Concept 49676 49680	ACE2
+T2898	Action 49685 49692	missing
+T2899	Concept 49700 49711	interaction
+T2900	Concept 49722 49735	SARS-CoV-2 RB
+R906	target Arg1:T2893 Arg2:T2892
+R907	in-context Arg1:T2893 Arg2:T2892
+R908	target Arg1:T2893 Arg2:T2894
+R909	target Arg1:T2893 Arg2:T2895
+R910	target Arg1:T2893 Arg2:T2899
+R911	target Arg1:T2893 Arg2:T2900
+*	same-as T2896 T2897
+*	same-as T2896 T2900
+R912	is-a Arg1:T2896 Arg2:T2900
+R913	target Arg1:T2898 Arg2:T2900
+*	same-as T2900 T2895
+T2901	Action 49774 49785	interaction
+T2902	Concept 49791 49803	pig 146 ACE2
+T2903	Concept 49812 49821	favorable
+T2904	Concept 49826 49836	SARS-CoV-2
+T2905	Concept 49837 49844	isolate
+T2906	Concept 49865 49867	Kd
+T2907	Concept 49871 49874	147
+T2908	Concept 49875 49882	3 folds
+T2909	Concept 49883 49889	lesser
+T2910	Concept 49902 49912	SARS-CoV-2
+R914	subject Arg1:T2901 Arg2:T2902
+R915	target Arg1:T2901 Arg2:T2902
+*	same-as T2904 T2910
+T2911	Concept 49923 49927	high
+T2912	Concept 49928 49938	resolution
+T2913	Concept 49939 49945	models
+T2914	Concept 49975 49978	low
+T2915	Concept 49979 49989	resolution
+T2916	Concept 49990 49994	bead
+T2917	Concept 49995 50003	modeling
+T2918	Concept 50020 50025	MONSA
+T2919	Concept 50027 50029	27
+T2920	Concept 50051 50057	phases
+T2921	Concept 50072 50081	contrasts
+T2922	Concept 50103 50110	protein
+T2923	Concept 50112 50119	phase 1
+T2924	Concept 50122 50137	detergent tails
+T2925	Concept 50139 50146	phase 2
+T2926	Concept 50152 50167	detergent heads
+T2927	Concept 50169 50176	phase 3
+R916	is-a Arg1:T2926 Arg2:T2912
+T2928	Concept 50182 50191	situation
+T2929	Concept 50195 50204	different
+T2930	Concept 50209 50219	Pyrococcus
+T2931	Concept 50221 50236	Native Nanopore
+T2932	Concept 50237 50241	data
+T2933	Concept 50259 50263	rRNA
+T2934	Concept 50275 50283	modified
+R917	target Arg1:T2934 Arg2:T2933
+T2935	Concept 50284 50292	Clinical
+T2936	Concept 50293 50308	characteristics
+T2937	Concept 50312 50320	patients
+T2938	Concept 50326 50332	severe
+T2939	Concept 50333 50373	acute respiratory syndrome coronavirus 2
+T2940	Concept 50375 50385	SARS-CoV-2
+T2941	Concept 50387 50396	infection
+T2942	Concept 50425 50431	median
+T2943	Concept 50432 50440	hospital
+T2944	Concept 50441 50445	stay
+T2945	Concept 50449 50460	forty-seven
+T2946	Concept 50461 50471	discharged
+T2947	Concept 50472 50480	patients
+T2948	Concept 50485 50487	10
+T2949	Concept 50488 50492	days
+R918	arg Arg1:T2936 Arg2:T2942
+R919	arg Arg1:T2936 Arg2:T2944
+R920	in-context Arg1:T2939 Arg2:T2938
+*	same-as T2939 T2940
+*	same-as T2940 T2939
+T2950	Concept 50498 50504	CTD 4A
+T2951	Concept 50509 50515	CTD 4E
+T2952	Concept 50523 50530	defects
+T2953	Action 50534 50541	binding
+T2954	Concept 50545 50551	O-MAD2
+T2955	Concept 50556 50561	C-MAD
+R921	target Arg1:T2952 Arg2:T2954
+R922	target Arg1:T2953 Arg2:T2955
+T2956	Concept 50579 50586	viruses
+T2957	Concept 50588 50597	HCOV-229E
+T2958	Action 50602 50612	identified
+T2959	Concept 50620 50628	patients
+T2960	Concept 50633 50638	HRV-A
+T2961	Action 50643 50653	identified
+T2962	Concept 50657 50662	three
+T2963	Concept 50663 50671	patients
+T2964	Concept 50694 50710	culture-positive
+T2965	Concept 50715 50736	Stenotrophomonas malt
+T2966	Concept 50751 50756	SENSR
+T2967	Action 50770 50778	detected
+T2968	Concept 50783 50789	target
+T2969	Concept 50790 50793	RNA
+T2970	Concept 50804 50810	0.1 aM
+R923	subject Arg1:T2967 Arg2:T2966
+R924	target Arg1:T2967 Arg2:T2968
+R925	target Arg1:T2967 Arg2:T2970
+R926	is-a Arg1:T2968 Arg2:T2969
+R927	domain Arg1:T2970 Arg2:T2968
+R928	domain Arg1:T2970 Arg2:T2969
+T2971	Concept 50901 50910	mortality
+T2972	Concept 50918 50922	PEDV
+T2973	Concept 50923 50932	infection
+T2974	Concept 50936 50941	lower
+T2975	Concept 50945 50950	older
+T2976	Concept 50951 50955	pigs
+T2977	Concept 50957 50966	infection
+T2978	Concept 50997 51003	growth
+R929	arg Arg1:T2975 Arg2:T2976
+T2979	Concept 51029 51034	dN/dS
+T2980	Concept 51035 51040	ratio
+T2981	Concept 51044 51054	RBD region
+T2982	Concept 51058 51068	SARS-CoV-2
+T2983	Concept 51069 51074	WIV04
+T2984	Concept 51092 51101	increased
+T2985	Concept 51111 51117	3 fold
+T2986	Concept 51137 51141	full
+T2987	Concept 51142 51154	spike region
+R930	target Arg1:T2979 Arg2:T2980
+R931	domain Arg1:T2979 Arg2:T2981
+R932	target Arg1:T2980 Arg2:T2981
+*	same-as T2982 T2981
+*	same-as T2982 T2983
+R933	target Arg1:T2984 Arg2:T2980
+T2988	Concept 51160 51167	samples
+T2989	Concept 51179 51187	COVID-19
+T2990	Concept 51197 51201	MERS
+T2991	Concept 51203 51208	BtCoV
+T2992	Concept 51213 51216	MHV
+T2993	Concept 51222 51230	positive
+T2994	Concept 51231 51238	RT-LAMP
+T2995	Concept 51239 51248	reactions
+T2996	Action 51260 51271	specificity
+T2997	Concept 51279 51287	reaction
+T2998	Concept 51292 51300	COVID-19
+T2999	Action 51332 51342	prevalence
+T3000	Concept 51346 51362	strongyloidiasis
+T3001	Concept 51372 51376	high
+T3002	Concept 51383 51391	migrants
+T3003	Concept 51402 51407	Spain
+T3004	Concept 51419 51428	screening
+T3005	Concept 51429 51438	programme
+T3006	Action 51449 51457	designed
+T3007	Concept 51475 51491	immunosuppressed
+T3008	Concept 51492 51500	patients
+T3009	Predicate 51518 51522	risk
+T3010	Action 51526 51535	suffering
+T3011	Concept 51543 51556	complications
+T3012	Concept 51564 51573	infection
+R934	target Arg1:T2999 Arg2:T3000
+R935	arg Arg1:T2999 Arg2:T3000
+R936	target Arg1:T3010 Arg2:T3005
+R937	target Arg1:T3010 Arg2:T3011
+T3013	Concept 51581 51596	epidemic period
+T3014	Concept 51631 51638	doctors
+T3015	Action 51642 51650	identify
+T3016	Concept 51651 51659	COVID-19
+T3017	Concept 51660 51669	pneumonia
+T3018	Concept 51675 51688	heart failure
+T3019	Concept 51689 51697	patients
+T3020	Concept 51705 51712	initial
+T3021	Concept 51713 51720	contact
+R938	subject Arg1:T3015 Arg2:T3014
+R939	target Arg1:T3015 Arg2:T3016
+R940	target Arg1:T3015 Arg2:T3017
+R941	target Arg1:T3015 Arg2:T3018
+R942	in-context Arg1:T3019 Arg2:T3021
+R943	target Arg1:T3021 Arg2:T3019
+T3022	Concept 51746 51753	reports
+T3023	Concept 51755 51760	older
+T3024	Concept 51761 51769	patients
+T3025	Concept 51771 51784	≥65 years old
+T3026	Concept 51814 51820	severe
+T3027	Concept 51829 51837	COVID-19
+T3028	Concept 51857 51865	patients
+T3029	Concept 51881 51886	study
+R944	target Arg1:T3022 Arg2:T3023

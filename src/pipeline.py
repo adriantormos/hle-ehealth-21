@@ -1,5 +1,5 @@
 from pathlib import Path
-from typing import List, Optional
+from typing import List
 
 import torch
 from transformers import AutoTokenizer, AutoModelForTokenClassification, TrainingArguments, Trainer
@@ -11,13 +11,10 @@ from src.utils import compute_metrics
 from src.train import RelationClassifier
 
 
-def pipeline_task_A(model_path: str, collection: Optional[Collection] = None) -> Collection:
+def pipeline_task_a(model_path: str, dataset_path: str) -> Collection:
     tokenizer = AutoTokenizer.from_pretrained(model_path)
     model = AutoModelForTokenClassification.from_pretrained(model_path, num_labels=9)
-    if collection is None:
-        test_c = Collection().load(Path('./2021/eval/testing/scenario2-taskA/input.txt'))
-    else:
-        test_c = collection
+    test_c = Collection().load(Path(dataset_path))
     test_input = tokenizer([s.text for s in test_c.sentences], padding=True)
 
     trainer = Trainer(
@@ -45,19 +42,16 @@ def pipeline_task_A(model_path: str, collection: Optional[Collection] = None) ->
     return Collection(sentences)
 
 
-def pipeline_task_B(model_path: str, preparator_path: str, collection=None) -> Collection:
+def pipeline_task_b1(model_path: str, preparator_path: str, dataset_path: str) -> Collection:
     model = RelationClassifier().to('cuda')
     model.load_state_dict(torch.load(model_path))
     tokenizer = AutoTokenizer.from_pretrained(preparator_path)
     preparator = AutoModelForTokenClassification.from_pretrained(preparator_path, num_labels=9,
                                                                  output_hidden_states=True)
-    dataset_x, sentences, keyphrases = generate_all_possible_relation_pairs(
-        '2021/eval/testing/scenario3-taskB/input.txt' if collection is None else collection, tokenizer, preparator
-    )
+    dataset_x, sentences, keyphrases = generate_all_possible_relation_pairs(dataset_path, tokenizer, preparator)
     batch_size = 64
     c_pointer = 0
-    test_c = Collection().load(Path('2021/eval/testing/scenario3-taskB/input.txt')) \
-        if collection is None else collection
+    test_c = Collection().load(Path(dataset_path))
     while c_pointer < len(dataset_x):
         with torch.no_grad():
             inputs = torch.stack(dataset_x[c_pointer:c_pointer + batch_size]).to('cuda')
@@ -71,7 +65,7 @@ def pipeline_task_B(model_path: str, preparator_path: str, collection=None) -> C
     return test_c
 
 
-def pipeline_task_B2(model_bin_path: str, model_rel_path: str, preparator_path: str, collection=None) -> Collection:
+def pipeline_task_b2(model_bin_path: str, model_rel_path: str, preparator_path: str, dataset_path: str) -> Collection:
     model_bin = RelationClassifier(output=1).to('cuda')
     model_rel = RelationClassifier().to('cuda')
     model_bin.load_state_dict(torch.load(model_bin_path))
@@ -79,13 +73,10 @@ def pipeline_task_B2(model_bin_path: str, model_rel_path: str, preparator_path: 
     tokenizer = AutoTokenizer.from_pretrained(preparator_path)
     preparator = AutoModelForTokenClassification.from_pretrained(preparator_path, num_labels=9,
                                                                  output_hidden_states=True)
-    dataset_x, sentences, keyphrases = generate_all_possible_relation_pairs(
-        '2021/eval/testing/scenario3-taskB/input.txt' if collection is None else collection, tokenizer, preparator
-    )
+    dataset_x, sentences, keyphrases = generate_all_possible_relation_pairs(dataset_path, tokenizer, preparator)
     batch_size = 64
     c_pointer = 0
-    test_c = Collection().load(Path('2021/eval/testing/scenario3-taskB/input.txt')) \
-        if collection is None else collection
+    test_c = Collection().load(Path(dataset_path))
     while c_pointer < len(dataset_x):
         with torch.no_grad():
             inputs = torch.stack(dataset_x[c_pointer:c_pointer + batch_size]).to('cuda')
@@ -109,11 +100,10 @@ def pipeline_task_B2(model_bin_path: str, model_rel_path: str, preparator_path: 
     return test_c
 
 
-def pipeline(nerc_model_path: str, re_paths: List[str], preparator_path: str, collection=None) -> Collection:
-    collection = Collection().load(Path('./2021/eval/testing/scenario1-main/input.txt')) \
-        if collection is None else collection
-    collection = pipeline_task_A(nerc_model_path, collection)
+def pipeline(nerc_model_path: str, re_paths: List[str], preparator_path: str, dataset_path: str) -> Collection:
+    collection = Collection().load(Path(dataset_path))
+    collection = pipeline_task_a(nerc_model_path, dataset_path)
     if len(re_paths) == 1:
-        return pipeline_task_B(re_paths[0], preparator_path, collection)
+        return pipeline_task_b1(re_paths[0], preparator_path, dataset_path)
     else:
-        return pipeline_task_B2(re_paths[0], re_paths[1], preparator_path, collection)
+        return pipeline_task_b2(re_paths[0], re_paths[1], preparator_path, dataset_path)

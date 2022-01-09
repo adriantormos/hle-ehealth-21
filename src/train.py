@@ -7,37 +7,6 @@ from transformers import AutoTokenizer, DataCollatorForTokenClassification, Auto
 from src.preprocessing import generate_NERC_dataset, generate_RE_datasets
 from src.utils import compute_metrics
 
-import pytorch_lightning as pl
-
-
-# class RelationClassifierPL(pl.LightningModule):
-#     def __init__(self, input=784*2, output=14):
-#         super().__init__()
-#         self.network = nn.Sequential(
-#             nn.Linear(input, 500),
-#             nn.ReLU(),
-#             nn.Linear(500, output),
-#             nn.Softmax()
-#         )
-#
-#     def forward(self, x):
-#         return self.network(x)
-#
-#     def training_step(self, batch, batch_idx):
-#         # training_step defined the train loop.
-#         # It is independent of forward
-#         x, y = batch
-#         x = x.view(x.size(0), -1)
-#         x = self.network(x)
-#         loss = nn.functional.cross_entropy(x, y)
-#         # Logging to TensorBoard by default
-#         self.log("train_loss", loss)
-#         return loss
-#
-#     def configure_optimizers(self):
-#         optimizer = torch.optim.Adam(self.parameters(), lr=1e-3)
-#         return optimizer
-
 
 class RelationClassifier(nn.Module):
     def __init__(self, input=768*2, output=14):
@@ -52,12 +21,11 @@ class RelationClassifier(nn.Module):
         return self.network(x)
 
 
-def train_task_A(pretrained_model: str, final_name: str, epochs=4):
-
+def train_task_a(pretrained_model: str, dataset: str, final_name: str, epochs=4):
     tokenizer = AutoTokenizer.from_pretrained(pretrained_model)
     model = AutoModelForTokenClassification.from_pretrained(pretrained_model, num_labels=9)
     train_dataset, val_dataset = generate_NERC_dataset(
-        '2021/ref/training/medline.1200.es.txt',
+        dataset,
         pretrained_model
     )
     data_collator = DataCollatorForTokenClassification(tokenizer)
@@ -65,7 +33,7 @@ def train_task_A(pretrained_model: str, final_name: str, epochs=4):
     trainer = transformers.Trainer(
         model,
         TrainingArguments(
-            final_name,
+            f'models/{final_name}',
             evaluation_strategy="epoch",
             learning_rate=2e-5,
             per_device_train_batch_size=32,
@@ -83,11 +51,11 @@ def train_task_A(pretrained_model: str, final_name: str, epochs=4):
     trainer.save_model()
 
 
-def train_task_B1(pretrained_model: str, epochs=5, model_name='taskB_model.pt',
+def train_task_b1(pretrained_model: str, dataset: str, epochs=5, model_name='taskB_model.pt',
                   all_relations=False, label_0_ratio=None):
     model_rel = RelationClassifier()
     train_dataset, val_dataset = generate_RE_datasets(
-        '2021/ref/training/medline.1200.es.txt',
+        dataset,
         pretrained_model,
         all_relations=all_relations,
         label_0_ratio=label_0_ratio
@@ -121,14 +89,14 @@ def train_task_B1(pretrained_model: str, epochs=5, model_name='taskB_model.pt',
                 total += labels.size(0)
                 correct += (predicted == labels).sum().item()
         print(f'val acc {correct/total}')
-    torch.save(model_rel.state_dict(), f'./{model_name}')
+    torch.save(model_rel.state_dict(), f'models/{model_name}')
 
 
-def train_task_B2(pretrained_model: str, epochs=5, model_name='taskB_model_es', label_0_ratio=1):
+def train_task_b2(pretrained_model: str, dataset: str, epochs=5, model_name='taskB_model_es', label_0_ratio=1):
     model_bin = RelationClassifier(output=1).to('cuda')
     model_rel = RelationClassifier().to('cuda')
     train_dataset_bin, val_dataset_bin, train_dataset_rel, val_dataset_rel = generate_RE_datasets(
-        '2021/ref/training/medline.1200.es.txt',
+        dataset,
         pretrained_model,
         two_datasets=True,
         all_relations=True,
@@ -169,7 +137,7 @@ def train_task_B2(pretrained_model: str, epochs=5, model_name='taskB_model_es', 
                 total += labels.size(0)
                 correct += ((torch.sigmoid(outputs) > 0.5) == labels).sum().item()
         print(f'val acc {correct/total}')
-    torch.save(model_bin.state_dict(), f'./{model_name}_bin.pt')
+    torch.save(model_bin.state_dict(), f'models/{model_name}_bin.pt')
 
     train_dataset = torch.utils.data.DataLoader(train_dataset_rel, batch_size=64, shuffle=True)
     val_dataset = torch.utils.data.DataLoader(val_dataset_rel, batch_size=64, shuffle=False)
@@ -208,9 +176,4 @@ def train_task_B2(pretrained_model: str, epochs=5, model_name='taskB_model_es', 
                 total += labels.size(0)
                 correct += (predicted == labels).sum().item()
         print(f'val acc {correct/total}')
-    torch.save(model_rel.state_dict(), f'./{model_name}_rel.pt')
-
-
-    # trainer = pl.Trainer(max_epochs=10, gpus=1)
-    # trainer.fit(model, train_dataset, val_dataset)
-    # trainer.test(test_dataloaders=val_dataset)
+    torch.save(model_rel.state_dict(), f'models/{model_name}_rel.pt')
